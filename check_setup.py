@@ -9,6 +9,7 @@ print("pandas :", pd.__version__)
 print("matplotlib:", matplotlib.__version__)
 print("commit-3: 25EC01048")
 print("25EC01048 merge check complete.")
+print("birthday: 2024-06-05")
 # a one-line smoke test of the plotting back-end
 plt.plot([0, 1, 2, 3], [0, 1, 4, 9], marker="o")
 plt.title("If you can see this window, the setup works")
