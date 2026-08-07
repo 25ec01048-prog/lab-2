@@ -64,12 +64,14 @@ max     5.00000   5.000000  24.150000
 ```python
     v_t = np.array([])
     for v_ds, g in df.groupby('V_DS (V)'):
-        v_t = np.append(v_t, np.polyfit(g['V_S (V)'], g['I_D (mA)'], 2)[0])
+        v_t = np.append(v_t, np.polyfit(g['V_GS (V)'], g['I_D (mA)'], 1)[0])
     print(round(v_t.mean(), 2) ,' V is the average threshold voltage')
 
 ```
-Output = 1.11  V is the average threshold voltage
+Output = 3.07  V is the average threshold voltage
 
 # Task - 11 
 
 ![Task 11](task11.png )
+
+

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv(r'ed-1/MOSFET_ID_VDS.csv')
+df = pd.read_csv(r'ed-1/MOSFET_ID_VGS.csv')
 
 fig, ax = plt.subplots(1,2,figsize=(11, 4.2)) 
 v_gs_gm_max = 0
@@ -11,7 +11,7 @@ v_t = np.array([]) # threshold voltage array
 for v_ds, g in df.groupby('V_DS (V)'):
     g = g.sort_values('V_GS (V)') # ALWAYS sort the sweep axis
     gm = np.gradient(g['I_D (mA)'], g['V_GS (V)']) # numerical derivative
-    v_t = np.append(v_t, np.polyfit(g['V_GS (V)'], g['I_D (mA)'], 2)[0]) 
+    v_t = np.append(v_t, np.polyfit(g['V_GS (V)'], g['I_D (mA)'], 1)[0]) 
     if gm_max < gm.max():
         gm_max = gm.max()
         v_gs_gm_max = g['V_GS (V)'].iloc[gm.argmax()]
