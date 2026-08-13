@@ -98,3 +98,34 @@ Output = 2.25  V is the average threshold voltage
 
 ![Task 12](t12.png )
 
+
+# Bonus Exercise
+
+## Task 1
+``` python
+Is = 1e-12 # A
+Vd = np.linspace(0, 0.8, 81) # V
+idealityFactors = [1, 1.5, 2]
+vt = 0.02585 # V
+
+
+for n in idealityFactors:   
+    I = Is * (np.exp(Vd/(n*vt)) - 1)
+```
+
+## Task 2
+
+
+![Task 2](bt1.png )
+
+## Task 3
+Here the range of logrithmic is so high that it can cover values ranging between 1e-12 to 1e2, better for the highly varying I<sub>d</sub> for different ideality factors.
+<br>
+
+![Task 3](bt3.png )
+
+
+
+## Task 4 
+
+![Task 4](bt4.png )
