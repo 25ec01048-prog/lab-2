@@ -11,14 +11,33 @@ v_t = np.array([]) # threshold voltage array
 for v_ds, g in df.groupby('V_DS (V)'):
     g = g.sort_values('V_GS (V)') # ALWAYS sort the sweep axis
     gm = np.gradient(g['I_D (mA)'], g['V_GS (V)']) # numerical derivative
-    v_t = np.append(v_t, np.polyfit(g['V_GS (V)'], g['I_D (mA)'], 1)[0]) 
+    
+    highslope_gm = np.where(gm > 0.7 * gm.max())[0][0] # index of the last zero crossing
+    
+    coef = np.polyfit(g['V_GS (V)'][highslope_gm:], g['I_D (mA)'][highslope_gm:], 1)
+    
+    v_t_t = -coef[1]/coef[0] # threshold voltage from linear extrapolation
+   
+    v_t = np.append(v_t, v_t_t)
+    polynomial = np.poly1d(coef)
+
+    # 3. Define an extended X-range for extrapolation (e.g., up to x=10)
+    x_extended = np.linspace(1, 5, 100)
+    y_extrapolated = polynomial(x_extended)
+
+    # 4. Plot the results
+    # plt.scatter(x, y, color='blue', label='Original Data')
+    ax[0].plot(x_extended, y_extrapolated, linestyle='--', label='Extrapolated Line')
+        
+        
     if gm_max < gm.max():
         gm_max = gm.max()
         v_gs_gm_max = g['V_GS (V)'].iloc[gm.argmax()]
+    
         
     ax[0].plot(g['V_GS (V)'], g['I_D (mA)'], linewidth=2,label=f'$V_{{DS}}$ = {v_ds} V')
     ax[1].plot(g['V_GS (V)'], gm, linewidth=2, label=f'$V_{{DS}}$ = {v_ds} V')
-
+ax[0].set_ylim(-1, df['I_D (mA)'].max() + 0.5)
 
 print(v_t)
 print(round(v_t.mean(), 2) ,' V is the average threshold voltage')

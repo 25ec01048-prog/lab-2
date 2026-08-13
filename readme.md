@@ -61,17 +61,40 @@ max     5.00000   5.000000  24.150000
 ![Task 9](gm_transfer.png )
 
 # Task - 10
-```python
+```python    
     v_t = np.array([])
     for v_ds, g in df.groupby('V_DS (V)'):
-        v_t = np.append(v_t, np.polyfit(g['V_GS (V)'], g['I_D (mA)'], 1)[0])
+        highslope_gm = np.where(gm > 0.7 * gm.max())[0][0] # index from which the id graph goes almost straight
+    
+        coef = np.polyfit(g['V_GS (V)'][highslope_gm:], g['I_D (mA)'][highslope_gm:], 1)
+            
+        v_t_t = -coef[1]/coef[0] # threshold voltage from linear extrapolation
+    
+        v_t = np.append(v_t, v_t_t)
+        polynomial = np.poly1d(coef)
+
+            # 3. Define an extended X-range for extrapolation (e.g., up to x=10)
+        x_extended = np.linspace(1, 5, 100)
+        y_extrapolated = polynomial(x_extended)
+
+            # 4. Plot the results
+            # plt.scatter(x, y, color='blue', label='Original Data')
+        ax[0].plot(x_extended, y_extrapolated, linestyle='--', label='Extrapolated Line')
+        
     print(round(v_t.mean(), 2) ,' V is the average threshold voltage')
 
 ```
-Output = 3.07  V is the average threshold voltage
+<b>
+Output = 2.25  V is the average threshold voltage
+</b>
+<br>
 
 # Task - 11 
 
 ![Task 11](task11.png )
 
+
+# Task - 12 
+
+![Task 12](t12.png )
 
