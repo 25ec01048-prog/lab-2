@@ -24,7 +24,7 @@ print (f"Phif = {phif:.3f} V")
 print(f"Phims = {phims:.3f} V")
 print(f"Phiox = {phiox:.3f} V")
 print(f"Cox = {cox:.3e} F/cm^2")
-fig, ax = plt.subplots(1,2,figsize=(11, 4.2)) 
+fig, ax = plt.subplots(1,1,figsize=(10, 6)) 
 #SPICE-level 1
 vGs = [1,2,3]
 vDs = np.linspace(0, 4, 100)
@@ -37,12 +37,12 @@ for v_gs in vGs:
         else:
             i_d = np.append(i_d, un * w / L * (cox) * (0.5 * (v_gs - vt) ** 2)*(1+lambda_ * v_ds))
 
-    ax[0].plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V', linewidth=2)
+    plt.plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V - spice 1', linewidth=2)
     i_d = np.array([])
     
-ax[0].set_xlabel('$V_{DS}$ (V)')
-ax[0].set_ylabel('$I_D$ (mA)')
-ax[0].set_title('Output characteristics using spice - 1 without')
+plt.xlabel('$V_{DS}$ (V)')
+plt.ylabel('$I_D$ (mA)')
+plt.title('Output characteristics using spice - 1 without')
 
 
 # for v_gs in vGs:
@@ -52,12 +52,12 @@ ax[0].set_title('Output characteristics using spice - 1 without')
 #         else:
 #             i_d = np.append(i_d, un * w / L * (cox) * (0.5 * (v_gs - vt) ** 2)*(1+lambda_ * v_ds))
 
-#     ax[0].plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V', linewidth=2)
+#     plt.plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V', linewidth=2)
 #     i_d = np.array([])
     
-# ax[0].set_xlabel('$V_{DS}$ (V)')
-# ax[0].set_ylabel('$I_D$ (mA)')
-# ax[0].set_title('Output characteristics using spice - 1 -with lamda')
+# plt.set_xlabel('$V_{DS}$ (V)')
+# plt.set_ylabel('$I_D$ (mA)')
+# plt.set_title('Output characteristics using spice - 1 -with lamda')
 alpha = 1 + ( np.sqrt(2* 1e-12 * 1.6 * 1e-19 * Na) / cox)/ (2*np.sqrt(phif))
 print(f"alpha = {alpha:.3f}")
 # x
@@ -71,19 +71,20 @@ for v_gs in vGs:
         else:
             i_d = np.append(i_d, un * (w /(alpha* 2 * L)) * (cox) * ( (v_gs - vt) ** 2)*(1 + lambda_ * v_ds))
 
-    ax[1].plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V', linewidth=2)
+    # ax[1].plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V', linewidth=2)
+    plt.plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V - spice 3', linewidth=2, linestyle='--')
     i_d = np.array([])
     
-ax[1].set_xlabel('$V_{DS}$ (V)')
-ax[1].set_ylabel('$I_D$ (mA)')
-ax[1].set_title('Output characteristics using spice - 3')
+# ax[1].set_xlabel('$V_{DS}$ (V)')
+# ax[1].set_ylabel('$I_D$ (mA)')
+# ax[1].set_title('Output characteristics using spice - 3')
 
 
 
 
-for a in ax:
-    a.grid(True, linestyle='--', alpha=0.6)
-    a.legend(fontsize=9)
+
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.legend(fontsize=9)
 plt.tight_layout()
 plt.savefig('t12.png', dpi=300) # save BEFORE showplt.show()
 plt.show()
