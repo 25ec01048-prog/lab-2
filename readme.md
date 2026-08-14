@@ -64,6 +64,8 @@ max     5.00000   5.000000  24.150000
 ```python    
     v_t = np.array([])
     for v_ds, g in df.groupby('V_DS (V)'):
+         g = g.sort_values('V_GS (V)') # ALWAYS sort the sweep axis
+        gm = np.gradient(g['I_D (mA)'], g['V_GS (V)']) # numerical derivative
         highslope_gm = np.where(gm > 0.7 * gm.max())[0][0] # index from which the id graph goes almost straight
     
         coef = np.polyfit(g['V_GS (V)'][highslope_gm:], g['I_D (mA)'][highslope_gm:], 1)
