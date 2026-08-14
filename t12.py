@@ -66,10 +66,10 @@ print(f"alpha = {alpha:.3f}")
 for v_gs in vGs:
     for v_ds in vDs:
         # print(((v_gs - vt)/alpha),",", v_ds)
-        if ((v_gs - vt)/(2*alpha))> v_ds:
-            i_d = np.append(i_d, (un * w / L * (cox) * (((v_gs - vt) * v_ds) - (alpha * (v_ds ** 2)))) * (1+lambda_ * v_ds))
+        if ((v_gs - vt)/(alpha))> v_ds:
+            i_d = np.append(i_d, (un * w / L * (cox) *(1+lambda_ * v_ds)* (((v_gs - vt) * v_ds) - (alpha *0.5* (v_ds ** 2)))) )
         else:
-            i_d = np.append(i_d, un * (w /(alpha* 2 * L)) * (cox) * ( (v_gs - vt) ** 2)*(1+lambda_ * v_ds))
+            i_d = np.append(i_d, un * (w /(alpha* 2 * L)) * (cox) * ( (v_gs - vt) ** 2)*(1 + lambda_ * v_ds))
 
     ax[1].plot(vDs, i_d, label=f'$V_{{GS}}$ = {v_gs} V', linewidth=2)
     i_d = np.array([])
