@@ -2,7 +2,7 @@
 # Sentaurus Visual V-2023.12.
 # Tcl log file.
 #------------------------------------------
-# Date: Sep 04, 2026. 11:27:55.
+# Date: Sep 07, 2026. 14:54:08.
 # Version: 35.2.8515123 (2.8515123)
 # Mode: Interactive (GUI).
 # Hostname: cdsl18.cdsl.iitbbs.ac.in.
@@ -10,69 +10,23 @@
 # Kernel: 5.14.0-503.11.1.el9_5.x86_64.
 ###########################################
 
-load_file /home/cdsllab/25ec01021/MOSFET/BV_n44_des.plt
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n7_des.plt
 create_plot -1d
 select_plots {Plot_1}
 #-> Plot_1
 #-> Plot_1
-#-> BV_n44_des
-create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {BV_n44_des} -plot Plot_1
+#-> IdVg_n7_des
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n21_des.plt
+#-> IdVg_n21_des
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n31_des.plt
+#-> IdVg_n31_des
+create_curve -axisX {source OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVg_n7_des} -plot Plot_1
+#-> Curve_1
+create_curve -axisX {gate OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVg_n7_des} -plot Plot_1
+#-> Curve_2
+remove_curves -plot Plot_1 {Curve_1}
 #-> Curve_1
 move_plot -plot Plot_1 -position {0 0}
-#-> 0
-move_plot -plot Plot_1 -position {0 0}
-#-> 0
-move_plot -plot Plot_1 -position {0 0}
-#-> 0
-set_curve_prop {Curve_1} -plot Plot_1 -label "drain TotalCurrent(BV)"
-#-> 0
-set_curve_prop {Curve_1} -plot Plot_1 -label "drain TotalCurrent(BV)"
-#-> 0
-set_axis_prop -plot Plot_1 -axis y -title I_d
-#-> 0
-set_axis_prop -plot Plot_1 -axis x -title V_ds
-#-> 0
-set_axis_prop -plot Plot_1 -axis x -title V_ds
-#-> 0
-set_plot_prop -plot {Plot_1} -title "Breakdown graph"
-#-> 0
-export_view /home/cdsllab/25ec01021/q7_graph.png -plots {Plot_1} -format png
-#-> 0
-probe_curve {Curve_1} -valueX 0.334285
-#-> 2.85564813203e-05
-probe_curve {Curve_1} -valueX 0.34026
-#-> 3.01371055341e-05
-probe_curve {Curve_1} -valueX 0.0649793
-#-> 1.13636623285e-06
-probe_curve {Curve_1} -valueX 0.0436397
-#-> 7.29158929629e-07
-probe_curve {Curve_1} -valueX 0.0483345
-#-> 8.12263432788e-07
-probe_curve {Curve_1} -valueX 0.0487612
-#-> 8.19938328962e-07
-probe_curve {Curve_1} -valueX 0.0530292
-#-> 8.98367391748e-07
-probe_curve {Curve_1} -valueX 0.0543095
-#-> 9.22506688231e-07
-probe_curve {Curve_1} -valueX 0.0581507
-#-> 9.96653612132e-07
-probe_curve {Curve_1} -valueX 0.061565
-#-> 1.06519202332e-06
-probe_curve {Curve_1} -valueX 0.0641257
-#-> 1.11829679905e-06
-probe_curve {Curve_1} -valueX 0.0671133
-#-> 1.18229972742e-06
-draw_textbox -plot Plot_1 -at {0.0948547 2.34551e-05} -label TextBox_1
-#-> TextBox_1
-set_textbox_prop TextBox_1 -plot Plot_1 -text "(0.062, 10^-6)"
-#-> 0
-set_textbox_prop TextBox_1 -plot Plot_1 -text "(0.062, 10^-6)"
-#-> 0
-set_textbox_prop TextBox_1 -plot Plot_1 -font_family arial -font_size 15 -font_att normal -font_color #000000
-#-> 0
-set_textbox_prop TextBox_1 -plot Plot_1 -font_family arial -font_size 15 -font_att normal -font_color #000000
-#-> 0
-export_view /home/cdsllab/25ec01021/q8_graph.png -plots {Plot_1} -format png
 #-> 0
 exit 0
  

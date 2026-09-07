@@ -13,7 +13,7 @@ File {
 
 Electrode {
    { Name="source"    Voltage=0.0 }
-   { Name="drain"     Voltage= @vds@}
+   { Name="drain"     Voltage= 1.1}
    { Name="gate"      Voltage=(0 at 0, Vg at tend) }
 
 }
@@ -70,9 +70,9 @@ Math {
 
 Solve {
     Coupled(Iterations= 1000 LineSearchDamping= 1e-2) { Poisson }
-    Coupled(Iterations= 100) { Poisson Electron Hole }
+    Coupled(Iterations= 1000) { Poisson Electron Hole }
     
-    NewCurrent = "IdVg_@tox@_@vds@_"
+    NewCurrent = "IdVg_@tox@_"
     Transient (
         InitialTime= 0 FinalTime= tend  
         InitialStep= @<tend*1e5/abs(Vg)>@ MinStep = @<tend*1e-14>@ Maxstep= @<tend*0.01>@ 

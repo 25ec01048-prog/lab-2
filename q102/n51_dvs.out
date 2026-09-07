@@ -1,0 +1,228 @@
+****************************************************************************
+***                      Sentaurus Structure Editor                      ***
+***                          Version V-2023.12                           ***
+***                      (2.8515123, x86_64, Linux)                      ***
+***                                                                      ***
+***               Copyright (C) 1994-2023 Synopsys, Inc.                 ***
+***        Portions of this software are owned by Spatial Corp.          ***
+***            Copyright (C) 1986-2023. All Rights Reserved.             ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Mon Oct 30 07:13:59 PDT 2023 on: sce-tcad-build01
+Running on: cdsl18.cdsl.iitbbs.ac.in
+Hardware type: x86_64
+OS name: Linux
+OS release: 5.14.0-503.11.1.el9_5.x86_64
+OS version: #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
+Process ID: 80919
+
+version #3 done.
+Evaluating file n51_dvs.cmd
+
+---> (sdegeo:create-rectangle (position 0.0 0.0 0.0) (position 0.5 0.25 0.0) Silicon R.Substrate)
+
+---> (sdegeo:create-rectangle (position -0.005 0.105 0.0) (position 0.0 0.145 0.0) Oxide R.GateOx)
+
+---> (sdegeo:create-rectangle (position -0.07 0.105 0.0) (position -0.005 0.145 0.0) PolySilicon R.Poly)
+
+---> (sdegeo:create-polygon (list (position 0 0.07 0.0) (position -0.07 0.07 0.0) (position -0.07 0.105 0.0) (position 0 0.105 0.0) (position 0 0.07 0.0)) Nitride R.Spacer.Left)
+
+---> (sdegeo:fillet-2d (list (car (find-vertex-id (position -0.07 0.07 0.0)))) 0.03)
+
+shortest edge: 0.035000
+---> (sdegeo:create-polygon (list (position 0 0.145 0.0) (position -0.07 0.145 0.0) (position -0.07 0.18 0.0) (position 0 0.18 0.0) (position 0 0.145 0.0)) Nitride R.Spacer.Right)
+
+---> (sdegeo:fillet-2d (list (car (find-vertex-id (position -0.07 0.18 0.0)))) 0.03)
+
+shortest edge: 0.035000
+---> (sdegeo:create-rectangle (position -0.01 0.01 0.0) (position 0.0 0.07 0.0) Silicide R.Silicide.Left)
+
+---> (sdegeo:create-rectangle (position -0.01 0.18 0.0) (position 0.0 0.24 0.0) Silicide R.Silicide.Right)
+
+---> (sdegeo:define-contact-set source 3 (color:rgb 1.0 0.0 0.0) ##)
+
+---> (sdegeo:define-contact-set drain 3 (color:rgb 0.0 0.0 1.0) ##)
+
+---> (sdegeo:define-contact-set gate 3 (color:rgb 0.0 1.0 0.0) ##)
+
+---> (sdegeo:set-contact (find-edge-id (position -0.01 0.05 0.0)) source)
+
+(sdegeo:set-contact (list (car (find-edge-id (position -0.01 0.04 0)))) "source")
+
+---> (sdegeo:set-contact (find-edge-id (position -0.01 0.2 0.0)) drain)
+
+(sdegeo:set-contact (list (car (find-edge-id (position -0.01 0.21 0)))) "drain")
+
+---> (sdegeo:set-contact (find-edge-id (position -0.07 0.115 0.0)) gate)
+
+(sdegeo:set-contact (list (car (find-edge-id (position -0.07 0.125 0)))) "gate")
+
+---> (sdedr:define-constant-profile Prof.Bulk BoronActiveConcentration 1e+16)
+
+---> (sdedr:define-constant-profile-region Place.Bulk Prof.Bulk R.Substrate)
+
+---> (sdedr:define-constant-profile Prof.PolyGate ArsenicActiveConcentration 1e+20)
+
+---> (sdedr:define-constant-profile-region Place.PolyGate Prof.PolyGate R.Poly)
+
+---> (sdedr:define-refeval-window BL.SD.L Line (position 0.0 0.0 0.0) (position 0.0 0.07 0.0))
+
+---> (sdedr:define-refeval-window BL.SD.R Line (position 0.0 0.18 0.0) (position 0.0 0.25 0.0))
+
+---> (sdedr:define-gaussian-profile Prof.SD ArsenicActiveConcentration PeakPos 0.0 PeakVal 1e+20 ValueAtDepth 1e+16 Depth 0.1 Gauss Factor 0.05)
+
+---> (sdedr:define-analytical-profile-placement Place.SD.L Prof.SD BL.SD.L Both NoReplace Eval)
+
+---> (sdedr:define-analytical-profile-placement Place.SD.R Prof.SD BL.SD.R Both NoReplace Eval)
+
+---> (sdedr:define-refinement-size Global_Ref_Def 0.05 0.05 0 0.005 0.005 0)
+
+---> (sdedr:define-refinement-size Upper_Ref_Def 0.005 0.005 0 0.001 0.001 0)
+
+---> (sdedr:define-refeval-window BL.LLD.L Line (position 0.0 0.05 0.0) (position 0.0 0.105 0.0))
+
+---> (sdedr:define-refeval-window BL.LLD.R Line (position 0.0 0.145 0.0) (position 0.0 0.2 0.0))
+
+---> (sdedr:define-gaussian-profile Prof.LLD ArsenicActiveConcentration PeakPos 0.0 PeakVal 1e+19 ValueAtDepth 1e+17 Depth 0.05 Gauss Factor 0.05)
+
+---> (sdedr:define-analytical-profile-placement Place.LLD.L Prof.LLD BL.LLD.L Both NoReplace Eval)
+
+---> (sdedr:define-analytical-profile-placement Place.LLD.R Prof.LLD BL.LLD.R Both NoReplace Eval)
+
+---> (sdedr:define-refeval-window BL.Well Line (position 0.0 0.11 0.0) (position 0.0 0.145 0.0))
+
+---> (sdedr:define-gaussian-profile Prof.Well BoronActiveConcentration PeakPos 0.0 PeakVal 2e+18 ValueAtDepth 2e+17 Depth 0.025 Gauss Factor 0.1)
+
+---> (sdedr:define-analytical-profile-placement Place.Well Prof.Well BL.Well Both NoReplace Eval)
+
+---> (sdedr:define-gaussian-profile Prof.Well1 BoronActiveConcentration PeakPos 0.0 PeakVal 7e+17 ValueAtDepth 2e+17 Depth 0.05 Gauss Factor 0.1)
+
+---> (sdedr:define-analytical-profile-placement Place.Well1 Prof.Well1 BL.Well Both NoReplace Eval)
+
+---> (sdegeo:create-rectangle (position 0 0 0.0) (position 0.45 0.01 0.0) Oxide R.STI.Left)
+
+---> (sdegeo:create-rectangle (position 0 0.24 0.0) (position 0.45 0.25 0.0) Oxide R.STI.Right)
+
+---> (sdedr:define-refinement-size Gate_Ref_Def 0.005 0.005 0 0.0005 0.0005 0)
+
+---> (sdedr:define-refeval-window Global_Win Rectangle (position -0.07 0.0 0.0) (position 0.5 0.25 0.0))
+
+---> (sdedr:define-refeval-window Upper_Win Rectangle (position -0.07 0.0 0.0) (position 0.2 0.25 0.0))
+
+---> (sdedr:define-refeval-window Gate_Win Rectangle (position -0.01 0.095 0.0) (position 0.01 0.155 0.0))
+
+---> (sdedr:define-refinement-function Global_Ref_Def DopingConcentration MaxTransDiff 1)
+
+---> (sdedr:define-refinement-function Upper_Ref_Def DopingConcentration MaxTransDiff 1)
+
+---> (sdedr:define-refinement-placement Global_Ref_Place Global_Ref_Def Global_Win)
+
+---> (sdedr:define-refinement-placement Upper_Ref_Place Upper_Ref_Def Upper_Win)
+
+---> (sdedr:define-refinement-placement Gate_Ref_Place Gate_Ref_Def Gate_Win)
+
+---> (sde:build-mesh n51_msh)
+
+****************************************************************************
+***                            Sentaurus Mesh                            ***
+***                          Version V-2023.12                           ***
+***                      (2.8515123, x86_64, Linux)                      ***
+***                                                                      ***
+***                       Copyright (C) 2005-2023                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Mon Oct 30 07:17:56 PDT 2023 on: sce-tcad-build01
+Running on: cdsl18.cdsl.iitbbs.ac.in
+Hardware type: x86_64
+OS name: Linux
+OS release: 5.14.0-503.11.1.el9_5.x86_64
+OS version: #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
+Process ID: 80954
+
+Flags used:
+
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  4737 (tree) + 476 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (-0.005 0.105)] at region=R.GateOx
+nVerts = 476  nTris = 484  nRegs = 12
+bmin: -0.07 -0
+bmax: 0.5 0.25
+min area: 0.000150318  max area: 0.035625  min edge length : 0.000150318
+total area  : 2.96398 interface area: 1.35
+total volume: 0.0857476
+Conformal? true
+Are all boundaries on bbox? false
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (4617 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    4529 points.
+    8814 elements.
+      12 regions.
+Max. connectivity = 8 located at (-0.0432813;0.0742188)
+
+
+==============================  tri-grid quality  ================================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %   .   .    3   5  24  24   6   4   1  33  .   .   .   .   .             
+---------------------------------------------------------------------------------
+minAngle: 2.10509  maxAngle: 138.434
+nVerts = 4529  nTris = 8814  nMats = 9
+max connectivity (tris per node): 8 [near (-0.0432813 0.0742188)]
+bmin: -0.07 -0
+bmax: 0.5 0.25
+min edgeLength: 0.000150318  [near (-0.0611534 0.171259)]
+min volume: 1.83105e-07  max volume: 0.000556641  Total volume: 0.133498
+bbox  volume: 0.1425
+Are all boundaries on bbox? false
+=================================================================================
+
+Smallest region: R.GateOx  Total volume: 0.0002
+Interpolating data...done.
+Saving file n51_msh.tdr...done.
+
+===============================  Timer Report===================================
+              Total Mesh Generation Time:     0.213s       100%
+                       Rate of #Vertices:  2.13e+04
+                          Rate of #Edges:  4.38e+04
+                          Rate of #Faces:  4.14e+04
+                       Rate of #Elements:         0
+
+                            Time Covered:         0s         0%
+
+
+"Meshing successful"
+---> #[end-of-file]
+
+"************************************************************************"
+"Sentaurus Structure Editor "
+"Start Time:    Mon Sep  7 14:39:15 2026"
+"End   Time:    Mon Sep  7 14:39:16 2026"
+"Total Execution Time (sec):    1"
+"Total System calls Time (sec): 0"
+"************************************************************************"

@@ -2,7 +2,7 @@
 # Sentaurus Visual V-2023.12.
 # Tcl log file.
 #------------------------------------------
-# Date: Sep 04, 2026. 13:36:54.
+# Date: Sep 07, 2026. 15:52:12.
 # Version: 35.2.8515123 (2.8515123)
 # Mode: Interactive (GUI).
 # Hostname: cdsl18.cdsl.iitbbs.ac.in.
@@ -10,31 +10,72 @@
 # Kernel: 5.14.0-503.11.1.el9_5.x86_64.
 ###########################################
 
-load_file /home/cdsllab/25ec01021/q10/IdVd_0.005_0.3_n18_des.plt
+load_file /home/cdsllab/25ec01021/q10/Id_off_0.005n71_des.plt
 create_plot -1d
 select_plots {Plot_1}
 #-> Plot_1
 #-> Plot_1
-#-> IdVd_0.005_0.3_n18_des
-load_file /home/cdsllab/25ec01021/q10/IdVd_0.005_0.9_n30_des.plt
-#-> IdVd_0.005_0.9_n30_des
-load_file /home/cdsllab/25ec01021/q10/IdVd_0.005_1.5_n40_des.plt
-#-> IdVd_0.005_1.5_n40_des
-load_file /home/cdsllab/25ec01021/q10/IdVd_0.00538_0.3_n55_des.plt
-#-> IdVd_0.00538_0.3_n55_des
-load_file /home/cdsllab/25ec01021/q10/IdVd_0.00538_0.9_n63_des.plt
-#-> IdVd_0.00538_0.9_n63_des
-load_file /home/cdsllab/25ec01021/q10/IdVd_0.00538_1.5_n67_des.plt
-#-> IdVd_0.00538_1.5_n67_des
-create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVd_0.005_0.3_n18_des IdVd_0.005_0.9_n30_des IdVd_0.005_1.5_n40_des IdVd_0.00538_0.3_n55_des IdVd_0.00538_0.9_n63_des IdVd_0.00538_1.5_n67_des} -plot Plot_1
-#-> Curve_1 Curve_2 Curve_3 Curve_4 Curve_5 Curve_6
-export_curves {Curve_1 Curve_2 Curve_3 Curve_4 Curve_5 Curve_6} -plot Plot_1 -filename /home/cdsllab/25ec01021/q10_id_vd.csv -format csv
-#-> /home/cdsllab/25ec01021/q10_id_vd.csv
-probe_curve {Curve_1 Curve_2 Curve_3 Curve_4 Curve_5 Curve_6} -valueX 0.416418
-#-> 1.46367842566e-05 0.000130169199514 0.000327011825535 1.37912180288e-05 0.000112521927097 0.000294354241479
-set_plot_prop -plot {Plot_1} -show_grid
-#-> 0
-set_plot_prop -plot {Plot_1} -hide_grid
-#-> 0
+#-> Id_off_0.005n71_des
+load_file /home/cdsllab/25ec01021/q10/Id_off_0.00538n75_des.plt
+#-> Id_off_0.00538n75_des
+load_file /home/cdsllab/25ec01021/q10/idOn_0.005n46_des.plt
+#-> idOn_0.005n46_des
+load_file /home/cdsllab/25ec01021/q10/idOn_0.00538n58_des.plt
+#-> idOn_0.00538n58_des
+create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {Id_off_0.005n71_des Id_off_0.00538n75_des idOn_0.005n46_des idOn_0.00538n58_des} -plot Plot_1
+#-> Curve_1 Curve_2 Curve_3 Curve_4
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+export_curves {Curve_1 Curve_2 Curve_3 Curve_4} -plot Plot_1 -filename /home/cdsllab/25ec01021/q10_id_onoff.csv -format csv
+#-> /home/cdsllab/25ec01021/q10_id_onoff.csv
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n7_des.plt
+#-> IdVg_n7_des
+remove_curves -plot Plot_1 {Curve_1 Curve_2 Curve_3 Curve_4}
+#-> Curve_1 Curve_2 Curve_3 Curve_4
+create_curve -axisX {gate OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVg_n7_des} -plot Plot_1
+#-> Curve_1
+calculate Curve_1 -plot Plot_1 -op vth
+# vth: 0.152070001698
+#-> 0.152070001698
 exit 0
  

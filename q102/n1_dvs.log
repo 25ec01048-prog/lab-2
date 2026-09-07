@@ -1,0 +1,105 @@
+Evaluating file n1_dvs.cmd
+---> (sdegeo:create-rectangle (position 0.0 0.0 0.0) (position 0.5 0.25 0.0) Silicon R.Substrate)
+#[body 5 1]
+---> (sdegeo:create-rectangle (position -0.005 0.105 0.0) (position 0.0 0.145 0.0) Oxide R.GateOx)
+#[body 6 1]
+---> (sdegeo:create-rectangle (position -0.07 0.105 0.0) (position -0.005 0.145 0.0) PolySilicon R.Poly)
+#[body 7 1]
+---> (sdegeo:create-polygon (list (position 0 0.07 0.0) (position -0.07 0.07 0.0) (position -0.07 0.105 0.0) (position 0 0.105 0.0) (position 0 0.07 0.0)) Nitride R.Spacer.Left)
+#[body 8 1]
+---> (sdegeo:fillet-2d (list (car (find-vertex-id (position -0.07 0.07 0.0)))) 0.03)
+(#[body 36 1])
+---> (sdegeo:create-polygon (list (position 0 0.145 0.0) (position -0.07 0.145 0.0) (position -0.07 0.18 0.0) (position 0 0.18 0.0) (position 0 0.145 0.0)) Nitride R.Spacer.Right)
+#[body 44 1]
+---> (sdegeo:fillet-2d (list (car (find-vertex-id (position -0.07 0.18 0.0)))) 0.03)
+(#[body 59 1])
+---> (sdegeo:create-rectangle (position -0.01 0.01 0.0) (position 0.0 0.07 0.0) Silicide R.Silicide.Left)
+#[body 67 1]
+---> (sdegeo:create-rectangle (position -0.01 0.18 0.0) (position 0.0 0.24 0.0) Silicide R.Silicide.Right)
+#[body 68 1]
+---> (sdegeo:define-contact-set source 3 (color:rgb 1.0 0.0 0.0) ##)
+()
+---> (sdegeo:define-contact-set drain 3 (color:rgb 0.0 0.0 1.0) ##)
+()
+---> (sdegeo:define-contact-set gate 3 (color:rgb 0.0 1.0 0.0) ##)
+()
+---> (sdegeo:set-contact (find-edge-id (position -0.01 0.05 0.0)) source)
+#t
+---> (sdegeo:set-contact (find-edge-id (position -0.01 0.2 0.0)) drain)
+#t
+---> (sdegeo:set-contact (find-edge-id (position -0.07 0.115 0.0)) gate)
+#t
+---> (sdedr:define-constant-profile Prof.Bulk BoronActiveConcentration 1e+16)
+#t
+---> (sdedr:define-constant-profile-region Place.Bulk Prof.Bulk R.Substrate)
+#t
+---> (sdedr:define-constant-profile Prof.PolyGate ArsenicActiveConcentration 1e+20)
+#t
+---> (sdedr:define-constant-profile-region Place.PolyGate Prof.PolyGate R.Poly)
+#t
+---> (sdedr:define-refeval-window BL.SD.L Line (position 0.0 0.0 0.0) (position 0.0 0.07 0.0))
+#[body 116 1]
+---> (sdedr:define-refeval-window BL.SD.R Line (position 0.0 0.18 0.0) (position 0.0 0.25 0.0))
+#[body 117 1]
+---> (sdedr:define-gaussian-profile Prof.SD ArsenicActiveConcentration PeakPos 0.0 PeakVal 1e+20 ValueAtDepth 1e+16 Depth 0.1 Gauss Factor 0.05)
+#t
+---> (sdedr:define-analytical-profile-placement Place.SD.L Prof.SD BL.SD.L Both NoReplace Eval)
+#t
+---> (sdedr:define-analytical-profile-placement Place.SD.R Prof.SD BL.SD.R Both NoReplace Eval)
+#t
+---> (sdedr:define-refinement-size Global_Ref_Def 0.05 0.05 0 0.005 0.005 0)
+#t
+---> (sdedr:define-refinement-size Upper_Ref_Def 0.005 0.005 0 0.001 0.001 0)
+#t
+---> (sdedr:define-refeval-window BL.LLD.L Line (position 0.0 0.05 0.0) (position 0.0 0.105 0.0))
+#[body 118 1]
+---> (sdedr:define-refeval-window BL.LLD.R Line (position 0.0 0.145 0.0) (position 0.0 0.2 0.0))
+#[body 119 1]
+---> (sdedr:define-gaussian-profile Prof.LLD ArsenicActiveConcentration PeakPos 0.0 PeakVal 1e+19 ValueAtDepth 1e+17 Depth 0.05 Gauss Factor 0.05)
+#t
+---> (sdedr:define-analytical-profile-placement Place.LLD.L Prof.LLD BL.LLD.L Both NoReplace Eval)
+#t
+---> (sdedr:define-analytical-profile-placement Place.LLD.R Prof.LLD BL.LLD.R Both NoReplace Eval)
+#t
+---> (sdedr:define-refeval-window BL.Well Line (position 0.0 0.11 0.0) (position 0.0 0.145 0.0))
+#[body 120 1]
+---> (sdedr:define-gaussian-profile Prof.Well BoronActiveConcentration PeakPos 0.0 PeakVal 2e+18 ValueAtDepth 2e+17 Depth 0.025 Gauss Factor 0.1)
+#t
+---> (sdedr:define-analytical-profile-placement Place.Well Prof.Well BL.Well Both NoReplace Eval)
+#t
+---> (sdedr:define-gaussian-profile Prof.Well1 BoronActiveConcentration PeakPos 0.0 PeakVal 7e+17 ValueAtDepth 2e+17 Depth 0.05 Gauss Factor 0.1)
+#t
+---> (sdedr:define-analytical-profile-placement Place.Well1 Prof.Well1 BL.Well Both NoReplace Eval)
+#t
+---> (sdegeo:create-rectangle (position 0 0 0.0) (position 0.45 0.01 0.0) Oxide R.STI.Left)
+#[body 121 1]
+---> (sdegeo:create-rectangle (position 0 0.24 0.0) (position 0.45 0.25 0.0) Oxide R.STI.Right)
+#[body 122 1]
+---> (sdedr:define-refinement-size Gate_Ref_Def 0.005 0.005 0 0.0005 0.0005 0)
+#t
+---> (sdedr:define-refeval-window Global_Win Rectangle (position -0.07 0.0 0.0) (position 0.5 0.25 0.0))
+#[body 123 1]
+---> (sdedr:define-refeval-window Upper_Win Rectangle (position -0.07 0.0 0.0) (position 0.2 0.25 0.0))
+#[body 124 1]
+---> (sdedr:define-refeval-window Gate_Win Rectangle (position -0.01 0.095 0.0) (position 0.01 0.155 0.0))
+#[body 125 1]
+---> (sdedr:define-refinement-function Global_Ref_Def DopingConcentration MaxTransDiff 1)
+#t
+---> (sdedr:define-refinement-function Upper_Ref_Def DopingConcentration MaxTransDiff 1)
+#t
+---> (sdedr:define-refinement-placement Global_Ref_Place Global_Ref_Def Global_Win)
+#t
+---> (sdedr:define-refinement-placement Upper_Ref_Place Upper_Ref_Def Upper_Win)
+#t
+---> (sdedr:define-refinement-placement Gate_Ref_Place Gate_Ref_Def Gate_Win)
+#t
+---> (sde:build-mesh n1_msh)
+#t
+---> #[end-of-file]
+"************************************************************************"
+"Sentaurus Structure Editor "
+"Start Time:    Mon Sep  7 14:39:04 2026"
+"End   Time:    Mon Sep  7 14:39:11 2026"
+"Total Execution Time (sec):    7"
+"Total System calls Time (sec): 0"
+"************************************************************************"

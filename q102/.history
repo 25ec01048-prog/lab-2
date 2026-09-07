@@ -1,0 +1,682 @@
+15:29:11 Aug 24 2026 <MOSFET> submitted to the batch system
+15:29:11 Aug 24 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+15:29:16 Aug 24 2026 --- job 1 <sde> exited abnormally: exit()
+15:29:18 Aug 24 2026 <MOSFET> failed
+15:30:34 Aug 24 2026 <MOSFET> submitted to the batch system
+15:30:35 Aug 24 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -l n1_dvs.cmd"
+15:32:33 Aug 24 2026 --- job 1 <sde> exited abnormally: exit()
+15:32:35 Aug 24 2026 <MOSFET> failed
+15:33:29 Aug 24 2026 <MOSFET> submitted to the batch system
+15:33:29 Aug 24 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -l n1_dvs.cmd"
+15:38:44 Aug 24 2026 +++ job 1 <sde> done: exit(0)
+15:38:46 Aug 24 2026 <MOSFET> done (317 sec)
+16:09:29 Aug 24 2026 <MOSFET> submitted to the batch system
+16:09:30 Aug 24 2026     job 3 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp3_des.cmd"
+16:10:01 Aug 24 2026 +++ job 3 <sdevice> done: exit(0)
+16:10:03 Aug 24 2026 <MOSFET> done (34 sec)
+16:31:49 Aug 24 2026 <MOSFET> submitted to the batch system
+16:31:50 Aug 24 2026     job 4 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp4_des.cmd"
+16:32:36 Aug 24 2026 +++ job 4 <sdevice> done: exit(0)
+16:32:39 Aug 24 2026 <MOSFET> done (50 sec)
+16:56:33 Aug 24 2026 <MOSFET> submitted to the batch system
+16:56:34 Aug 24 2026 <MOSFET> done (1 sec)
+16:57:03 Aug 24 2026 <MOSFET> submitted to the batch system
+16:57:05 Aug 24 2026 <MOSFET> done (2 sec)
+16:58:19 Aug 24 2026 <MOSFET> submitted to the batch system
+16:58:22 Aug 24 2026     job 4 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp4_des.cmd"
+16:59:10 Aug 24 2026 +++ job 4 <sdevice> done: exit(0)
+16:59:11 Aug 24 2026     job 6 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp6_des.cmd"
+16:59:59 Aug 24 2026 +++ job 6 <sdevice> done: exit(0)
+17:00:00 Aug 24 2026     job 8 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp8_des.cmd"
+17:00:49 Aug 24 2026 +++ job 8 <sdevice> done: exit(0)
+17:00:50 Aug 24 2026     job 10 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp10_des.cmd"
+17:01:38 Aug 24 2026 +++ job 10 <sdevice> done: exit(0)
+17:01:39 Aug 24 2026     job 12 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp12_des.cmd"
+17:02:27 Aug 24 2026 +++ job 12 <sdevice> done: exit(0)
+17:02:28 Aug 24 2026     job 14 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp14_des.cmd"
+17:03:17 Aug 24 2026 +++ job 14 <sdevice> done: exit(0)
+17:03:19 Aug 24 2026 <MOSFET> done (300 sec)
+17:06:00 Aug 24 2026 <MOSFET> submitted to the batch system
+17:06:03 Aug 24 2026     job 4 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp4_des.cmd"
+17:06:50 Aug 24 2026 +++ job 4 <sdevice> done: exit(0)
+17:06:51 Aug 24 2026     job 6 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp6_des.cmd"
+17:07:40 Aug 24 2026 +++ job 6 <sdevice> done: exit(0)
+17:07:41 Aug 24 2026     job 8 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp8_des.cmd"
+17:08:31 Aug 24 2026 +++ job 8 <sdevice> done: exit(0)
+17:08:32 Aug 24 2026     job 10 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp10_des.cmd"
+17:09:21 Aug 24 2026 +++ job 10 <sdevice> done: exit(0)
+17:09:22 Aug 24 2026     job 12 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp12_des.cmd"
+17:10:13 Aug 24 2026 +++ job 12 <sdevice> done: exit(0)
+17:10:14 Aug 24 2026     job 14 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp14_des.cmd"
+17:11:02 Aug 24 2026 +++ job 14 <sdevice> done: exit(0)
+17:11:04 Aug 24 2026 <MOSFET> done (304 sec)
+14:50:14 Aug 31 2026 <MOSFET> submitted to the batch system
+14:50:15 Aug 31 2026     job 5 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp5_des.cmd"
+14:51:05 Aug 31 2026 +++ job 5 <sdevice> done: exit(0)
+14:51:07 Aug 31 2026 <MOSFET> done (53 sec)
+16:10:50 Aug 31 2026 <MOSFET> submitted to the batch system
+16:10:51 Aug 31 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -l n1_dvs.cmd"
+16:11:22 Aug 31 2026 +++ job 1 <sde> done: exit(0)
+16:11:24 Aug 31 2026 <MOSFET> done (34 sec)
+16:11:34 Aug 31 2026 <MOSFET> submitted to the batch system
+16:11:35 Aug 31 2026     job 5 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp5_des.cmd"
+16:12:21 Aug 31 2026 +++ job 5 <sdevice> done: exit(0)
+16:12:23 Aug 31 2026 <MOSFET> done (49 sec)
+16:12:51 Aug 31 2026 <MOSFET> submitted to the batch system
+16:12:52 Aug 31 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -l n1_dvs.cmd"
+16:13:10 Aug 31 2026 +++ job 1 <sde> done: exit(0)
+16:13:12 Aug 31 2026 <MOSFET> done (21 sec)
+16:13:19 Aug 31 2026 <MOSFET> submitted to the batch system
+16:13:20 Aug 31 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp7_des.cmd"
+16:14:07 Aug 31 2026 +++ job 7 <sdevice> done: exit(0)
+16:14:09 Aug 31 2026 <MOSFET> done (50 sec)
+16:32:56 Aug 31 2026 <MOSFET> submitted to the batch system
+16:32:57 Aug 31 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+16:33:02 Aug 31 2026 +++ job 1 <sde> done: exit(0)
+16:33:04 Aug 31 2026 <MOSFET> done (8 sec)
+16:33:19 Aug 31 2026 <MOSFET> submitted to the batch system
+16:33:20 Aug 31 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp7_des.cmd"
+16:34:24 Aug 31 2026 +++ job 7 <sdevice> done: exit(0)
+16:34:26 Aug 31 2026 <MOSFET> done (67 sec)
+16:34:41 Aug 31 2026 <MOSFET> submitted to the batch system
+16:34:42 Aug 31 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+16:34:47 Aug 31 2026 +++ job 1 <sde> done: exit(0)
+16:34:50 Aug 31 2026 <MOSFET> done (9 sec)
+16:34:57 Aug 31 2026 <MOSFET> submitted to the batch system
+16:34:58 Aug 31 2026     job 9 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp9_des.cmd"
+16:39:32 Aug 31 2026 +++ job 9 <sdevice> done: exit(0)
+16:39:35 Aug 31 2026 <MOSFET> done (278 sec)
+17:19:03 Aug 31 2026 <MOSFET> submitted to the batch system
+17:19:04 Aug 31 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+17:19:09 Aug 31 2026 +++ job 1 <sde> done: exit(0)
+17:19:11 Aug 31 2026 <MOSFET> done (8 sec)
+17:19:21 Aug 31 2026 <MOSFET> submitted to the batch system
+17:19:22 Aug 31 2026     job 6 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp6_des.cmd"
+17:20:25 Aug 31 2026 +++ job 6 <sdevice> done: exit(0)
+17:20:28 Aug 31 2026 <MOSFET> done (67 sec)
+17:33:17 Aug 31 2026 <MOSFET> submitted to the batch system
+17:33:18 Aug 31 2026     job 6 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp6_des.cmd"
+17:34:23 Aug 31 2026 +++ job 6 <sdevice> done: exit(0)
+17:34:25 Aug 31 2026 <MOSFET> done (68 sec)
+17:37:02 Aug 31 2026 <MOSFET> submitted to the batch system
+17:37:03 Aug 31 2026     job 6 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp6_des.cmd"
+17:38:05 Aug 31 2026 +++ job 6 <sdevice> done: exit(0)
+17:38:07 Aug 31 2026 <MOSFET> done (65 sec)
+17:40:20 Aug 31 2026 <MOSFET> submitted to the batch system
+17:40:22 Aug 31 2026     job 6 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp6_des.cmd"
+17:41:25 Aug 31 2026 +++ job 6 <sdevice> done: exit(0)
+17:41:26 Aug 31 2026     job 8 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp8_des.cmd"
+17:42:34 Aug 31 2026 +++ job 8 <sdevice> done: exit(0)
+17:42:35 Aug 31 2026     job 10 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp10_des.cmd"
+17:43:40 Aug 31 2026 +++ job 10 <sdevice> done: exit(0)
+17:43:41 Aug 31 2026     job 12 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp12_des.cmd"
+17:44:39 Aug 31 2026 +++ job 12 <sdevice> done: exit(0)
+17:44:41 Aug 31 2026 <MOSFET> done (261 sec)
+17:53:40 Aug 31 2026 <MOSFET> submitted to the batch system
+17:53:42 Aug 31 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+17:55:07 Aug 31 2026 +++ job 18 <sdevice> done: exit(0)
+17:55:08 Aug 31 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+17:56:32 Aug 31 2026 +++ job 20 <sdevice> done: exit(0)
+17:56:33 Aug 31 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+17:57:55 Aug 31 2026 +++ job 30 <sdevice> done: exit(0)
+17:57:56 Aug 31 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp40_des.cmd"
+17:59:15 Aug 31 2026 +++ job 40 <sdevice> done: exit(0)
+17:59:17 Aug 31 2026 <MOSFET> done (337 sec)
+09:32:56 Sep 04 2026 <MOSFET> submitted to the batch system
+09:32:57 Sep 04 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp7_des.cmd"
+09:34:05 Sep 04 2026 +++ job 7 <sdevice> done: exit(0)
+09:34:07 Sep 04 2026 <MOSFET> done (71 sec)
+09:34:31 Sep 04 2026 <MOSFET> submitted to the batch system
+09:34:32 Sep 04 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp7_des.cmd"
+09:35:35 Sep 04 2026 +++ job 7 <sdevice> done: exit(0)
+09:35:38 Sep 04 2026 <MOSFET> done (67 sec)
+09:36:26 Sep 04 2026 <MOSFET> submitted to the batch system
+09:36:27 Sep 04 2026     job 21 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp21_des.cmd"
+09:37:25 Sep 04 2026 +++ job 21 <sdevice> done: exit(0)
+09:37:28 Sep 04 2026 <MOSFET> done (62 sec)
+09:38:20 Sep 04 2026 <MOSFET> submitted to the batch system
+09:38:21 Sep 04 2026     job 31 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp31_des.cmd"
+09:39:23 Sep 04 2026 +++ job 31 <sdevice> done: exit(0)
+09:39:25 Sep 04 2026 <MOSFET> done (65 sec)
+09:49:14 Sep 04 2026 <MOSFET> submitted to the batch system
+09:49:16 Sep 04 2026 <MOSFET> done (2 sec)
+09:50:47 Sep 04 2026 <MOSFET> submitted to the batch system
+09:50:47 Sep 04 2026 <MOSFET> failed: nok
+09:56:18 Sep 04 2026 <MOSFET> submitted to the batch system
+09:56:18 Sep 04 2026 <MOSFET> failed: nok
+09:56:33 Sep 04 2026 <MOSFET> submitted to the batch system
+09:56:35 Sep 04 2026 <MOSFET> done (2 sec)
+09:57:20 Sep 04 2026 <MOSFET> submitted to the batch system
+09:57:22 Sep 04 2026 <MOSFET> done (2 sec)
+09:59:15 Sep 04 2026 <MOSFET> submitted to the batch system
+09:59:16 Sep 04 2026 <MOSFET> failed: nok
+09:59:55 Sep 04 2026 <MOSFET> submitted to the batch system
+09:59:56 Sep 04 2026 <MOSFET> failed: nok
+10:00:40 Sep 04 2026 <MOSFET> submitted to the batch system
+10:00:41 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:00:44 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:00:46 Sep 04 2026 <MOSFET> failed
+10:02:56 Sep 04 2026 <MOSFET> submitted to the batch system
+10:02:58 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:03:00 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:03:02 Sep 04 2026 <MOSFET> failed
+10:13:01 Sep 04 2026 <MOSFET> submitted to the batch system
+10:13:02 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:13:05 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:13:07 Sep 04 2026 <MOSFET> failed
+10:14:56 Sep 04 2026 <MOSFET> submitted to the batch system
+10:14:56 Sep 04 2026 <MOSFET> failed: nok
+10:15:58 Sep 04 2026 <MOSFET> submitted to the batch system
+10:15:58 Sep 04 2026 <MOSFET> failed: nok
+10:17:56 Sep 04 2026 <MOSFET> submitted to the batch system
+10:17:58 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:18:00 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:18:02 Sep 04 2026 <MOSFET> failed
+10:26:35 Sep 04 2026 <MOSFET> submitted to the batch system
+10:26:37 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:26:40 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:26:42 Sep 04 2026 <MOSFET> failed
+10:30:19 Sep 04 2026 <MOSFET> submitted to the batch system
+10:30:20 Sep 04 2026 <MOSFET> failed: nok
+10:30:37 Sep 04 2026 <MOSFET> submitted to the batch system
+10:30:38 Sep 04 2026 <MOSFET> failed: nok
+10:30:53 Sep 04 2026 <MOSFET> submitted to the batch system
+10:30:54 Sep 04 2026 <MOSFET> failed: nok
+10:31:42 Sep 04 2026 <MOSFET> submitted to the batch system
+10:31:43 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:31:47 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:31:49 Sep 04 2026 <MOSFET> failed
+10:34:22 Sep 04 2026 <MOSFET> submitted to the batch system
+10:34:23 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:34:29 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:34:31 Sep 04 2026 <MOSFET> failed
+10:35:16 Sep 04 2026 <MOSFET> submitted to the batch system
+10:35:17 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:35:24 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:35:26 Sep 04 2026 <MOSFET> failed
+10:36:08 Sep 04 2026 <MOSFET> submitted to the batch system
+10:36:09 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:36:15 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:36:17 Sep 04 2026 <MOSFET> failed
+10:37:24 Sep 04 2026 <MOSFET> submitted to the batch system
+10:37:25 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:37:30 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:37:33 Sep 04 2026 <MOSFET> failed
+10:39:48 Sep 04 2026 <MOSFET> submitted to the batch system
+10:39:50 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:39:55 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:39:57 Sep 04 2026 <MOSFET> failed
+10:44:33 Sep 04 2026 <MOSFET> submitted to the batch system
+10:44:35 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:44:40 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:44:42 Sep 04 2026 <MOSFET> failed
+10:47:08 Sep 04 2026 <MOSFET> submitted to the batch system
+10:47:09 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:47:15 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:47:17 Sep 04 2026 <MOSFET> failed
+10:49:26 Sep 04 2026 <MOSFET> submitted to the batch system
+10:49:28 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:49:33 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:49:35 Sep 04 2026 <MOSFET> failed
+10:51:37 Sep 04 2026 <MOSFET> submitted to the batch system
+10:51:38 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:51:44 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:51:46 Sep 04 2026 <MOSFET> failed
+10:53:23 Sep 04 2026 <MOSFET> submitted to the batch system
+10:53:24 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:53:30 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:53:32 Sep 04 2026 <MOSFET> failed
+10:55:30 Sep 04 2026 <MOSFET> submitted to the batch system
+10:55:31 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+10:55:37 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+10:55:39 Sep 04 2026 <MOSFET> failed
+10:58:59 Sep 04 2026 <MOSFET> submitted to the batch system
+10:59:00 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:02:45 Sep 04 2026 +++ job 44 <sdevice> done: exit(0)
+11:02:47 Sep 04 2026 <MOSFET> done (228 sec)
+11:05:16 Sep 04 2026 <MOSFET> submitted to the batch system
+11:05:17 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:05:20 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:05:22 Sep 04 2026 <MOSFET> failed
+11:05:57 Sep 04 2026 <MOSFET> submitted to the batch system
+11:05:58 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:06:00 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:06:03 Sep 04 2026 <MOSFET> failed
+11:07:40 Sep 04 2026 <MOSFET> submitted to the batch system
+11:07:41 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:07:44 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:07:46 Sep 04 2026 <MOSFET> failed
+11:08:05 Sep 04 2026 <MOSFET> submitted to the batch system
+11:08:06 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:08:09 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:08:11 Sep 04 2026 <MOSFET> failed
+11:11:01 Sep 04 2026 <MOSFET> submitted to the batch system
+11:11:02 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:11:05 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:11:07 Sep 04 2026 <MOSFET> failed
+11:15:02 Sep 04 2026 <MOSFET> submitted to the batch system
+11:15:03 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:15:06 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:15:08 Sep 04 2026 <MOSFET> failed
+11:16:41 Sep 04 2026 <MOSFET> submitted to the batch system
+11:16:42 Sep 04 2026 <MOSFET> failed: nok
+11:17:27 Sep 04 2026 <MOSFET> submitted to the batch system
+11:17:27 Sep 04 2026 <MOSFET> failed: nok
+11:18:06 Sep 04 2026 <MOSFET> submitted to the batch system
+11:18:07 Sep 04 2026 <MOSFET> failed: nok
+11:18:23 Sep 04 2026 <MOSFET> submitted to the batch system
+11:18:24 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:18:27 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:18:29 Sep 04 2026 <MOSFET> failed
+11:19:08 Sep 04 2026 <MOSFET> submitted to the batch system
+11:19:10 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:19:13 Sep 04 2026 --- job 44 <sdevice> exited abnormally: exit()
+11:19:15 Sep 04 2026 <MOSFET> failed
+11:19:59 Sep 04 2026 <MOSFET> submitted to the batch system
+11:20:00 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+11:27:19 Sep 04 2026 +++ job 44 <sdevice> done: exit(0)
+11:27:23 Sep 04 2026 <MOSFET> done (444 sec)
+12:05:50 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:05:51 Sep 04 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+12:05:56 Sep 04 2026 +++ job 1 <sde> done: exit(0)
+12:05:58 Sep 04 2026 <MOSFET_Copy> done (8 sec)
+12:07:24 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:07:26 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+12:11:12 Sep 04 2026 +++ job 44 <sdevice> done: exit(0)
+12:11:13 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+12:11:16 Sep 04 2026 --- job 18 <sdevice> exited abnormally: exit()
+12:11:18 Sep 04 2026 <MOSFET_Copy> failed
+12:15:11 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:15:13 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp46_des.cmd"
+12:15:41 Sep 04 2026 +++ job 46 <sdevice> done: exit(0)
+12:15:45 Sep 04 2026 <MOSFET_Copy> done (34 sec)
+12:25:05 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:25:06 Sep 04 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+12:25:11 Sep 04 2026 +++ job 1 <sde> done: exit(0)
+12:25:12 Sep 04 2026     job 51 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n51_dvs.cmd"
+12:25:17 Sep 04 2026 +++ job 51 <sde> done: exit(0)
+12:25:19 Sep 04 2026 <MOSFET_Copy> done (14 sec)
+12:29:44 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:29:47 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+12:29:49 Sep 04 2026 --- job 18 <sdevice> exited abnormally: exit()
+12:29:50 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+12:29:53 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit(-1)
+12:29:53 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+12:29:55 Sep 04 2026 --- job 30 <sdevice> exited abnormally: exit()
+12:29:56 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+12:29:58 Sep 04 2026 --- job 40 <sdevice> exited abnormally: exit()
+12:29:59 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+12:30:01 Sep 04 2026 --- job 55 <sdevice> exited abnormally: exit()
+12:30:02 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+12:30:04 Sep 04 2026 --- job 59 <sdevice> exited abnormally: exit()
+12:30:05 Sep 04 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+12:30:07 Sep 04 2026 --- job 63 <sdevice> exited abnormally: exit()
+12:30:08 Sep 04 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
+12:30:10 Sep 04 2026 --- job 67 <sdevice> exited abnormally: exit()
+12:30:11 Sep 04 2026     job 3 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp3_des.cmd"
+12:30:36 Sep 04 2026 +++ job 3 <sdevice> done: exit(0)
+12:30:37 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp46_des.cmd"
+12:30:50 Sep 04 2026 --- job 46 <sdevice> exited abnormally: exit()
+12:30:51 Sep 04 2026     job 71 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp71_des.cmd"
+12:31:33 Sep 04 2026 +++ job 71 <sdevice> done: exit(0)
+12:31:35 Sep 04 2026 <MOSFET_Copy> failed
+12:33:59 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:34:00 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp46_des.cmd"
+12:34:12 Sep 04 2026 --- job 46 <sdevice> exited abnormally: exit()
+12:34:15 Sep 04 2026 <MOSFET_Copy> failed
+12:35:05 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:35:08 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+12:35:10 Sep 04 2026 --- job 18 <sdevice> exited abnormally: exit()
+12:35:11 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+12:35:13 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+12:35:14 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+12:35:16 Sep 04 2026 --- job 30 <sdevice> exited abnormally: exit(-1)
+12:35:17 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+12:35:19 Sep 04 2026 --- job 40 <sdevice> exited abnormally: exit()
+12:35:20 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+12:35:22 Sep 04 2026 --- job 55 <sdevice> exited abnormally: exit()
+12:35:23 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+12:35:25 Sep 04 2026 --- job 59 <sdevice> exited abnormally: exit()
+12:35:26 Sep 04 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+12:35:28 Sep 04 2026 --- job 63 <sdevice> exited abnormally: exit()
+12:35:29 Sep 04 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
+12:35:31 Sep 04 2026 --- job 67 <sdevice> exited abnormally: exit()
+12:35:32 Sep 04 2026     job 53 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp53_des.cmd"
+12:39:20 Sep 04 2026 +++ job 53 <sdevice> done: exit(0)
+12:39:21 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+12:39:34 Sep 04 2026 --- job 18 <sdevice> exited abnormally: exit()
+12:39:35 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+12:39:48 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+12:39:49 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+12:40:01 Sep 04 2026 --- job 30 <sdevice> exited abnormally: exit()
+12:40:02 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+12:40:14 Sep 04 2026 --- job 40 <sdevice> exited abnormally: exit()
+12:40:15 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+12:40:44 Sep 04 2026 +++ job 55 <sdevice> done: exit(0)
+12:40:45 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+12:41:16 Sep 04 2026 +++ job 59 <sdevice> done: exit(0)
+12:41:17 Sep 04 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+12:41:46 Sep 04 2026 +++ job 63 <sdevice> done: exit(0)
+12:41:47 Sep 04 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
+12:42:17 Sep 04 2026 +++ job 67 <sdevice> done: exit(0)
+12:42:20 Sep 04 2026 <MOSFET_Copy> failed
+12:44:51 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:44:52 Sep 04 2026     job 57 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp57_des.cmd"
+12:45:17 Sep 04 2026 +++ job 57 <sdevice> done: exit(0)
+12:45:18 Sep 04 2026     job 58 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp58_des.cmd"
+12:45:47 Sep 04 2026 +++ job 58 <sdevice> done: exit(0)
+12:45:48 Sep 04 2026     job 75 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp75_des.cmd"
+12:46:33 Sep 04 2026 +++ job 75 <sdevice> done: exit(0)
+12:46:35 Sep 04 2026 <MOSFET_Copy> done (104 sec)
+12:47:30 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:47:33 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+12:48:32 Sep 04 2026 +++ job 18 <sdevice> done: exit(0)
+12:48:33 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+12:48:46 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+12:48:47 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+12:49:35 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+12:49:51 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+12:50:42 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+12:50:50 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp46_des.cmd"
+12:51:02 Sep 04 2026 --- job 46 <sdevice> exited abnormally: exit()
+12:51:03 Sep 04 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+12:51:08 Sep 04 2026 +++ job 1 <sde> done: exit(0)
+12:51:10 Sep 04 2026 <MOSFET_Copy> failed
+12:51:27 Sep 04 2026 <MOSFET_Copy> submitted to the batch system
+12:51:28 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp46_des.cmd"
+12:51:41 Sep 04 2026 --- job 46 <sdevice> exited abnormally: exit()
+12:51:43 Sep 04 2026 <MOSFET_Copy> failed
+12:53:22 Sep 04 2026 <q10> submitted to the batch system
+12:53:24 Sep 04 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp44_des.cmd"
+12:56:55 Sep 04 2026 +++ job 44 <sdevice> done: exit(0)
+12:56:56 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+12:57:09 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+12:57:10 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+12:58:08 Sep 04 2026 +++ job 30 <sdevice> done: exit(0)
+12:58:09 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+12:59:07 Sep 04 2026 +++ job 40 <sdevice> done: exit(0)
+12:59:08 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+13:00:07 Sep 04 2026 +++ job 55 <sdevice> done: exit(0)
+13:00:08 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+13:01:06 Sep 04 2026 +++ job 59 <sdevice> done: exit(0)
+13:01:07 Sep 04 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+13:02:05 Sep 04 2026 +++ job 63 <sdevice> done: exit(0)
+13:02:06 Sep 04 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp67_des.cmd"
+13:03:03 Sep 04 2026 +++ job 67 <sdevice> done: exit(0)
+13:03:04 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp46_des.cmd"
+13:03:17 Sep 04 2026 --- job 46 <sdevice> exited abnormally: exit()
+13:03:19 Sep 04 2026 <q10> failed
+13:05:18 Sep 04 2026 <q10> submitted to the batch system
+13:05:20 Sep 04 2026     job 71 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp71_des.cmd"
+13:06:01 Sep 04 2026 +++ job 71 <sdevice> done: exit(0)
+13:06:04 Sep 04 2026 <q10> done (46 sec)
+13:08:03 Sep 04 2026 <q10> submitted to the batch system
+13:08:05 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp46_des.cmd"
+13:08:29 Sep 04 2026 +++ job 46 <sdevice> done: exit(0)
+13:08:30 Sep 04 2026     job 58 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp58_des.cmd"
+13:08:53 Sep 04 2026 +++ job 58 <sdevice> done: exit(0)
+13:08:55 Sep 04 2026 <q10> done (52 sec)
+13:09:12 Sep 04 2026 <q10> submitted to the batch system
+13:09:14 Sep 04 2026     job 3 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp3_des.cmd"
+13:09:40 Sep 04 2026 +++ job 3 <sdevice> done: exit(0)
+13:09:41 Sep 04 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp46_des.cmd"
+13:10:05 Sep 04 2026 +++ job 46 <sdevice> done: exit(0)
+13:10:06 Sep 04 2026     job 71 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp71_des.cmd"
+13:10:48 Sep 04 2026 +++ job 71 <sdevice> done: exit(0)
+13:10:49 Sep 04 2026     job 57 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp57_des.cmd"
+13:11:12 Sep 04 2026 +++ job 57 <sdevice> done: exit(0)
+13:11:13 Sep 04 2026     job 58 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp58_des.cmd"
+13:11:37 Sep 04 2026 +++ job 58 <sdevice> done: exit(0)
+13:11:38 Sep 04 2026     job 75 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp75_des.cmd"
+13:12:24 Sep 04 2026 +++ job 75 <sdevice> done: exit(0)
+13:12:25 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+13:13:25 Sep 04 2026 +++ job 18 <sdevice> done: exit(0)
+13:13:26 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+13:13:41 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+13:13:42 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+13:14:40 Sep 04 2026 +++ job 30 <sdevice> done: exit(0)
+13:14:41 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+13:15:39 Sep 04 2026 +++ job 40 <sdevice> done: exit(0)
+13:15:40 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+13:16:38 Sep 04 2026 +++ job 55 <sdevice> done: exit(0)
+13:16:39 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+13:17:38 Sep 04 2026 +++ job 59 <sdevice> done: exit(0)
+13:17:39 Sep 04 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+13:18:36 Sep 04 2026 +++ job 63 <sdevice> done: exit(0)
+13:18:37 Sep 04 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
+13:19:33 Sep 04 2026 +++ job 67 <sdevice> done: exit(0)
+13:19:34 Sep 04 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp7_des.cmd"
+13:20:20 Sep 04 2026 +++ job 7 <sdevice> done: exit(0)
+13:20:21 Sep 04 2026     job 56 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp56_des.cmd"
+13:20:33 Sep 04 2026 --- job 56 <sdevice> exited abnormally: exit()
+13:20:36 Sep 04 2026 <q10> failed
+13:21:14 Sep 04 2026 <q10> submitted to the batch system
+13:21:15 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp20_des.cmd"
+13:21:28 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+13:21:30 Sep 04 2026 <q10> failed
+13:21:40 Sep 04 2026 <q10> submitted to the batch system
+13:21:41 Sep 04 2026     job 56 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp56_des.cmd"
+13:21:54 Sep 04 2026 --- job 56 <sdevice> exited abnormally: exit()
+13:21:56 Sep 04 2026 <q10> failed
+13:28:02 Sep 04 2026 <q10> submitted to the batch system
+13:28:06 Sep 04 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+13:29:04 Sep 04 2026 +++ job 18 <sdevice> done: exit(0)
+13:29:05 Sep 04 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+13:29:18 Sep 04 2026 --- job 20 <sdevice> exited abnormally: exit()
+13:29:19 Sep 04 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+13:30:16 Sep 04 2026 +++ job 30 <sdevice> done: exit(0)
+13:30:17 Sep 04 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+13:31:14 Sep 04 2026 +++ job 40 <sdevice> done: exit(0)
+13:31:15 Sep 04 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+13:32:12 Sep 04 2026 +++ job 55 <sdevice> done: exit(0)
+13:32:13 Sep 04 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+13:33:11 Sep 04 2026 +++ job 59 <sdevice> done: exit(0)
+13:33:12 Sep 04 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+13:34:09 Sep 04 2026 +++ job 63 <sdevice> done: exit(0)
+13:34:10 Sep 04 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
+13:35:07 Sep 04 2026 +++ job 67 <sdevice> done: exit(0)
+13:35:08 Sep 04 2026     job 60 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp60_des.cmd"
+13:35:20 Sep 04 2026 --- job 60 <sdevice> exited abnormally: exit()
+13:35:23 Sep 04 2026 <q10> failed
+13:35:49 Sep 04 2026 <q10> submitted to the batch system
+13:35:51 Sep 04 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp7_des.cmd"
+13:36:03 Sep 04 2026 --- job 7 <sdevice> exited abnormally: exit()
+13:36:04 Sep 04 2026     job 87 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp87_des.cmd"
+13:36:46 Sep 04 2026 +++ job 87 <sdevice> done: exit(0)
+13:36:47 Sep 04 2026     job 119 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp119_des.cmd"
+13:37:00 Sep 04 2026 --- job 119 <sdevice> exited abnormally: exit()
+13:37:01 Sep 04 2026     job 56 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp56_des.cmd"
+13:37:13 Sep 04 2026 --- job 56 <sdevice> exited abnormally: exit()
+13:37:14 Sep 04 2026     job 103 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp103_des.cmd"
+13:37:26 Sep 04 2026 --- job 103 <sdevice> exited abnormally: exit()
+13:37:27 Sep 04 2026     job 135 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp135_des.cmd"
+13:38:10 Sep 04 2026 +++ job 135 <sdevice> done: exit(0)
+13:38:12 Sep 04 2026 <q10> failed
+10:24:28 Sep 07 2026 <q10> submitted to the batch system
+10:24:30 Sep 07 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp7_des.cmd"
+10:25:32 Sep 07 2026 +++ job 7 <sdevice> done: exit(0)
+10:25:33 Sep 07 2026     job 87 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp87_des.cmd"
+10:26:32 Sep 07 2026 +++ job 87 <sdevice> done: exit(0)
+10:26:33 Sep 07 2026     job 119 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp119_des.cmd"
+10:27:31 Sep 07 2026 +++ job 119 <sdevice> done: exit(0)
+10:27:32 Sep 07 2026     job 56 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp56_des.cmd"
+10:28:06 Sep 07 2026 <q10> done (218 sec)
+10:28:24 Sep 07 2026 <q10> submitted to the batch system
+10:28:26 Sep 07 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp7_des.cmd"
+10:28:40 Sep 07 2026 --- job 7 <sdevice> exited abnormally: exit()
+10:28:41 Sep 07 2026     job 87 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp87_des.cmd"
+10:29:27 Sep 07 2026 +++ job 87 <sdevice> done: exit(0)
+10:29:28 Sep 07 2026     job 119 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp119_des.cmd"
+10:29:41 Sep 07 2026 --- job 119 <sdevice> exited abnormally: exit()
+10:29:42 Sep 07 2026     job 56 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp56_des.cmd"
+10:29:55 Sep 07 2026 --- job 56 <sdevice> exited abnormally: exit()
+10:29:56 Sep 07 2026     job 103 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp103_des.cmd"
+10:30:08 Sep 07 2026 --- job 103 <sdevice> exited abnormally: exit()
+10:30:09 Sep 07 2026     job 135 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp135_des.cmd"
+10:30:52 Sep 07 2026 +++ job 135 <sdevice> done: exit(0)
+10:30:54 Sep 07 2026 <q10> failed
+10:31:08 Sep 07 2026 <q10> submitted to the batch system
+10:31:09 Sep 07 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp7_des.cmd"
+10:31:22 Sep 07 2026 --- job 7 <sdevice> exited abnormally: exit()
+10:31:24 Sep 07 2026 <q10> failed
+10:31:44 Sep 07 2026 <q10> submitted to the batch system
+10:31:45 Sep 07 2026     job 7 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp7_des.cmd"
+10:32:31 Sep 07 2026 +++ job 7 <sdevice> done: exit(0)
+10:32:33 Sep 07 2026 <q10> done (49 sec)
+10:33:14 Sep 07 2026 <q10> submitted to the batch system
+10:33:15 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp79_des.cmd"
+10:34:00 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+10:34:01 Sep 07 2026     job 83 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp83_des.cmd"
+10:34:14 Sep 07 2026 --- job 83 <sdevice> exited abnormally: exit()
+10:34:16 Sep 07 2026 <q10> failed
+10:35:53 Sep 07 2026 <q10> submitted to the batch system
+10:35:55 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp79_des.cmd"
+10:36:01 Sep 07 2026 --- job 79 <sdevice> exited abnormally: exit()
+10:36:02 Sep 07 2026     job 83 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp83_des.cmd"
+10:36:08 Sep 07 2026 --- job 83 <sdevice> exited abnormally: exit()
+10:36:10 Sep 07 2026 <q10> failed
+10:36:55 Sep 07 2026 <q10> submitted to the batch system
+10:36:56 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp79_des.cmd"
+10:37:44 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+10:37:45 Sep 07 2026     job 83 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp83_des.cmd"
+10:38:41 Sep 07 2026 +++ job 83 <sdevice> done: exit(0)
+10:38:43 Sep 07 2026 <q10> done (108 sec)
+10:39:18 Sep 07 2026 <q10> submitted to the batch system
+10:39:21 Sep 07 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+10:40:27 Sep 07 2026 +++ job 18 <sdevice> done: exit(0)
+10:40:28 Sep 07 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+10:41:15 Sep 07 2026 <q10> done (117 sec)
+10:44:08 Sep 07 2026 <q10> submitted to the batch system
+10:44:09 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp79_des.cmd"
+10:45:02 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+10:45:03 Sep 07 2026     job 83 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp83_des.cmd"
+10:45:59 Sep 07 2026 +++ job 83 <sdevice> done: exit(0)
+10:46:01 Sep 07 2026 <q10> done (113 sec)
+10:47:10 Sep 07 2026 <q10> submitted to the batch system
+10:47:13 Sep 07 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+10:48:20 Sep 07 2026 +++ job 18 <sdevice> done: exit(0)
+10:48:21 Sep 07 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+10:49:39 Sep 07 2026 +++ job 20 <sdevice> done: exit(0)
+10:49:40 Sep 07 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+10:50:45 Sep 07 2026 +++ job 30 <sdevice> done: exit(0)
+10:50:46 Sep 07 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+10:51:47 Sep 07 2026 +++ job 40 <sdevice> done: exit(0)
+10:51:48 Sep 07 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+10:52:45 Sep 07 2026 +++ job 55 <sdevice> done: exit(0)
+10:52:46 Sep 07 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+10:53:44 Sep 07 2026 +++ job 59 <sdevice> done: exit(0)
+10:53:45 Sep 07 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+10:54:42 Sep 07 2026 +++ job 63 <sdevice> done: exit(0)
+10:54:43 Sep 07 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp67_des.cmd"
+10:55:39 Sep 07 2026 +++ job 67 <sdevice> done: exit(0)
+10:55:41 Sep 07 2026 <q10> done (511 sec)
+14:38:55 Sep 07 2026 <q102> submitted to the batch system
+14:38:55 Sep 07 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+14:39:11 Sep 07 2026 +++ job 1 <sde> done: exit(0)
+14:39:12 Sep 07 2026     job 51 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n51_dvs.cmd"
+14:39:16 Sep 07 2026 +++ job 51 <sde> done: exit(0)
+14:39:20 Sep 07 2026 <q102> done (25 sec)
+14:41:38 Sep 07 2026 <q102> submitted to the batch system
+14:41:39 Sep 07 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp44_des.cmd"
+14:41:42 Sep 07 2026 --- job 44 <sdevice> exited abnormally: exit()
+14:41:43 Sep 07 2026     job 53 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp53_des.cmd"
+14:41:45 Sep 07 2026 --- job 53 <sdevice> exited abnormally: exit()
+14:41:47 Sep 07 2026 <q102> failed
+14:42:12 Sep 07 2026 <q102> submitted to the batch system
+14:42:13 Sep 07 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp44_des.cmd"
+14:42:17 Sep 07 2026 --- job 44 <sdevice> exited abnormally: exit()
+14:42:18 Sep 07 2026     job 53 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp53_des.cmd"
+14:42:22 Sep 07 2026 --- job 53 <sdevice> exited abnormally: exit()
+14:42:24 Sep 07 2026 <q102> failed
+14:44:00 Sep 07 2026 <q102> submitted to the batch system
+14:44:02 Sep 07 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp44_des.cmd"
+14:44:04 Sep 07 2026 --- job 44 <sdevice> exited abnormally: exit()
+14:44:05 Sep 07 2026     job 53 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp53_des.cmd"
+14:44:07 Sep 07 2026 --- job 53 <sdevice> exited abnormally: exit()
+14:44:09 Sep 07 2026 <q102> failed
+14:45:23 Sep 07 2026 <q102> submitted to the batch system
+14:45:25 Sep 07 2026     job 45 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp45_des.cmd"
+14:45:27 Sep 07 2026 --- job 45 <sdevice> exited abnormally: exit()
+14:45:28 Sep 07 2026     job 52 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp52_des.cmd"
+14:45:30 Sep 07 2026 --- job 52 <sdevice> exited abnormally: exit()
+14:45:32 Sep 07 2026 <q102> failed
+14:46:08 Sep 07 2026 <q102> submitted to the batch system
+14:46:10 Sep 07 2026     job 45 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp45_des.cmd"
+14:46:12 Sep 07 2026 --- job 45 <sdevice> exited abnormally: exit()
+14:46:13 Sep 07 2026     job 52 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp52_des.cmd"
+14:46:15 Sep 07 2026 --- job 52 <sdevice> exited abnormally: exit()
+14:46:17 Sep 07 2026 <q102> failed
+14:47:51 Sep 07 2026 <q102> submitted to the batch system
+14:47:52 Sep 07 2026     job 45 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp45_des.cmd"
+14:47:57 Sep 07 2026 --- job 45 <sdevice> exited abnormally: exit()
+14:47:59 Sep 07 2026     job 52 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp52_des.cmd"
+14:48:03 Sep 07 2026 --- job 52 <sdevice> exited abnormally: exit()
+14:48:06 Sep 07 2026 <q102> failed
+14:52:51 Sep 07 2026 <q102> submitted to the batch system
+14:52:53 Sep 07 2026     job 45 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp45_des.cmd"
+14:56:27 Sep 07 2026 +++ job 45 <sdevice> done: exit(0)
+14:56:28 Sep 07 2026     job 52 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp52_des.cmd"
+14:56:31 Sep 07 2026 --- job 52 <sdevice> exited abnormally: exit()
+14:56:33 Sep 07 2026 <q102> failed
+14:58:21 Sep 07 2026 <q102> submitted to the batch system
+14:58:22 Sep 07 2026     job 52 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp52_des.cmd"
+14:58:25 Sep 07 2026 --- job 52 <sdevice> exited abnormally: exit()
+14:58:27 Sep 07 2026 <q102> failed
+14:59:25 Sep 07 2026 <q102> submitted to the batch system
+14:59:26 Sep 07 2026     job 52 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp52_des.cmd"
+15:03:08 Sep 07 2026 +++ job 52 <sdevice> done: exit(0)
+15:03:10 Sep 07 2026 <q102> done (225 sec)
+15:10:26 Sep 07 2026 <q102> submitted to the batch system
+15:10:30 Sep 07 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+15:11:30 Sep 07 2026 +++ job 18 <sdevice> done: exit(0)
+15:11:31 Sep 07 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+15:12:33 Sep 07 2026 +++ job 20 <sdevice> done: exit(0)
+15:12:34 Sep 07 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+15:13:33 Sep 07 2026 +++ job 30 <sdevice> done: exit(0)
+15:13:34 Sep 07 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+15:14:33 Sep 07 2026 +++ job 40 <sdevice> done: exit(0)
+15:14:34 Sep 07 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+15:15:34 Sep 07 2026 +++ job 55 <sdevice> done: exit(0)
+15:15:35 Sep 07 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+15:16:36 Sep 07 2026 +++ job 59 <sdevice> done: exit(0)
+15:16:37 Sep 07 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+15:17:36 Sep 07 2026 +++ job 63 <sdevice> done: exit(0)
+15:17:37 Sep 07 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
+15:18:37 Sep 07 2026 +++ job 67 <sdevice> done: exit(0)
+15:18:38 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp79_des.cmd"
+15:18:58 Sep 07 2026 --- job 79 <sdevice> exited abnormally: exit()
+15:19:00 Sep 07 2026     job 83 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp83_des.cmd"
+15:19:45 Sep 07 2026 +++ job 83 <sdevice> done: exit(0)
+15:19:46 Sep 07 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp46_des.cmd"
+15:20:11 Sep 07 2026 +++ job 46 <sdevice> done: exit(0)
+15:20:12 Sep 07 2026     job 58 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp58_des.cmd"
+15:20:36 Sep 07 2026 +++ job 58 <sdevice> done: exit(0)
+15:20:37 Sep 07 2026     job 71 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp71_des.cmd"
+15:21:24 Sep 07 2026 +++ job 71 <sdevice> done: exit(0)
+15:21:25 Sep 07 2026     job 75 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp75_des.cmd"
+15:21:38 Sep 07 2026 --- job 75 <sdevice> exited abnormally: exit()
+15:21:40 Sep 07 2026 <q102> failed
+15:24:34 Sep 07 2026 <q102> submitted to the batch system
+15:24:35 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+15:24:55 Sep 07 2026 --- job 79 <sdevice> exited abnormally: exit()
+15:24:57 Sep 07 2026 <q102> failed
+15:25:12 Sep 07 2026 <q102> submitted to the batch system
+15:25:13 Sep 07 2026     job 75 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp75_des.cmd"
+15:25:47 Sep 07 2026 +++ job 75 <sdevice> done: exit(0)
+15:25:49 Sep 07 2026 <q102> done (37 sec)
+15:26:45 Sep 07 2026 <q102> submitted to the batch system
+15:26:46 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+15:27:06 Sep 07 2026 --- job 79 <sdevice> exited abnormally: exit()
+15:27:08 Sep 07 2026 <q102> failed
+15:27:49 Sep 07 2026 <q102> submitted to the batch system
+15:27:50 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+15:28:10 Sep 07 2026 --- job 79 <sdevice> exited abnormally: exit()
+15:28:12 Sep 07 2026 <q102> failed
+15:29:52 Sep 07 2026 <q102> submitted to the batch system
+15:29:53 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+15:30:07 Sep 07 2026 --- job 79 <sdevice> exited abnormally: exit()
+15:30:09 Sep 07 2026 <q102> failed
+15:30:36 Sep 07 2026 <q102> submitted to the batch system
+15:30:37 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+15:31:23 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+15:31:25 Sep 07 2026 <q102> done (49 sec)

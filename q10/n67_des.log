@@ -16,12 +16,12 @@
 	Host Name: cdsl18.cdsl.iitbbs.ac.in
 	Operating System: Linux rel. 5.14.0-503.11.1.el9_5.x86_64 ver. #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
 	Machine Type: x86_64
-	Process ID: 714722
+	Process ID: 64785
 	Number of processors: 28
 	Domain Name: cdsl.iitbbs.ac.in
-	Date: Fri Sep  4 13:34:12 2026  (IST)
+	Date: Mon Sep  7 10:54:45 2026  (IST)
 
-Fri Sep  4 13:34:14 2026: checked out 1 sdevice license(s)
+Mon Sep  7 10:54:46 2026: checked out 1 sdevice license(s)
 Parsing circuit file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/lib/sdevice/sd_hb_sRL.ccf
 Parsing circuit file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/lib/sdevice/sd_hb_vsource2.ccf
 Parsing circuit file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/lib/sdevice/sd_hb_vsource.ccf
@@ -44,8 +44,8 @@ Loading shared object file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux6
 Loading shared object file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/lib/sdevice/sd_hb_vsource.so.linux64
 Loading shared object file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/lib/sdevice/sd_hb_vsource2.so.linux64
 Loading shared object file /cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/lib/sdevice/sd_hb_sRL.so.linux64
-Fri Sep  4 13:34:14 2026: checked out 1 sdevice-parallel license(s)
-Fri Sep  4 13:34:14 2026: checked out 1 sparallel license(s)
+Mon Sep  7 10:54:47 2026: checked out 1 sdevice-parallel license(s)
+Mon Sep  7 10:54:47 2026: checked out 1 sparallel license(s)
 
 Input source: pp67_des.cmd
 
@@ -422,7 +422,7 @@ Devices:
 Systems:
 Solve :
  Poisson
-Coupled ( Digits : 5, Max. #iterations : 100, 
+Coupled ( Digits : 5, Max. #iterations : 1000, 
     Solver : Super,
     #undamped iterations : 50 
     )
@@ -524,7 +524,7 @@ Info for semiconductor regions (NumberOfRegions = 2):
 \----------------------------------------------------------------------------------------------------------------
     done.
   done.
-  (times: wallclock = 0.01 s, tcpu = 0.01 s)
+  (times: wallclock = 0.01 s, tcpu = 0.0000e+00 s)
 done.
 Reading doping 'n51_msh.tdr' (TDR format) ...
 done.
@@ -2452,15 +2452,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     3      1.05e+01   5.00e-01   6.16e+00   1.91e+05    1         1      0.03
     4      4.12e+00   1.00e+00   2.91e+00   8.52e+04    0         1      0.03
     5      9.13e-01   1.00e+00   1.40e-01   4.79e+03    0         1      0.04
-    6      5.24e-02   1.00e+00   1.20e-02   2.64e+02    0         1      0.04
+    6      5.24e-02   1.00e+00   1.20e-02   2.64e+02    0         1      0.05
     7      1.73e-04   1.00e+00   5.07e-04   3.38e+00    0         1      0.05
     8      1.82e-09   1.00e+00   1.48e-06   9.73e-03    0         1      0.06
 Finished, because...
 Error smaller than 1 ( 9.7255E-03 ).
 
 Accumulated times:
-Assembly time:        0.04 s
-Solve time:      0.02 s
+Assembly time:        0.02 s
+Solve time:      0.04 s
 Total time:      0.06 s
 
 contact        voltage     electron current    hole current  conduction current
@@ -2471,7 +2471,7 @@ contact        voltage     electron current    hole current  conduction current
 
 ===============================
 Starting solve of next problem:
-Coupled ( Digits : 5, Max. #iterations : 100, 
+Coupled ( Digits : 5, Max. #iterations : 1000, 
     Solver : Super,
     #undamped iterations : 50 
     )
@@ -2488,16 +2488,16 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     1      3.48e+10   1.00e+00   1.09e+01   4.42e+05    0         1      0.16
     2      1.07e+10   1.00e+00   1.04e+01   1.00e+06    0         1      0.27
     3      6.14e+09   1.00e+00   1.01e+00   9.19e+03    0         1      0.38
-    4      3.80e+08   1.00e+00   5.68e-01   6.35e+02    0         1      0.50
-    5      1.07e+07   1.00e+00   5.06e-03   8.96e+00    0         1      0.61
-    6      6.97e+03   1.00e+00   1.01e-05   2.19e-01    0         1      0.72
+    4      3.80e+08   1.00e+00   5.68e-01   6.35e+02    0         1      0.49
+    5      1.07e+07   1.00e+00   5.06e-03   8.96e+00    0         1      0.60
+    6      6.97e+03   1.00e+00   1.01e-05   2.19e-01    0         1      0.71
 Finished, because...
 Error smaller than 1 ( 2.1896E-01 ).
 
 Accumulated times:
-Assembly time:        0.42 s
+Assembly time:        0.41 s
 Solve time:      0.30 s
-Total time:      0.72 s
+Total time:      0.71 s
 
 contact        voltage     electron current    hole current  conduction current
  drain        0.000E+00       1.208E-09         0.000E+00        1.208E-09
@@ -2528,18 +2528,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      4.49e+12                                                      0.05
+    0      4.49e+12                                                      0.04
     1      1.13e+07   1.00e+00   2.71e-01   9.48e+03    0         1      0.16
     2      1.94e+04   1.00e+00   1.98e-02   1.10e+03    0         1      0.27
-    3      6.60e-02   1.00e+00   1.21e-04   9.20e+00    0         1      0.40
-    4      1.18e-03   1.00e+00   2.96e-08   2.89e-03    0         1      0.51
+    3      6.60e-02   1.00e+00   1.21e-04   9.20e+00    0         1      0.39
+    4      1.18e-03   1.00e+00   2.96e-08   2.89e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 2.8894E-03 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.20 s
-Total time:      0.51 s
+Assembly time:        0.29 s
+Solve time:      0.21 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.0000e+00 s to 0.01 s (Stepsize: 0.01 s)
 Computing Coupled( 1 poisson-equation(s) , 1 current-contact-equation(s) , 
@@ -2548,18 +2548,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.17e+12                                                      0.05
-    1      5.80e+06   1.00e+00   1.91e-01   6.53e+03    0         1      0.16
-    2      4.77e+03   1.00e+00   1.04e-02   6.50e+02    0         1      0.27
-    3      7.33e-03   1.00e+00   2.74e-05   2.29e+00    0         1      0.39
-    4      1.86e-03   1.00e+00   1.96e-09   1.90e-04    0         1      0.50
+    0      3.17e+12                                                      0.06
+    1      5.80e+06   1.00e+00   1.91e-01   6.53e+03    0         1      0.17
+    2      4.77e+03   1.00e+00   1.04e-02   6.50e+02    0         1      0.29
+    3      7.33e-03   1.00e+00   2.74e-05   2.29e+00    0         1      0.40
+    4      1.86e-03   1.00e+00   1.96e-09   1.90e-04    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 1.8968E-04 ).
 
 Accumulated times:
-Assembly time:        0.30 s
-Solve time:      0.19 s
-Total time:      0.50 s
+Assembly time:        0.31 s
+Solve time:      0.20 s
+Total time:      0.51 s
 
 contact        voltage     electron current    hole current     total current
  drain        3.000E-02       4.135E-05         0.000E+00        4.135E-05
@@ -2576,7 +2576,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.49e+12                                                      0.05
     1      1.18e+07   1.00e+00   2.71e-01   9.28e+03    0         1      0.16
-    2      2.07e+04   1.00e+00   2.19e-02   1.40e+03    0         1      0.28
+    2      2.07e+04   1.00e+00   2.19e-02   1.40e+03    0         1      0.27
     3      2.07e-01   1.00e+00   1.17e-04   8.98e+00    0         1      0.39
     4      2.39e-03   1.00e+00   1.19e-07   1.16e-02    0         1      0.50
 Finished, because...
@@ -2594,18 +2594,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.17e+12                                                      0.05
+    0      3.17e+12                                                      0.06
     1      6.08e+06   1.00e+00   1.91e-01   6.54e+03    0         1      0.17
     2      5.10e+03   1.00e+00   1.09e-02   7.24e+02    0         1      0.28
     3      7.69e-02   1.00e+00   5.08e-05   4.83e+00    0         1      0.39
-    4      3.65e-03   1.00e+00   3.43e-08   3.40e-03    0         1      0.50
+    4      3.65e-03   1.00e+00   3.43e-08   3.40e-03    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 3.3965E-03 ).
 
 Accumulated times:
-Assembly time:        0.30 s
+Assembly time:        0.31 s
 Solve time:      0.20 s
-Total time:      0.50 s
+Total time:      0.51 s
 
 contact        voltage     electron current    hole current     total current
  drain        6.000E-02       7.812E-05         0.000E+00        7.812E-05
@@ -2621,8 +2621,8 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      6.63e+06                                                      0.06
-    1      5.81e+03   1.00e+00   2.69e-02   2.27e+03    0         1      0.17
+    0      6.63e+06                                                      0.05
+    1      5.81e+03   1.00e+00   2.69e-02   2.27e+03    0         1      0.16
     2      5.12e+01   1.00e+00   1.37e-03   1.33e+02    0         1      0.27
     3      2.53e-02   1.00e+00   1.93e-05   1.90e+00    0         1      0.38
     4      4.83e-03   1.00e+00   5.89e-09   5.85e-04    0         1      0.50
@@ -2631,7 +2631,7 @@ Error smaller than 1 ( 5.8518E-04 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.17 s
+Solve time:      0.20 s
 Total time:      0.50 s
 
 Computing BDF2-step from 0.02 s to 0.03 s (Stepsize: 0.01 s)
@@ -2652,7 +2652,7 @@ Error smaller than 1 ( 4.6364E-02 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.20 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
@@ -2674,14 +2674,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     2      3.22e+03   1.00e+00   1.26e-02   1.15e+03    0         1      0.27
     3      8.38e+01   1.00e+00   9.60e-04   9.40e+01    0         1      0.38
     4      9.58e-02   1.00e+00   1.20e-05   1.20e+00    0         1      0.50
-    5      7.62e-03   1.00e+00   5.92e-09   5.91e-04    0         1      0.62
+    5      7.62e-03   1.00e+00   5.92e-09   5.91e-04    0         1      0.61
 Finished, because...
 Error smaller than 1 ( 5.9149E-04 ).
 
 Accumulated times:
-Assembly time:        0.38 s
-Solve time:      0.22 s
-Total time:      0.62 s
+Assembly time:        0.37 s
+Solve time:      0.23 s
+Total time:      0.61 s
 
 Computing BDF2-step from 0.03 s to 0.04 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.04 ... done.
@@ -2692,18 +2692,18 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.56e+07                                                      0.05
-    1      2.19e+05   1.00e+00   1.37e-01   8.60e+03    0         1      0.17
+    1      2.19e+05   1.00e+00   1.37e-01   8.60e+03    0         1      0.16
     2      5.35e+03   1.00e+00   2.02e-02   1.79e+03    0         1      0.28
     3      3.75e+02   1.00e+00   1.99e-03   1.94e+02    0         1      0.39
     4      9.81e-01   1.00e+00   4.67e-05   4.65e+00    0         1      0.50
-    5      8.19e-03   1.00e+00   5.95e-08   5.95e-03    0         1      0.62
+    5      8.19e-03   1.00e+00   5.95e-08   5.95e-03    0         1      0.61
 Finished, because...
 Error smaller than 1 ( 5.9502E-03 ).
 
 Accumulated times:
-Assembly time:        0.38 s
-Solve time:      0.22 s
-Total time:      0.62 s
+Assembly time:        0.36 s
+Solve time:      0.25 s
+Total time:      0.61 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.200E-01       1.389E-04         0.000E+00        1.389E-04
@@ -2722,7 +2722,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      1.19e+07                                                      0.05
     1      1.81e+04   1.00e+00   3.14e-02   2.52e+03    0         1      0.16
     2      3.78e+02   1.00e+00   2.33e-03   2.22e+02    0         1      0.27
-    3      1.44e+00   1.00e+00   6.35e-05   6.31e+00    0         1      0.39
+    3      1.44e+00   1.00e+00   6.35e-05   6.31e+00    0         1      0.38
     4      9.57e-03   1.00e+00   8.79e-08   8.79e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 8.7868E-03 ).
@@ -2741,17 +2741,17 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.41e+07                                                      0.05
-    1      6.84e+04   1.00e+00   5.84e-02   4.30e+03    0         1      0.17
-    2      2.84e+03   1.00e+00   6.79e-03   6.32e+02    0         1      0.28
-    3      2.58e+01   1.00e+00   4.14e-04   4.10e+01    0         1      0.40
-    4      9.74e-03   1.00e+00   3.16e-06   3.16e-01    0         1      0.51
+    1      6.84e+04   1.00e+00   5.84e-02   4.30e+03    0         1      0.16
+    2      2.84e+03   1.00e+00   6.79e-03   6.32e+02    0         1      0.27
+    3      2.58e+01   1.00e+00   4.14e-04   4.10e+01    0         1      0.39
+    4      9.74e-03   1.00e+00   3.16e-06   3.16e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 3.1586E-01 ).
 
 Accumulated times:
-Assembly time:        0.32 s
-Solve time:      0.18 s
-Total time:      0.51 s
+Assembly time:        0.30 s
+Solve time:      0.20 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.500E-01       1.637E-04         0.000E+00        1.637E-04
@@ -2769,17 +2769,17 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.73e+07                                                      0.05
     1      2.32e+05   1.00e+00   1.02e-01   6.67e+03    0         1      0.16
-    2      1.40e+04   1.00e+00   1.65e-02   1.47e+03    0         1      0.27
+    2      1.40e+04   1.00e+00   1.65e-02   1.47e+03    0         1      0.28
     3      4.08e+02   1.00e+00   1.68e-03   1.65e+02    0         1      0.39
-    4      6.61e-01   1.00e+00   3.88e-05   3.88e+00    0         1      0.49
-    5      7.02e-03   1.00e+00   3.57e-08   3.57e-03    0         1      0.61
+    4      6.61e-01   1.00e+00   3.88e-05   3.88e+00    0         1      0.50
+    5      7.02e-03   1.00e+00   3.57e-08   3.57e-03    0         1      0.60
 Finished, because...
 Error smaller than 1 ( 3.5716E-03 ).
 
 Accumulated times:
-Assembly time:        0.37 s
+Assembly time:        0.35 s
 Solve time:      0.24 s
-Total time:      0.61 s
+Total time:      0.60 s
 
 Computing BDF2-step from 0.05 s to 0.06 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.06 ... done.
@@ -2790,10 +2790,10 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.83e+07                                                      0.05
-    1      4.39e+05   1.00e+00   1.37e-01   8.23e+03    0         1      0.17
-    2      2.52e+04   1.00e+00   2.53e-02   2.18e+03    0         1      0.28
-    3      1.44e+03   1.00e+00   3.06e-03   2.98e+02    0         1      0.39
-    4      4.94e+00   1.00e+00   1.08e-04   1.07e+01    0         1      0.50
+    1      4.39e+05   1.00e+00   1.37e-01   8.23e+03    0         1      0.16
+    2      2.52e+04   1.00e+00   2.53e-02   2.18e+03    0         1      0.27
+    3      1.44e+03   1.00e+00   3.06e-03   2.98e+02    0         1      0.38
+    4      4.94e+00   1.00e+00   1.08e-04   1.07e+01    0         1      0.49
     5      1.04e-02   1.00e+00   2.31e-07   2.31e-02    0         1      0.61
 Finished, because...
 Error smaller than 1 ( 2.3121E-02 ).
@@ -2819,16 +2819,16 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.35e+07                                                      0.05
     1      2.15e+04   1.00e+00   2.72e-02   2.20e+03    0         1      0.16
-    2      8.01e+02   1.00e+00   2.09e-03   2.04e+02    0         1      0.27
-    3      2.77e+00   1.00e+00   5.44e-05   5.42e+00    0         1      0.38
-    4      7.89e-03   1.00e+00   7.55e-08   7.55e-03    0         1      0.49
+    2      8.01e+02   1.00e+00   2.09e-03   2.04e+02    0         1      0.28
+    3      2.77e+00   1.00e+00   5.44e-05   5.42e+00    0         1      0.39
+    4      7.89e-03   1.00e+00   7.55e-08   7.55e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 7.5463E-03 ).
 
 Accumulated times:
-Assembly time:        0.29 s
+Assembly time:        0.30 s
 Solve time:      0.20 s
-Total time:      0.49 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.06 s to 0.07 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.07 ... done.
@@ -2839,7 +2839,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.74e+07                                                      0.05
-    1      7.89e+04   1.00e+00   5.04e-02   3.79e+03    0         1      0.16
+    1      7.89e+04   1.00e+00   5.04e-02   3.79e+03    0         1      0.17
     2      3.41e+03   1.00e+00   6.01e-03   5.76e+02    0         1      0.28
     3      8.83e+01   1.00e+00   3.45e-04   3.43e+01    0         1      0.39
     4      2.68e-02   1.00e+00   2.26e-06   2.26e-01    0         1      0.50
@@ -2865,19 +2865,19 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      5.39e+07                                                      0.06
-    1      2.70e+05   1.00e+00   8.76e-02   5.97e+03    0         1      0.18
-    2      1.61e+04   1.00e+00   1.43e-02   1.32e+03    0         1      0.29
-    3      4.78e+02   1.00e+00   1.43e-03   1.41e+02    0         1      0.41
-    4      2.96e-01   1.00e+00   2.61e-05   2.61e+00    0         1      0.52
-    5      2.39e-02   1.00e+00   1.67e-08   1.67e-03    0         1      0.63
+    0      5.39e+07                                                      0.05
+    1      2.70e+05   1.00e+00   8.76e-02   5.97e+03    0         1      0.17
+    2      1.61e+04   1.00e+00   1.43e-02   1.32e+03    0         1      0.28
+    3      4.78e+02   1.00e+00   1.43e-03   1.41e+02    0         1      0.39
+    4      2.96e-01   1.00e+00   2.61e-05   2.61e+00    0         1      0.50
+    5      2.39e-02   1.00e+00   1.67e-08   1.67e-03    0         1      0.62
 Finished, because...
 Error smaller than 1 ( 1.6689E-03 ).
 
 Accumulated times:
-Assembly time:        0.38 s
+Assembly time:        0.37 s
 Solve time:      0.24 s
-Total time:      0.63 s
+Total time:      0.62 s
 
 Computing BDF2-step from 0.07 s to 0.08 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.08 ... done.
@@ -2888,18 +2888,18 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.78e+07                                                      0.05
-    1      5.74e+05   1.00e+00   1.17e-01   7.45e+03    0         1      0.17
-    2      4.05e+04   1.00e+00   2.15e-02   1.93e+03    0         1      0.28
+    1      5.74e+05   1.00e+00   1.17e-01   7.45e+03    0         1      0.16
+    2      4.05e+04   1.00e+00   2.15e-02   1.93e+03    0         1      0.27
     3      1.12e+03   1.00e+00   2.71e-03   2.66e+02    0         1      0.39
-    4      2.17e+00   1.00e+00   8.52e-05   8.51e+00    0         1      0.51
-    5      1.61e-02   1.00e+00   1.15e-07   1.15e-02    0         1      0.62
+    4      2.17e+00   1.00e+00   8.52e-05   8.51e+00    0         1      0.50
+    5      1.61e-02   1.00e+00   1.15e-07   1.15e-02    0         1      0.61
 Finished, because...
 Error smaller than 1 ( 1.1475E-02 ).
 
 Accumulated times:
-Assembly time:        0.37 s
-Solve time:      0.25 s
-Total time:      0.62 s
+Assembly time:        0.36 s
+Solve time:      0.24 s
+Total time:      0.61 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.400E-01       2.209E-04         0.000E+00        2.209E-04
@@ -2916,15 +2916,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.51e+07                                                      0.05
-    1      3.35e+04   1.00e+00   2.19e-02   1.77e+03    0         1      0.16
+    1      3.35e+04   1.00e+00   2.19e-02   1.77e+03    0         1      0.17
     2      7.96e+02   1.00e+00   1.54e-03   1.51e+02    0         1      0.28
-    3      9.16e-01   1.00e+00   3.30e-05   3.30e+00    0         1      0.39
+    3      9.16e-01   1.00e+00   3.30e-05   3.30e+00    0         1      0.40
     4      1.48e-02   1.00e+00   2.91e-08   2.91e-03    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 2.9063E-03 ).
 
 Accumulated times:
-Assembly time:        0.31 s
+Assembly time:        0.32 s
 Solve time:      0.19 s
 Total time:      0.51 s
 
@@ -2946,7 +2946,7 @@ Error smaller than 1 ( 8.7612E-02 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.20 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
@@ -2963,19 +2963,19 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      6.03e+07                                                      0.04
-    1      4.49e+05   1.00e+00   7.20e-02   4.97e+03    0         1      0.16
-    2      1.69e+04   1.00e+00   1.09e-02   1.00e+03    0         1      0.27
-    3      4.17e+02   1.00e+00   1.08e-03   1.07e+02    0         1      0.38
-    4      1.55e-01   1.00e+00   2.05e-05   2.05e+00    0         1      0.50
-    5      2.22e-02   1.00e+00   7.66e-09   7.66e-04    0         1      0.61
+    0      6.03e+07                                                      0.06
+    1      4.49e+05   1.00e+00   7.20e-02   4.97e+03    0         1      0.18
+    2      1.69e+04   1.00e+00   1.09e-02   1.00e+03    0         1      0.30
+    3      4.17e+02   1.00e+00   1.08e-03   1.07e+02    0         1      0.41
+    4      1.55e-01   1.00e+00   2.05e-05   2.05e+00    0         1      0.53
+    5      2.22e-02   1.00e+00   7.66e-09   7.66e-04    0         1      0.64
 Finished, because...
 Error smaller than 1 ( 7.6582E-04 ).
 
 Accumulated times:
-Assembly time:        0.36 s
-Solve time:      0.23 s
-Total time:      0.61 s
+Assembly time:        0.40 s
+Solve time:      0.24 s
+Total time:      0.64 s
 
 Computing BDF2-step from 0.09 s to 0.1 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.1 ... done.
@@ -2987,17 +2987,17 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.71e+07                                                      0.05
     1      9.08e+05   1.00e+00   9.69e-02   6.36e+03    0         1      0.16
-    2      7.03e+04   1.00e+00   1.66e-02   1.47e+03    0         1      0.27
-    3      1.73e+03   1.00e+00   2.03e-03   2.00e+02    0         1      0.38
-    4      3.29e+00   1.00e+00   5.24e-05   5.24e+00    0         1      0.49
-    5      1.42e-02   1.00e+00   5.34e-08   5.33e-03    0         1      0.61
+    2      7.03e+04   1.00e+00   1.66e-02   1.47e+03    0         1      0.28
+    3      1.73e+03   1.00e+00   2.03e-03   2.00e+02    0         1      0.39
+    4      3.29e+00   1.00e+00   5.24e-05   5.24e+00    0         1      0.51
+    5      1.42e-02   1.00e+00   5.34e-08   5.33e-03    0         1      0.62
 Finished, because...
 Error smaller than 1 ( 5.3344E-03 ).
 
 Accumulated times:
 Assembly time:        0.37 s
 Solve time:      0.24 s
-Total time:      0.61 s
+Total time:      0.62 s
 
 contact        voltage     electron current    hole current     total current
  drain        3.000E-01       2.493E-04         0.000E+00        2.493E-04
@@ -3023,7 +3023,7 @@ Error smaller than 1 ( 1.1979E-03 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.20 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 Computing BDF2-step from 0.1 s to 0.11 s (Stepsize: 0.01 s)
@@ -3036,16 +3036,16 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.35e+07                                                      0.05
     1      2.10e+05   1.00e+00   3.61e-02   2.47e+03    0         1      0.16
-    2      4.68e+03   1.00e+00   3.58e-03   3.15e+02    0         1      0.27
-    3      4.18e+01   1.00e+00   1.47e-04   1.43e+01    0         1      0.38
-    4      1.83e-02   1.00e+00   5.69e-07   5.67e-02    0         1      0.49
+    2      4.68e+03   1.00e+00   3.58e-03   3.15e+02    0         1      0.28
+    3      4.18e+01   1.00e+00   1.47e-04   1.43e+01    0         1      0.39
+    4      1.83e-02   1.00e+00   5.69e-07   5.67e-02    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 5.6721E-02 ).
 
 Accumulated times:
-Assembly time:        0.29 s
+Assembly time:        0.30 s
 Solve time:      0.20 s
-Total time:      0.49 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        3.300E-01       2.618E-04         0.000E+00        2.618E-04
@@ -3061,18 +3061,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      6.59e+07                                                      0.04
-    1      6.83e+05   1.00e+00   6.51e-02   4.20e+03    0         1      0.16
-    2      1.72e+04   1.00e+00   9.03e-03   7.38e+02    0         1      0.27
-    3      2.37e+02   1.00e+00   6.85e-04   6.51e+01    0         1      0.38
-    4      1.20e-01   1.00e+00   7.73e-06   7.67e-01    0         1      0.49
+    0      6.59e+07                                                      0.05
+    1      6.83e+05   1.00e+00   6.51e-02   4.20e+03    0         1      0.17
+    2      1.72e+04   1.00e+00   9.03e-03   7.38e+02    0         1      0.28
+    3      2.37e+02   1.00e+00   6.85e-04   6.51e+01    0         1      0.39
+    4      1.20e-01   1.00e+00   7.73e-06   7.67e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 7.6667E-01 ).
 
 Accumulated times:
-Assembly time:        0.29 s
+Assembly time:        0.30 s
 Solve time:      0.20 s
-Total time:      0.49 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.11 s to 0.12 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.12 ... done.
@@ -3084,17 +3084,17 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.52e+07                                                      0.05
     1      1.25e+06   1.00e+00   8.90e-02   5.59e+03    0         1      0.16
-    2      6.87e+04   1.00e+00   1.44e-02   1.12e+03    0         1      0.28
-    3      1.18e+03   1.00e+00   1.39e-03   1.30e+02    0         1      0.39
+    2      6.87e+04   1.00e+00   1.44e-02   1.12e+03    0         1      0.27
+    3      1.18e+03   1.00e+00   1.39e-03   1.30e+02    0         1      0.38
     4      6.89e-01   1.00e+00   2.21e-05   2.16e+00    0         1      0.50
-    5      1.78e-02   1.00e+00   9.53e-09   9.47e-04    0         1      0.62
+    5      1.78e-02   1.00e+00   9.53e-09   9.47e-04    0         1      0.61
 Finished, because...
 Error smaller than 1 ( 9.4697E-04 ).
 
 Accumulated times:
 Assembly time:        0.36 s
 Solve time:      0.25 s
-Total time:      0.62 s
+Total time:      0.61 s
 
 contact        voltage     electron current    hole current     total current
  drain        3.600E-01       2.735E-04         0.000E+00        2.735E-04
@@ -3110,18 +3110,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.76e+07                                                      0.05
-    1      7.92e+04   1.00e+00   1.82e-02   1.14e+03    0         1      0.16
+    0      1.76e+07                                                      0.06
+    1      7.92e+04   1.00e+00   1.82e-02   1.14e+03    0         1      0.17
     2      1.03e+03   1.00e+00   1.06e-03   8.06e+01    0         1      0.28
     3      8.95e-01   1.00e+00   1.42e-05   1.22e+00    0         1      0.39
-    4      2.01e-02   1.00e+00   5.68e-09   5.49e-04    0         1      0.49
+    4      2.01e-02   1.00e+00   5.68e-09   5.49e-04    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 5.4949E-04 ).
 
 Accumulated times:
-Assembly time:        0.29 s
-Solve time:      0.20 s
-Total time:      0.49 s
+Assembly time:        0.30 s
+Solve time:      0.19 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.12 s to 0.13 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.13 ... done.
@@ -3135,14 +3135,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     1      2.88e+05   1.00e+00   3.48e-02   2.11e+03    0         1      0.16
     2      6.13e+03   1.00e+00   3.25e-03   2.40e+02    0         1      0.27
     3      2.54e+01   1.00e+00   1.04e-04   8.95e+00    0         1      0.38
-    4      1.45e-02   1.00e+00   2.19e-07   1.92e-02    0         1      0.50
+    4      1.45e-02   1.00e+00   2.19e-07   1.92e-02    0         1      0.49
 Finished, because...
 Error smaller than 1 ( 1.9202E-02 ).
 
 Accumulated times:
-Assembly time:        0.30 s
+Assembly time:        0.29 s
 Solve time:      0.20 s
-Total time:      0.50 s
+Total time:      0.49 s
 
 contact        voltage     electron current    hole current     total current
  drain        3.900E-01       2.847E-04         0.000E+00        2.847E-04
@@ -3160,15 +3160,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.02e+07                                                      0.05
     1      9.22e+05   1.00e+00   6.34e-02   3.71e+03    0         1      0.16
-    2      1.77e+04   1.00e+00   8.25e-03   5.74e+02    0         1      0.28
+    2      1.77e+04   1.00e+00   8.25e-03   5.74e+02    0         1      0.27
     3      1.33e+02   1.00e+00   5.29e-04   4.52e+01    0         1      0.39
     4      1.60e-02   1.00e+00   4.04e-06   3.73e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 3.7337E-01 ).
 
 Accumulated times:
-Assembly time:        0.30 s
-Solve time:      0.19 s
+Assembly time:        0.31 s
+Solve time:      0.18 s
 Total time:      0.50 s
 
 Computing BDF2-step from 0.13 s to 0.14 s (Stepsize: 0.01 s)
@@ -3181,17 +3181,17 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.01e+08                                                      0.05
     1      1.67e+06   1.00e+00   8.73e-02   5.05e+03    0         1      0.16
-    2      2.99e+04   1.00e+00   1.31e-02   8.65e+02    0         1      0.28
-    3      3.72e+02   1.00e+00   1.14e-03   9.54e+01    0         1      0.39
-    4      2.82e-01   1.00e+00   1.64e-05   1.55e+00    0         1      0.51
-    5      3.20e-02   1.00e+00   8.10e-09   8.05e-04    0         1      0.62
+    2      2.99e+04   1.00e+00   1.31e-02   8.65e+02    0         1      0.27
+    3      3.72e+02   1.00e+00   1.14e-03   9.54e+01    0         1      0.38
+    4      2.82e-01   1.00e+00   1.64e-05   1.55e+00    0         1      0.49
+    5      3.20e-02   1.00e+00   8.10e-09   8.05e-04    0         1      0.60
 Finished, because...
 Error smaller than 1 ( 8.0508E-04 ).
 
 Accumulated times:
-Assembly time:        0.37 s
+Assembly time:        0.35 s
 Solve time:      0.25 s
-Total time:      0.62 s
+Total time:      0.60 s
 
 contact        voltage     electron current    hole current     total current
  drain        4.200E-01       2.957E-04         0.000E+00        2.957E-04
@@ -3207,17 +3207,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.83e+07                                                      0.05
+    0      1.83e+07                                                      0.04
     1      6.53e+04   1.00e+00   1.78e-02   9.97e+02    0         1      0.16
-    2      7.88e+02   1.00e+00   9.84e-04   5.68e+01    0         1      0.28
-    3      2.31e-01   1.00e+00   1.06e-05   6.76e-01    0         1      0.39
+    2      7.88e+02   1.00e+00   9.84e-04   5.68e+01    0         1      0.27
+    3      2.31e-01   1.00e+00   1.06e-05   6.76e-01    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 6.7634E-01 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.15 s
-Total time:      0.39 s
+Assembly time:        0.23 s
+Solve time:      0.14 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.14 s to 0.15 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.15 ... done.
@@ -3228,17 +3228,17 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.72e+07                                                      0.05
-    1      2.30e+05   1.00e+00   3.44e-02   1.88e+03    0         1      0.16
-    2      6.24e+03   1.00e+00   3.16e-03   1.77e+02    0         1      0.27
-    3      1.31e+01   1.00e+00   1.00e-04   5.64e+00    0         1      0.38
-    4      3.16e-02   1.00e+00   1.98e-07   1.27e-02    0         1      0.50
+    1      2.30e+05   1.00e+00   3.44e-02   1.88e+03    0         1      0.17
+    2      6.24e+03   1.00e+00   3.16e-03   1.77e+02    0         1      0.28
+    3      1.31e+01   1.00e+00   1.00e-04   5.64e+00    0         1      0.40
+    4      3.16e-02   1.00e+00   1.98e-07   1.27e-02    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 1.2723E-02 ).
 
 Accumulated times:
-Assembly time:        0.30 s
-Solve time:      0.19 s
-Total time:      0.50 s
+Assembly time:        0.31 s
+Solve time:      0.20 s
+Total time:      0.51 s
 
 contact        voltage     electron current    hole current     total current
  drain        4.500E-01       3.064E-04         0.000E+00        3.064E-04
@@ -3264,7 +3264,7 @@ Error smaller than 1 ( 2.1749E-01 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.20 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 Computing BDF2-step from 0.15 s to 0.16 s (Stepsize: 0.01 s)
@@ -3275,18 +3275,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.05e+08                                                      0.04
+    0      1.05e+08                                                      0.05
     1      1.44e+06   1.00e+00   8.78e-02   4.66e+03    0         1      0.16
     2      4.47e+04   1.00e+00   1.45e-02   7.17e+02    0         1      0.27
     3      3.92e+02   1.00e+00   1.59e-03   6.85e+01    0         1      0.38
-    4      3.73e-02   1.00e+00   6.82e-05   8.11e-01    0         1      0.50
+    4      3.73e-02   1.00e+00   6.82e-05   8.11e-01    0         1      0.49
 Finished, because...
 Error smaller than 1 ( 8.1096E-01 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.19 s
-Total time:      0.50 s
+Assembly time:        0.29 s
+Solve time:      0.20 s
+Total time:      0.49 s
 
 contact        voltage     electron current    hole current     total current
  drain        4.800E-01       3.170E-04         0.000E+00        3.170E-04
@@ -3304,15 +3304,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.88e+07                                                      0.05
     1      1.02e+05   1.00e+00   1.81e-02   8.74e+02    0         1      0.16
-    2      3.23e+02   1.00e+00   1.18e-03   4.75e+01    0         1      0.27
-    3      5.06e-02   1.00e+00   1.85e-05   5.56e-01    0         1      0.38
+    2      3.23e+02   1.00e+00   1.18e-03   4.75e+01    0         1      0.28
+    3      5.06e-02   1.00e+00   1.85e-05   5.56e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 5.5592E-01 ).
 
 Accumulated times:
-Assembly time:        0.23 s
-Solve time:      0.15 s
-Total time:      0.38 s
+Assembly time:        0.24 s
+Solve time:      0.14 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.16 s to 0.17 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.17 ... done.
@@ -3322,18 +3322,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.80e+07                                                      0.06
+    0      3.80e+07                                                      0.05
     1      3.68e+05   1.00e+00   3.47e-02   1.67e+03    0         1      0.17
     2      2.96e+03   1.00e+00   3.85e-03   1.44e+02    0         1      0.28
-    3      2.74e+00   1.00e+00   1.59e-04   4.14e+00    0         1      0.40
-    4      3.99e-02   1.00e+00   5.33e-07   7.84e-03    0         1      0.51
+    3      2.74e+00   1.00e+00   1.59e-04   4.14e+00    0         1      0.39
+    4      3.99e-02   1.00e+00   5.33e-07   7.84e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 7.8354E-03 ).
 
 Accumulated times:
-Assembly time:        0.31 s
+Assembly time:        0.30 s
 Solve time:      0.20 s
-Total time:      0.51 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        5.100E-01       3.275E-04         0.000E+00        3.275E-04
@@ -3351,7 +3351,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.41e+07                                                      0.05
     1      1.17e+06   1.00e+00   6.36e-02   3.04e+03    0         1      0.16
-    2      1.62e+04   1.00e+00   1.05e-02   3.55e+02    0         1      0.28
+    2      1.62e+04   1.00e+00   1.05e-02   3.55e+02    0         1      0.27
     3      7.52e+01   1.00e+00   8.44e-04   2.18e+01    0         1      0.39
     4      3.41e-02   1.00e+00   1.16e-05   1.68e-01    0         1      0.50
 Finished, because...
@@ -3372,16 +3372,16 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.07e+08                                                      0.05
     1      2.10e+06   1.00e+00   8.77e-02   4.19e+03    0         1      0.17
-    2      4.24e+04   1.00e+00   1.68e-02   5.47e+02    0         1      0.27
+    2      4.24e+04   1.00e+00   1.68e-02   5.47e+02    0         1      0.28
     3      4.50e+02   1.00e+00   1.89e-03   5.10e+01    0         1      0.39
-    4      4.95e-02   1.00e+00   5.47e-05   6.85e-01    0         1      0.50
+    4      4.95e-02   1.00e+00   5.47e-05   6.85e-01    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 6.8489E-01 ).
 
 Accumulated times:
-Assembly time:        0.30 s
+Assembly time:        0.31 s
 Solve time:      0.20 s
-Total time:      0.50 s
+Total time:      0.51 s
 
 contact        voltage     electron current    hole current     total current
  drain        5.400E-01       3.380E-04         0.000E+00        3.380E-04
@@ -3398,15 +3398,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.89e+07                                                      0.05
-    1      7.79e+04   1.00e+00   1.91e-02   7.51e+02    0         1      0.16
+    1      7.79e+04   1.00e+00   1.91e-02   7.51e+02    0         1      0.17
     2      3.39e+02   1.00e+00   1.47e-03   3.77e+01    0         1      0.28
     3      4.26e-02   1.00e+00   3.55e-05   4.36e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 4.3584E-01 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.18 s to 0.19 s (Stepsize: 0.01 s)
@@ -3445,17 +3445,17 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.45e+07                                                      0.05
-    1      7.74e+05   1.00e+00   6.49e-02   2.60e+03    0         1      0.16
-    2      8.08e+03   1.00e+00   1.18e-02   2.88e+02    0         1      0.27
+    1      7.74e+05   1.00e+00   6.49e-02   2.60e+03    0         1      0.17
+    2      8.08e+03   1.00e+00   1.18e-02   2.88e+02    0         1      0.28
     3      3.60e+01   1.00e+00   1.17e-03   1.91e+01    0         1      0.39
-    4      4.02e-02   1.00e+00   2.86e-05   1.60e-01    0         1      0.51
+    4      4.02e-02   1.00e+00   2.86e-05   1.60e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 1.6049E-01 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.19 s
-Total time:      0.51 s
+Assembly time:        0.30 s
+Solve time:      0.20 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.19 s to 0.2 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.2 ... done.
@@ -3515,15 +3515,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      3.83e+07                                                      0.05
     1      1.36e+05   1.00e+00   3.34e-02   1.14e+03    0         1      0.16
     2      8.59e+02   1.00e+00   4.56e-03   9.96e+01    0         1      0.27
-    3      1.90e-01   1.00e+00   2.51e-04   3.27e+00    0         1      0.38
-    4      4.40e-02   1.00e+00   1.31e-06   5.84e-03    0         1      0.49
+    3      1.90e-01   1.00e+00   2.51e-04   3.27e+00    0         1      0.39
+    4      4.40e-02   1.00e+00   1.31e-06   5.84e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 5.8354E-03 ).
 
 Accumulated times:
-Assembly time:        0.29 s
-Solve time:      0.19 s
-Total time:      0.49 s
+Assembly time:        0.30 s
+Solve time:      0.18 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        6.300E-01       3.698E-04         0.000E+00        3.698E-04
@@ -3540,15 +3540,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.43e+07                                                      0.05
-    1      4.55e+05   1.00e+00   5.90e-02   2.05e+03    0         1      0.17
-    2      6.14e+03   1.00e+00   1.18e-02   2.50e+02    0         1      0.28
-    3      6.16e+00   1.00e+00   1.30e-03   1.65e+01    0         1      0.39
-    4      4.12e-02   1.00e+00   3.08e-05   1.58e-01    0         1      0.50
+    1      4.55e+05   1.00e+00   5.90e-02   2.05e+03    0         1      0.16
+    2      6.14e+03   1.00e+00   1.18e-02   2.50e+02    0         1      0.27
+    3      6.16e+00   1.00e+00   1.30e-03   1.65e+01    0         1      0.38
+    4      4.12e-02   1.00e+00   3.08e-05   1.58e-01    0         1      0.49
 Finished, because...
 Error smaller than 1 ( 1.5768E-01 ).
 
 Accumulated times:
-Assembly time:        0.30 s
+Assembly time:        0.29 s
 Solve time:      0.20 s
 Total time:      0.50 s
 
@@ -3560,18 +3560,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.06e+08                                                      0.04
+    0      1.06e+08                                                      0.05
     1      8.52e+05   1.00e+00   7.94e-02   2.79e+03    0         1      0.16
-    2      1.65e+04   1.00e+00   1.82e-02   3.84e+02    0         1      0.28
-    3      3.25e+01   1.00e+00   3.18e-03   3.46e+01    0         1      0.39
-    4      3.33e-02   1.00e+00   2.30e-04   8.22e-01    0         1      0.51
+    2      1.65e+04   1.00e+00   1.82e-02   3.84e+02    0         1      0.27
+    3      3.25e+01   1.00e+00   3.18e-03   3.46e+01    0         1      0.38
+    4      3.33e-02   1.00e+00   2.30e-04   8.22e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 8.2211E-01 ).
 
 Accumulated times:
-Assembly time:        0.30 s
-Solve time:      0.19 s
-Total time:      0.51 s
+Assembly time:        0.33 s
+Solve time:      0.17 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        6.600E-01       3.804E-04         0.000E+00        3.804E-04
@@ -3587,17 +3587,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.89e+07                                                      0.06
-    1      4.01e+04   1.00e+00   1.63e-02   4.74e+02    0         1      0.17
-    2      5.28e+01   1.00e+00   1.34e-03   2.72e+01    0         1      0.29
-    3      4.36e-02   1.00e+00   2.70e-05   3.70e-01    0         1      0.40
+    0      1.89e+07                                                      0.05
+    1      4.01e+04   1.00e+00   1.63e-02   4.74e+02    0         1      0.16
+    2      5.28e+01   1.00e+00   1.34e-03   2.72e+01    0         1      0.28
+    3      4.36e-02   1.00e+00   2.70e-05   3.70e-01    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 3.6976E-01 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.15 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.22 s to 0.23 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.23 ... done.
@@ -3607,18 +3607,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.80e+07                                                      0.04
-    1      1.49e+05   1.00e+00   3.02e-02   8.90e+02    0         1      0.15
+    0      3.80e+07                                                      0.05
+    1      1.49e+05   1.00e+00   3.02e-02   8.90e+02    0         1      0.16
     2      5.29e+02   1.00e+00   4.03e-03   8.72e+01    0         1      0.27
     3      1.72e-01   1.00e+00   1.90e-04   2.92e+00    0         1      0.38
-    4      3.88e-02   1.00e+00   1.20e-06   5.47e-03    0         1      0.50
+    4      3.88e-02   1.00e+00   1.20e-06   5.47e-03    0         1      0.49
 Finished, because...
 Error smaller than 1 ( 5.4690E-03 ).
 
 Accumulated times:
 Assembly time:        0.30 s
 Solve time:      0.19 s
-Total time:      0.50 s
+Total time:      0.49 s
 
 contact        voltage     electron current    hole current     total current
  drain        6.900E-01       3.911E-04         0.000E+00        3.911E-04
@@ -3634,17 +3634,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      7.37e+07                                                      0.06
-    1      4.93e+05   1.00e+00   5.27e-02   1.58e+03    0         1      0.17
+    0      7.37e+07                                                      0.05
+    1      4.93e+05   1.00e+00   5.27e-02   1.58e+03    0         1      0.16
     2      3.21e+03   1.00e+00   1.03e-02   2.20e+02    0         1      0.27
-    3      2.65e+00   1.00e+00   8.05e-04   1.62e+01    0         1      0.38
+    3      2.65e+00   1.00e+00   8.05e-04   1.62e+01    0         1      0.39
     4      3.52e-02   1.00e+00   1.01e-05   1.74e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 1.7442E-01 ).
 
 Accumulated times:
 Assembly time:        0.31 s
-Solve time:      0.17 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 Computing BDF2-step from 0.23 s to 0.24 s (Stepsize: 0.01 s)
@@ -3656,17 +3656,17 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.05e+08                                                      0.05
-    1      9.18e+05   1.00e+00   7.05e-02   2.12e+03    0         1      0.17
+    1      9.18e+05   1.00e+00   7.05e-02   2.12e+03    0         1      0.16
     2      6.70e+03   1.00e+00   1.63e-02   3.34e+02    0         1      0.28
     3      1.59e+01   1.00e+00   1.77e-03   3.41e+01    0         1      0.39
-    4      3.68e-02   1.00e+00   4.09e-05   7.50e-01    0         1      0.51
+    4      3.68e-02   1.00e+00   4.09e-05   7.50e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 7.4991E-01 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.19 s
-Total time:      0.51 s
+Assembly time:        0.30 s
+Solve time:      0.20 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        7.200E-01       4.018E-04         0.000E+00        4.018E-04
@@ -3683,16 +3683,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.87e+07                                                      0.05
-    1      5.43e+04   1.00e+00   1.43e-02   3.92e+02    0         1      0.17
+    1      5.43e+04   1.00e+00   1.43e-02   3.92e+02    0         1      0.16
     2      2.74e+01   1.00e+00   1.13e-03   2.39e+01    0         1      0.28
-    3      3.29e-02   1.00e+00   1.98e-05   3.28e-01    0         1      0.40
+    3      3.29e-02   1.00e+00   1.98e-05   3.28e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.2754E-01 ).
 
 Accumulated times:
-Assembly time:        0.26 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.24 s to 0.25 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.25 ... done.
@@ -3704,14 +3704,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.76e+07                                                      0.05
     1      1.99e+05   1.00e+00   2.65e-02   7.27e+02    0         1      0.16
-    2      2.01e+02   1.00e+00   3.44e-03   7.52e+01    0         1      0.28
-    3      1.34e-01   1.00e+00   1.42e-04   2.89e+00    0         1      0.39
+    2      2.01e+02   1.00e+00   3.44e-03   7.52e+01    0         1      0.27
+    3      1.34e-01   1.00e+00   1.42e-04   2.89e+00    0         1      0.38
     4      4.41e-02   1.00e+00   8.85e-07   7.28e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 7.2791E-03 ).
 
 Accumulated times:
-Assembly time:        0.29 s
+Assembly time:        0.30 s
 Solve time:      0.19 s
 Total time:      0.50 s
 
@@ -3732,13 +3732,13 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      7.27e+07                                                      0.05
     1      6.48e+05   1.00e+00   4.62e-02   1.26e+03    0         1      0.16
     2      1.85e+03   1.00e+00   9.06e-03   1.94e+02    0         1      0.27
-    3      1.61e+00   1.00e+00   6.70e-04   1.67e+01    0         1      0.38
+    3      1.61e+00   1.00e+00   6.70e-04   1.67e+01    0         1      0.39
     4      4.73e-02   1.00e+00   1.09e-05   1.85e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 1.8512E-01 ).
 
 Accumulated times:
-Assembly time:        0.28 s
+Assembly time:        0.30 s
 Solve time:      0.20 s
 Total time:      0.50 s
 
@@ -3750,10 +3750,10 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.04e+08                                                      0.05
-    1      1.19e+06   1.00e+00   6.17e-02   1.68e+03    0         1      0.16
-    2      5.26e+03   1.00e+00   1.45e-02   3.06e+02    0         1      0.28
-    3      7.96e+00   1.00e+00   1.66e-03   3.51e+01    0         1      0.39
+    0      1.04e+08                                                      0.06
+    1      1.19e+06   1.00e+00   6.17e-02   1.68e+03    0         1      0.17
+    2      5.26e+03   1.00e+00   1.45e-02   3.06e+02    0         1      0.29
+    3      7.96e+00   1.00e+00   1.66e-03   3.51e+01    0         1      0.40
     4      3.92e-02   1.00e+00   6.30e-05   6.95e-01    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 6.9525E-01 ).
@@ -3777,17 +3777,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.84e+07                                                      0.05
-    1      5.88e+04   1.00e+00   1.25e-02   3.37e+02    0         1      0.17
-    2      1.83e+01   1.00e+00   9.87e-04   2.52e+01    0         1      0.29
-    3      4.54e-02   1.00e+00   1.83e-05   3.68e-01    0         1      0.40
+    0      1.84e+07                                                      0.04
+    1      5.88e+04   1.00e+00   1.25e-02   3.37e+02    0         1      0.16
+    2      1.83e+01   1.00e+00   9.87e-04   2.52e+01    0         1      0.27
+    3      4.54e-02   1.00e+00   1.83e-05   3.68e-01    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 3.6828E-01 ).
 
 Accumulated times:
-Assembly time:        0.26 s
+Assembly time:        0.23 s
 Solve time:      0.14 s
-Total time:      0.40 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.26 s to 0.27 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.27 ... done.
@@ -3797,18 +3797,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.69e+07                                                      0.04
+    0      3.69e+07                                                      0.05
     1      2.05e+05   1.00e+00   2.33e-02   6.25e+02    0         1      0.16
     2      2.25e+02   1.00e+00   3.06e-03   7.81e+01    0         1      0.27
-    3      1.01e-01   1.00e+00   1.41e-04   3.18e+00    0         1      0.38
-    4      2.96e-02   1.00e+00   6.55e-07   8.97e-03    0         1      0.49
+    3      1.01e-01   1.00e+00   1.41e-04   3.18e+00    0         1      0.39
+    4      2.96e-02   1.00e+00   6.55e-07   8.97e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 8.9678E-03 ).
 
 Accumulated times:
 Assembly time:        0.30 s
 Solve time:      0.19 s
-Total time:      0.49 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        8.100E-01       4.340E-04         0.000E+00        4.340E-04
@@ -3826,7 +3826,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.12e+07                                                      0.05
     1      6.20e+05   1.00e+00   4.07e-02   1.09e+03    0         1      0.16
-    2      1.79e+03   1.00e+00   7.86e-03   1.98e+02    0         1      0.28
+    2      1.79e+03   1.00e+00   7.86e-03   1.98e+02    0         1      0.27
     3      8.91e-01   1.00e+00   6.06e-04   1.72e+01    0         1      0.39
     4      6.39e-02   1.00e+00   1.28e-05   1.98e-01    0         1      0.51
 Finished, because...
@@ -3847,7 +3847,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.02e+08                                                      0.05
     1      1.08e+06   1.00e+00   5.45e-02   1.44e+03    0         1      0.16
-    2      4.55e+03   1.00e+00   1.25e-02   3.06e+02    0         1      0.28
+    2      4.55e+03   1.00e+00   1.25e-02   3.06e+02    0         1      0.27
     3      3.54e+00   1.00e+00   1.09e-03   3.65e+01    0         1      0.39
     4      8.53e-02   1.00e+00   3.22e-05   8.27e-01    0         1      0.50
 Finished, because...
@@ -3855,7 +3855,7 @@ Error smaller than 1 ( 8.2712E-01 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.19 s
+Solve time:      0.20 s
 Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
@@ -3873,15 +3873,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.79e+07                                                      0.05
-    1      4.44e+04   1.00e+00   1.06e-02   3.07e+02    0         1      0.17
-    2      7.56e+00   1.00e+00   7.61e-04   2.33e+01    0         1      0.28
+    1      4.44e+04   1.00e+00   1.06e-02   3.07e+02    0         1      0.16
+    2      7.56e+00   1.00e+00   7.61e-04   2.33e+01    0         1      0.27
     3      7.72e-02   1.00e+00   9.54e-06   3.77e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.7711E-01 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.28 s to 0.29 s (Stepsize: 0.01 s)
@@ -3892,18 +3892,18 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.59e+07                                                      0.06
-    1      1.63e+05   1.00e+00   1.99e-02   5.65e+02    0         1      0.18
-    2      7.29e+01   1.00e+00   2.42e-03   7.21e+01    0         1      0.30
-    3      5.97e-02   1.00e+00   7.30e-05   3.59e+00    0         1      0.41
-    4      5.97e-02   1.00e+00   1.70e-07   1.35e-02    0         1      0.53
+    0      3.59e+07                                                      0.05
+    1      1.63e+05   1.00e+00   1.99e-02   5.65e+02    0         1      0.16
+    2      7.29e+01   1.00e+00   2.42e-03   7.21e+01    0         1      0.27
+    3      5.97e-02   1.00e+00   7.30e-05   3.59e+00    0         1      0.39
+    4      5.97e-02   1.00e+00   1.70e-07   1.35e-02    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 1.3546E-02 ).
 
 Accumulated times:
-Assembly time:        0.33 s
-Solve time:      0.20 s
-Total time:      0.53 s
+Assembly time:        0.30 s
+Solve time:      0.19 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        8.700E-01       4.556E-04         0.000E+00        4.556E-04
@@ -3921,16 +3921,16 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.93e+07                                                      0.05
     1      5.26e+05   1.00e+00   3.52e-02   9.70e+02    0         1      0.16
-    2      7.45e+02   1.00e+00   6.55e-03   1.98e+02    0         1      0.27
+    2      7.45e+02   1.00e+00   6.55e-03   1.98e+02    0         1      0.28
     3      3.49e-01   1.00e+00   3.50e-04   1.82e+01    0         1      0.39
-    4      7.43e-02   1.00e+00   1.85e-06   1.42e-01    0         1      0.50
+    4      7.43e-02   1.00e+00   1.85e-06   1.42e-01    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 1.4181E-01 ).
 
 Accumulated times:
-Assembly time:        0.30 s
+Assembly time:        0.31 s
 Solve time:      0.20 s
-Total time:      0.50 s
+Total time:      0.51 s
 
 Computing BDF2-step from 0.29 s to 0.3 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.3 ... done.
@@ -3941,8 +3941,8 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.87e+07                                                      0.05
-    1      9.64e+05   1.00e+00   4.74e-02   1.28e+03    0         1      0.16
-    2      2.32e+03   1.00e+00   1.08e-02   3.15e+02    0         1      0.27
+    1      9.64e+05   1.00e+00   4.74e-02   1.28e+03    0         1      0.17
+    2      2.32e+03   1.00e+00   1.08e-02   3.15e+02    0         1      0.28
     3      1.64e+00   1.00e+00   8.14e-04   3.74e+01    0         1      0.39
     4      8.13e-02   1.00e+00   9.04e-06   5.45e-01    0         1      0.50
 Finished, because...
@@ -3950,7 +3950,7 @@ Error smaller than 1 ( 5.4506E-01 ).
 
 Accumulated times:
 Assembly time:        0.30 s
-Solve time:      0.20 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
@@ -3968,15 +3968,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.73e+07                                                      0.05
-    1      3.31e+04   1.00e+00   9.57e-03   2.72e+02    0         1      0.17
+    1      3.31e+04   1.00e+00   9.57e-03   2.72e+02    0         1      0.16
     2      7.00e+00   1.00e+00   6.26e-04   2.39e+01    0         1      0.28
     3      6.98e-02   1.00e+00   6.45e-06   3.41e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.4097E-01 ).
 
 Accumulated times:
-Assembly time:        0.23 s
-Solve time:      0.14 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.3 s to 0.31 s (Stepsize: 0.01 s)
@@ -3990,15 +3990,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      3.48e+07                                                      0.05
     1      1.16e+05   1.00e+00   1.80e-02   4.99e+02    0         1      0.17
     2      7.10e+01   1.00e+00   1.99e-03   6.64e+01    0         1      0.28
-    3      7.27e-02   1.00e+00   5.02e-05   2.38e+00    0         1      0.40
+    3      7.27e-02   1.00e+00   5.02e-05   2.38e+00    0         1      0.39
     4      7.27e-02   1.00e+00   7.61e-08   5.79e-03    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 5.7894E-03 ).
 
 Accumulated times:
-Assembly time:        0.30 s
-Solve time:      0.19 s
-Total time:      0.51 s
+Assembly time:        0.31 s
+Solve time:      0.20 s
+Total time:      0.52 s
 
 contact        voltage     electron current    hole current     total current
  drain        9.300E-01       4.772E-04         0.000E+00        4.772E-04
@@ -4015,17 +4015,17 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.69e+07                                                      0.05
-    1      3.53e+05   1.00e+00   3.19e-02   8.53e+02    0         1      0.17
-    2      4.83e+02   1.00e+00   5.50e-03   1.52e+02    0         1      0.28
-    3      3.11e-01   1.00e+00   2.65e-04   1.29e+01    0         1      0.40
-    4      6.99e-02   1.00e+00   1.80e-06   1.59e-01    0         1      0.51
+    1      3.53e+05   1.00e+00   3.19e-02   8.53e+02    0         1      0.16
+    2      4.83e+02   1.00e+00   5.50e-03   1.52e+02    0         1      0.27
+    3      3.11e-01   1.00e+00   2.65e-04   1.29e+01    0         1      0.38
+    4      6.99e-02   1.00e+00   1.80e-06   1.59e-01    0         1      0.49
 Finished, because...
 Error smaller than 1 ( 1.5890E-01 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.20 s
-Total time:      0.51 s
+Assembly time:        0.29 s
+Solve time:      0.19 s
+Total time:      0.49 s
 
 Computing BDF2-step from 0.31 s to 0.32 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.32 ... done.
@@ -4039,14 +4039,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     1      6.19e+05   1.00e+00   4.30e-02   1.12e+03    0         1      0.16
     2      1.22e+03   1.00e+00   9.18e-03   2.36e+02    0         1      0.28
     3      8.18e-01   1.00e+00   6.06e-04   2.53e+01    0         1      0.39
-    4      6.89e-02   1.00e+00   5.50e-06   3.19e-01    0         1      0.50
+    4      6.89e-02   1.00e+00   5.50e-06   3.19e-01    0         1      0.51
 Finished, because...
 Error smaller than 1 ( 3.1861E-01 ).
 
 Accumulated times:
 Assembly time:        0.31 s
-Solve time:      0.18 s
-Total time:      0.50 s
+Solve time:      0.19 s
+Total time:      0.51 s
 
 contact        voltage     electron current    hole current     total current
  drain        9.600E-01       4.879E-04         0.000E+00        4.879E-04
@@ -4062,17 +4062,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.67e+07                                                      0.06
-    1      2.02e+04   1.00e+00   8.57e-03   2.45e+02    0         1      0.17
-    2      3.37e+00   1.00e+00   5.14e-04   1.62e+01    0         1      0.29
-    3      9.02e-02   1.00e+00   3.92e-06   1.48e-01    0         1      0.40
+    0      1.67e+07                                                      0.05
+    1      2.02e+04   1.00e+00   8.57e-03   2.45e+02    0         1      0.16
+    2      3.37e+00   1.00e+00   5.14e-04   1.62e+01    0         1      0.27
+    3      9.02e-02   1.00e+00   3.92e-06   1.48e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.4842E-01 ).
 
 Accumulated times:
 Assembly time:        0.25 s
 Solve time:      0.14 s
-Total time:      0.40 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.32 s to 0.33 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.33 ... done.
@@ -4084,14 +4084,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.35e+07                                                      0.05
     1      8.41e+04   1.00e+00   1.61e-02   4.50e+02    0         1      0.16
-    2      4.28e+01   1.00e+00   1.70e-03   5.30e+01    0         1      0.27
-    3      6.30e-02   1.00e+00   3.86e-05   1.67e+00    0         1      0.38
+    2      4.28e+01   1.00e+00   1.70e-03   5.30e+01    0         1      0.28
+    3      6.30e-02   1.00e+00   3.86e-05   1.67e+00    0         1      0.39
     4      6.30e-02   1.00e+00   4.46e-08   1.26e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 1.2557E-03 ).
 
 Accumulated times:
-Assembly time:        0.31 s
+Assembly time:        0.30 s
 Solve time:      0.19 s
 Total time:      0.50 s
 
@@ -4110,16 +4110,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.44e+07                                                      0.05
-    1      3.27e+05   1.00e+00   2.86e-02   7.73e+02    0         1      0.17
-    2      4.05e+02   1.00e+00   4.89e-03   1.42e+02    0         1      0.28
-    3      1.91e-01   1.00e+00   2.41e-04   1.24e+01    0         1      0.39
+    1      3.27e+05   1.00e+00   2.86e-02   7.73e+02    0         1      0.16
+    2      4.05e+02   1.00e+00   4.89e-03   1.42e+02    0         1      0.27
+    3      1.91e-01   1.00e+00   2.41e-04   1.24e+01    0         1      0.38
     4      7.70e-02   1.00e+00   1.15e-06   8.81e-02    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 8.8087E-02 ).
 
 Accumulated times:
-Assembly time:        0.29 s
-Solve time:      0.20 s
+Assembly time:        0.30 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 Computing BDF2-step from 0.33 s to 0.34 s (Stepsize: 0.01 s)
@@ -4130,7 +4130,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      9.15e+07                                                      0.06
+    0      9.15e+07                                                      0.05
     1      6.82e+05   1.00e+00   3.86e-02   1.02e+03    0         1      0.17
     2      1.25e+03   1.00e+00   8.22e-03   2.25e+02    0         1      0.28
     3      7.40e-01   1.00e+00   5.55e-04   2.94e+01    0         1      0.39
@@ -4139,8 +4139,8 @@ Finished, because...
 Error smaller than 1 ( 5.1444E-01 ).
 
 Accumulated times:
-Assembly time:        0.32 s
-Solve time:      0.19 s
+Assembly time:        0.31 s
+Solve time:      0.20 s
 Total time:      0.51 s
 
 contact        voltage     electron current    hole current     total current
@@ -4157,17 +4157,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.61e+07                                                      0.06
-    1      2.40e+04   1.00e+00   7.94e-03   2.09e+02    0         1      0.17
+    0      1.61e+07                                                      0.05
+    1      2.40e+04   1.00e+00   7.94e-03   2.09e+02    0         1      0.16
     2      3.75e+00   1.00e+00   4.37e-04   1.14e+01    0         1      0.28
-    3      6.05e-02   1.00e+00   2.60e-06   6.75e-02    0         1      0.40
+    3      6.05e-02   1.00e+00   2.60e-06   6.75e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 6.7463E-02 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.15 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.14 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.34 s to 0.35 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.35 ... done.
@@ -4185,8 +4185,8 @@ Finished, because...
 Error smaller than 1 ( 7.6318E-01 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -4207,14 +4207,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     1      4.01e+05   1.00e+00   2.63e-02   6.73e+02    0         1      0.17
     2      2.88e+02   1.00e+00   4.20e-03   1.07e+02    0         1      0.28
     3      9.86e-02   1.00e+00   1.87e-04   8.38e+00    0         1      0.39
-    4      7.99e-02   1.00e+00   7.56e-07   4.85e-02    0         1      0.51
+    4      7.99e-02   1.00e+00   7.56e-07   4.85e-02    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 4.8541E-02 ).
 
 Accumulated times:
 Assembly time:        0.30 s
 Solve time:      0.20 s
-Total time:      0.51 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.35 s to 0.36 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.36 ... done.
@@ -4225,17 +4225,17 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.79e+07                                                      0.05
-    1      8.47e+05   1.00e+00   3.55e-02   8.98e+02    0         1      0.17
-    2      7.45e+02   1.00e+00   7.18e-03   1.77e+02    0         1      0.28
-    3      1.08e+00   1.00e+00   5.09e-04   2.85e+01    0         1      0.40
-    4      8.26e-02   1.00e+00   6.40e-06   6.03e-01    0         1      0.51
+    1      8.47e+05   1.00e+00   3.55e-02   8.98e+02    0         1      0.16
+    2      7.45e+02   1.00e+00   7.18e-03   1.77e+02    0         1      0.27
+    3      1.08e+00   1.00e+00   5.09e-04   2.85e+01    0         1      0.38
+    4      8.26e-02   1.00e+00   6.40e-06   6.03e-01    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 6.0348E-01 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.20 s
-Total time:      0.51 s
+Assembly time:        0.30 s
+Solve time:      0.19 s
+Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.080E+00       5.308E-04         0.000E+00        5.308E-04
@@ -4253,15 +4253,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.56e+07                                                      0.05
     1      2.91e+04   1.00e+00   7.43e-03   2.01e+02    0         1      0.16
-    2      1.95e+00   1.00e+00   3.83e-04   1.08e+01    0         1      0.27
-    3      7.60e-02   1.00e+00   2.07e-06   3.07e-02    0         1      0.38
+    2      1.95e+00   1.00e+00   3.83e-04   1.08e+01    0         1      0.28
+    3      7.60e-02   1.00e+00   2.07e-06   3.07e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.0748E-02 ).
 
 Accumulated times:
-Assembly time:        0.23 s
-Solve time:      0.15 s
-Total time:      0.38 s
+Assembly time:        0.24 s
+Solve time:      0.13 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.36 s to 0.37 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.37 ... done.
@@ -4274,14 +4274,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      3.11e+07                                                      0.05
     1      1.25e+05   1.00e+00   1.40e-02   3.79e+02    0         1      0.16
     2      2.18e+01   1.00e+00   1.28e-03   3.47e+01    0         1      0.27
-    3      8.24e-02   1.00e+00   1.80e-05   3.18e-01    0         1      0.38
+    3      8.24e-02   1.00e+00   1.80e-05   3.18e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.1802E-01 ).
 
 Accumulated times:
-Assembly time:        0.23 s
-Solve time:      0.14 s
-Total time:      0.38 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.110E+00       5.415E-04         0.000E+00        5.415E-04
@@ -4300,15 +4300,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      5.97e+07                                                      0.05
     1      5.02e+05   1.00e+00   2.49e-02   6.73e+02    0         1      0.16
     2      1.87e+02   1.00e+00   3.77e-03   1.02e+02    0         1      0.27
-    3      7.49e-02   1.00e+00   1.29e-04   3.38e+00    0         1      0.38
-    4      7.49e-02   1.00e+00   3.17e-07   6.01e-03    0         1      0.49
+    3      7.49e-02   1.00e+00   1.29e-04   3.38e+00    0         1      0.39
+    4      7.49e-02   1.00e+00   3.17e-07   6.01e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 6.0145E-03 ).
 
 Accumulated times:
-Assembly time:        0.29 s
+Assembly time:        0.30 s
 Solve time:      0.19 s
-Total time:      0.49 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.37 s to 0.38 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.38 ... done.
@@ -4318,17 +4318,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      8.47e+07                                                      0.04
+    0      8.47e+07                                                      0.05
     1      1.07e+06   1.00e+00   3.36e-02   9.10e+02    0         1      0.16
-    2      6.08e+02   1.00e+00   6.57e-03   1.83e+02    0         1      0.27
-    3      1.86e-01   1.00e+00   3.67e-04   1.09e+01    0         1      0.38
+    2      6.08e+02   1.00e+00   6.57e-03   1.83e+02    0         1      0.28
+    3      1.86e-01   1.00e+00   3.67e-04   1.09e+01    0         1      0.39
     4      8.87e-02   1.00e+00   1.85e-06   5.42e-02    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 5.4234E-02 ).
 
 Accumulated times:
 Assembly time:        0.31 s
-Solve time:      0.18 s
+Solve time:      0.19 s
 Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
@@ -4348,14 +4348,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      1.51e+07                                                      0.05
     1      3.61e+04   1.00e+00   6.77e-03   1.50e+02    0         1      0.16
     2      1.89e+00   1.00e+00   3.49e-04   7.32e+00    0         1      0.27
-    3      8.29e-02   1.00e+00   1.82e-06   5.03e-02    0         1      0.39
+    3      8.29e-02   1.00e+00   1.82e-06   5.03e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 5.0270E-02 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.38 s to 0.39 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.39 ... done.
@@ -4366,16 +4366,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.01e+07                                                      0.05
-    1      1.57e+05   1.00e+00   1.29e-02   2.88e+02    0         1      0.17
-    2      2.19e+01   1.00e+00   1.13e-03   2.49e+01    0         1      0.29
-    3      7.02e-02   1.00e+00   1.51e-05   5.15e-01    0         1      0.40
+    1      1.57e+05   1.00e+00   1.29e-02   2.88e+02    0         1      0.16
+    2      2.19e+01   1.00e+00   1.13e-03   2.49e+01    0         1      0.28
+    3      7.02e-02   1.00e+00   1.51e-05   5.15e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 5.1455E-01 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.170E+00       5.628E-04         0.000E+00        5.628E-04
@@ -4393,16 +4393,16 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      5.77e+07                                                      0.05
     1      6.34e+05   1.00e+00   2.31e-02   5.22e+02    0         1      0.16
-    2      1.84e+02   1.00e+00   3.27e-03   7.28e+01    0         1      0.28
+    2      1.84e+02   1.00e+00   3.27e-03   7.28e+01    0         1      0.27
     3      6.18e-02   1.00e+00   9.67e-05   2.99e+00    0         1      0.39
-    4      6.18e-02   1.00e+00   1.83e-07   4.88e-03    0         1      0.51
+    4      6.18e-02   1.00e+00   1.83e-07   4.88e-03    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 4.8803E-03 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.20 s
-Total time:      0.51 s
+Assembly time:        0.30 s
+Solve time:      0.19 s
+Total time:      0.50 s
 
 Computing BDF2-step from 0.39 s to 0.4 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.4 ... done.
@@ -4414,15 +4414,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.18e+07                                                      0.05
     1      1.35e+06   1.00e+00   3.13e-02   7.12e+02    0         1      0.16
-    2      5.19e+02   1.00e+00   5.71e-03   1.22e+02    0         1      0.27
+    2      5.19e+02   1.00e+00   5.71e-03   1.22e+02    0         1      0.28
     3      6.27e-02   1.00e+00   2.68e-04   5.84e+00    0         1      0.39
     4      6.27e-02   1.00e+00   1.03e-06   1.27e-02    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 1.2704E-02 ).
 
 Accumulated times:
-Assembly time:        0.31 s
-Solve time:      0.19 s
+Assembly time:        0.30 s
+Solve time:      0.20 s
 Total time:      0.50 s
 
 contact        voltage     electron current    hole current     total current
@@ -4439,17 +4439,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.52e+07                                                      0.06
-    1      4.38e+04   1.00e+00   6.24e-03   1.60e+02    0         1      0.18
-    2      1.11e+00   1.00e+00   3.17e-04   3.80e+00    0         1      0.30
-    3      6.66e-02   1.00e+00   1.84e-06   2.88e-03    0         1      0.42
+    0      1.52e+07                                                      0.05
+    1      4.38e+04   1.00e+00   6.24e-03   1.60e+02    0         1      0.17
+    2      1.11e+00   1.00e+00   3.17e-04   3.80e+00    0         1      0.28
+    3      6.66e-02   1.00e+00   1.84e-06   2.88e-03    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 2.8817E-03 ).
 
 Accumulated times:
-Assembly time:        0.27 s
+Assembly time:        0.25 s
 Solve time:      0.15 s
-Total time:      0.42 s
+Total time:      0.40 s
 
 Computing BDF2-step from 0.4 s to 0.41 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.41 ... done.
@@ -4459,17 +4459,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.13e+07                                                      0.06
-    1      1.91e+05   1.00e+00   1.19e-02   2.98e+02    0         1      0.17
+    0      3.13e+07                                                      0.05
+    1      1.91e+05   1.00e+00   1.19e-02   2.98e+02    0         1      0.16
     2      1.34e+01   1.00e+00   1.02e-03   1.25e+01    0         1      0.28
-    3      8.11e-02   1.00e+00   1.37e-05   2.83e-02    0         1      0.40
+    3      8.11e-02   1.00e+00   1.37e-05   2.83e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.8324E-02 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.230E+00       5.840E-04         0.000E+00        5.840E-04
@@ -4486,7 +4486,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.26e+07                                                      0.05
-    1      7.71e+05   1.00e+00   2.16e-02   5.20e+02    0         1      0.17
+    1      7.71e+05   1.00e+00   2.16e-02   5.20e+02    0         1      0.16
     2      1.33e+02   1.00e+00   2.86e-03   3.71e+01    0         1      0.28
     3      7.20e-02   1.00e+00   7.34e-05   2.73e-01    0         1      0.39
 Finished, because...
@@ -4494,7 +4494,7 @@ Error smaller than 1 ( 2.7298E-01 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.41 s to 0.42 s (Stepsize: 0.01 s)
@@ -4506,16 +4506,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.15e+07                                                      0.05
-    1      1.64e+06   1.00e+00   2.93e-02   6.94e+02    0         1      0.17
-    2      4.45e+02   1.00e+00   4.90e-03   6.53e+01    0         1      0.28
-    3      8.05e-02   1.00e+00   1.83e-04   9.56e-01    0         1      0.40
+    1      1.64e+06   1.00e+00   2.93e-02   6.94e+02    0         1      0.16
+    2      4.45e+02   1.00e+00   4.90e-03   6.53e+01    0         1      0.27
+    3      8.05e-02   1.00e+00   1.83e-04   9.56e-01    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 9.5587E-01 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.40 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.260E+00       5.945E-04         0.000E+00        5.945E-04
@@ -4531,16 +4531,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.77e+07                                                      0.05
-    1      5.03e+04   1.00e+00   5.71e-03   1.11e+02    0         1      0.16
-    2      1.01e+00   1.00e+00   2.82e-04   2.73e+00    0         1      0.27
+    0      1.77e+07                                                      0.06
+    1      5.03e+04   1.00e+00   5.71e-03   1.11e+02    0         1      0.17
+    2      1.01e+00   1.00e+00   2.82e-04   2.73e+00    0         1      0.28
     3      8.19e-02   1.00e+00   1.67e-06   3.74e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.7359E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.42 s to 0.43 s (Stepsize: 0.01 s)
@@ -4551,8 +4551,8 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.63e+07                                                      0.06
-    1      2.19e+05   1.00e+00   1.09e-02   2.17e+02    0         1      0.17
+    0      3.63e+07                                                      0.05
+    1      2.19e+05   1.00e+00   1.09e-02   2.17e+02    0         1      0.16
     2      1.30e+01   1.00e+00   9.43e-04   9.92e+00    0         1      0.28
     3      7.87e-02   1.00e+00   1.37e-05   4.31e-02    0         1      0.39
 Finished, because...
@@ -4600,7 +4600,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      1.05e+08                                                      0.05
     1      1.89e+06   1.00e+00   2.71e-02   5.56e+02    0         1      0.16
     2      4.45e+02   1.00e+00   4.39e-03   5.72e+01    0         1      0.27
-    3      7.57e-02   1.00e+00   1.59e-04   1.04e+00    0         1      0.38
+    3      7.57e-02   1.00e+00   1.59e-04   1.04e+00    0         1      0.39
     4      7.57e-02   1.00e+00   4.41e-07   4.36e-04    0         1      0.50
 Finished, because...
 Error smaller than 1 ( 4.3613E-04 ).
@@ -4624,7 +4624,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.99e+07                                                      0.05
+    0      1.99e+07                                                      0.06
     1      5.51e+04   1.00e+00   5.57e-03   1.24e+02    0         1      0.17
     2      1.35e+00   1.00e+00   2.32e-04   2.47e+00    0         1      0.28
     3      6.15e-02   1.00e+00   1.08e-06   1.63e-03    0         1      0.39
@@ -4632,8 +4632,8 @@ Finished, because...
 Error smaller than 1 ( 1.6317E-03 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.15 s
+Assembly time:        0.25 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.44 s to 0.45 s (Stepsize: 0.01 s)
@@ -4645,8 +4645,8 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.06e+07                                                      0.05
-    1      2.39e+05   1.00e+00   1.06e-02   2.37e+02    0         1      0.16
-    2      1.62e+01   1.00e+00   8.16e-04   8.30e+00    0         1      0.27
+    1      2.39e+05   1.00e+00   1.06e-02   2.37e+02    0         1      0.17
+    2      1.62e+01   1.00e+00   8.16e-04   8.30e+00    0         1      0.28
     3      6.71e-02   1.00e+00   1.13e-05   1.46e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.4574E-02 ).
@@ -4671,7 +4671,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.05e+07                                                      0.05
-    1      9.63e+05   1.00e+00   1.90e-02   4.27e+02    0         1      0.16
+    1      9.63e+05   1.00e+00   1.90e-02   4.27e+02    0         1      0.17
     2      1.45e+02   1.00e+00   2.45e-03   2.45e+01    0         1      0.28
     3      7.69e-02   1.00e+00   7.12e-05   1.02e-01    0         1      0.39
 Finished, because...
@@ -4691,16 +4691,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.17e+08                                                      0.05
-    1      2.04e+06   1.00e+00   2.58e-02   5.78e+02    0         1      0.16
-    2      4.27e+02   1.00e+00   4.19e-03   4.30e+01    0         1      0.27
-    3      9.37e-02   1.00e+00   1.65e-04   2.81e-01    0         1      0.39
+    1      2.04e+06   1.00e+00   2.58e-02   5.78e+02    0         1      0.17
+    2      4.27e+02   1.00e+00   4.19e-03   4.30e+01    0         1      0.28
+    3      9.37e-02   1.00e+00   1.65e-04   2.81e-01    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 2.8100E-01 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.25 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.40 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.380E+00       6.362E-04         0.000E+00        6.362E-04
@@ -4725,7 +4725,7 @@ Error smaller than 1 ( 5.6554E-04 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.46 s to 0.47 s (Stepsize: 0.01 s)
@@ -4738,7 +4738,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.39e+07                                                      0.05
     1      2.47e+05   1.00e+00   1.01e-02   1.73e+02    0         1      0.16
-    2      7.61e+00   1.00e+00   7.09e-04   4.18e+00    0         1      0.27
+    2      7.61e+00   1.00e+00   7.09e-04   4.18e+00    0         1      0.28
     3      5.09e-02   1.00e+00   6.83e-06   5.57e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 5.5712E-03 ).
@@ -4762,17 +4762,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      8.65e+07                                                      0.05
-    1      9.89e+05   1.00e+00   1.81e-02   3.14e+02    0         1      0.17
-    2      7.77e+01   1.00e+00   2.12e-03   1.23e+01    0         1      0.28
-    3      6.99e-02   1.00e+00   5.46e-05   4.90e-02    0         1      0.40
+    0      8.65e+07                                                      0.04
+    1      9.89e+05   1.00e+00   1.81e-02   3.14e+02    0         1      0.16
+    2      7.77e+01   1.00e+00   2.12e-03   1.23e+01    0         1      0.27
+    3      6.99e-02   1.00e+00   5.46e-05   4.90e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 4.8957E-02 ).
 
 Accumulated times:
-Assembly time:        0.26 s
+Assembly time:        0.24 s
 Solve time:      0.14 s
-Total time:      0.40 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.47 s to 0.48 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.48 ... done.
@@ -4784,7 +4784,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.25e+08                                                      0.05
     1      2.09e+06   1.00e+00   2.45e-02   4.27e+02    0         1      0.16
-    2      3.72e+02   1.00e+00   3.74e-03   2.15e+01    0         1      0.28
+    2      3.72e+02   1.00e+00   3.74e-03   2.15e+01    0         1      0.27
     3      7.96e-02   1.00e+00   1.48e-04   1.65e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.6532E-01 ).
@@ -4808,17 +4808,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.27e+07                                                      0.06
-    1      5.59e+04   1.00e+00   5.02e-03   7.90e+01    0         1      0.17
+    0      2.27e+07                                                      0.05
+    1      5.59e+04   1.00e+00   5.02e-03   7.90e+01    0         1      0.16
     2      5.45e-01   1.00e+00   1.94e-04   1.08e+00    0         1      0.28
-    3      7.03e-02   1.00e+00   6.81e-07   8.35e-04    0         1      0.39
+    3      7.03e-02   1.00e+00   6.81e-07   8.35e-04    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 8.3534E-04 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.14 s
-Total time:      0.39 s
+Assembly time:        0.25 s
+Solve time:      0.15 s
+Total time:      0.40 s
 
 Computing BDF2-step from 0.48 s to 0.49 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.49 ... done.
@@ -4829,8 +4829,8 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.61e+07                                                      0.05
-    1      2.42e+05   1.00e+00   9.62e-03   1.53e+02    0         1      0.16
-    2      6.98e+00   1.00e+00   6.48e-04   3.98e+00    0         1      0.27
+    1      2.42e+05   1.00e+00   9.62e-03   1.53e+02    0         1      0.17
+    2      6.98e+00   1.00e+00   6.48e-04   3.98e+00    0         1      0.28
     3      6.94e-02   1.00e+00   5.93e-06   9.21e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 9.2062E-03 ).
@@ -4855,7 +4855,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.05e+07                                                      0.05
-    1      9.66e+05   1.00e+00   1.73e-02   2.83e+02    0         1      0.16
+    1      9.66e+05   1.00e+00   1.73e-02   2.83e+02    0         1      0.17
     2      6.73e+01   1.00e+00   1.93e-03   1.28e+01    0         1      0.28
     3      6.14e-02   1.00e+00   3.80e-05   6.81e-02    0         1      0.39
 Finished, because...
@@ -4875,15 +4875,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.31e+08                                                      0.05
-    1      2.04e+06   1.00e+00   2.36e-02   3.90e+02    0         1      0.16
-    2      3.21e+02   1.00e+00   3.40e-03   2.32e+01    0         1      0.27
+    1      2.04e+06   1.00e+00   2.36e-02   3.90e+02    0         1      0.17
+    2      3.21e+02   1.00e+00   3.40e-03   2.32e+01    0         1      0.28
     3      7.45e-02   1.00e+00   1.06e-04   1.79e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.7881E-01 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -4900,17 +4900,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.34e+07                                                      0.05
-    1      5.31e+04   1.00e+00   4.53e-03   8.08e+01    0         1      0.16
-    2      2.75e-01   1.00e+00   1.86e-04   1.07e+00    0         1      0.28
-    3      6.68e-02   1.00e+00   7.42e-07   6.60e-04    0         1      0.39
+    0      2.34e+07                                                      0.04
+    1      5.31e+04   1.00e+00   4.53e-03   8.08e+01    0         1      0.15
+    2      2.75e-01   1.00e+00   1.86e-04   1.07e+00    0         1      0.27
+    3      6.68e-02   1.00e+00   7.42e-07   6.60e-04    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 6.5984E-04 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.22 s
 Solve time:      0.14 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.5 s to 0.51 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.51 ... done.
@@ -4921,15 +4921,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.75e+07                                                      0.05
-    1      2.30e+05   1.00e+00   8.74e-03   1.58e+02    0         1      0.17
+    1      2.30e+05   1.00e+00   8.74e-03   1.58e+02    0         1      0.16
     2      3.37e+00   1.00e+00   6.19e-04   3.96e+00    0         1      0.28
     3      6.83e-02   1.00e+00   6.03e-06   8.54e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 8.5446E-03 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.15 s
+Assembly time:        0.25 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -4946,9 +4946,9 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      9.30e+07                                                      0.06
-    1      9.19e+05   1.00e+00   1.59e-02   2.91e+02    0         1      0.17
-    2      5.54e+01   1.00e+00   1.74e-03   1.33e+01    0         1      0.28
+    0      9.30e+07                                                      0.05
+    1      9.19e+05   1.00e+00   1.59e-02   2.91e+02    0         1      0.16
+    2      5.54e+01   1.00e+00   1.74e-03   1.33e+01    0         1      0.27
     3      5.52e-02   1.00e+00   3.36e-05   8.20e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 8.2025E-02 ).
@@ -4966,17 +4966,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.34e+08                                                      0.05
-    1      1.93e+06   1.00e+00   2.18e-02   4.02e+02    0         1      0.16
-    2      2.63e+02   1.00e+00   2.94e-03   2.50e+01    0         1      0.27
-    3      6.69e-02   1.00e+00   8.09e-05   2.54e-01    0         1      0.39
+    0      1.34e+08                                                      0.06
+    1      1.93e+06   1.00e+00   2.18e-02   4.02e+02    0         1      0.17
+    2      2.63e+02   1.00e+00   2.94e-03   2.50e+01    0         1      0.28
+    3      6.69e-02   1.00e+00   8.09e-05   2.54e-01    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 2.5388E-01 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.25 s
 Solve time:      0.14 s
-Total time:      0.39 s
+Total time:      0.40 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.560E+00       6.971E-04         0.000E+00        6.971E-04
@@ -4993,16 +4993,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.38e+07                                                      0.05
-    1      4.83e+04   1.00e+00   4.24e-03   8.44e+01    0         1      0.17
-    2      3.60e-01   1.00e+00   1.51e-04   1.43e+00    0         1      0.28
-    3      6.26e-02   1.00e+00   4.74e-07   1.00e-03    0         1      0.40
+    1      4.83e+04   1.00e+00   4.24e-03   8.44e+01    0         1      0.16
+    2      3.60e-01   1.00e+00   1.51e-04   1.43e+00    0         1      0.27
+    3      6.26e-02   1.00e+00   4.74e-07   1.00e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.0017E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.40 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.52 s to 0.53 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.53 ... done.
@@ -5013,16 +5013,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.81e+07                                                      0.05
-    1      2.09e+05   1.00e+00   8.14e-03   1.64e+02    0         1      0.16
-    2      5.00e+00   1.00e+00   5.25e-04   5.16e+00    0         1      0.28
-    3      5.95e-02   1.00e+00   5.11e-06   1.19e-02    0         1      0.39
+    1      2.09e+05   1.00e+00   8.14e-03   1.64e+02    0         1      0.15
+    2      5.00e+00   1.00e+00   5.25e-04   5.16e+00    0         1      0.27
+    3      5.95e-02   1.00e+00   5.11e-06   1.19e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.1891E-02 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.15 s
-Total time:      0.39 s
+Assembly time:        0.23 s
+Solve time:      0.13 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.590E+00       7.071E-04         0.000E+00        7.071E-04
@@ -5038,7 +5038,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      9.39e+07                                                      0.06
+    0      9.39e+07                                                      0.05
     1      8.36e+05   1.00e+00   1.48e-02   3.03e+02    0         1      0.17
     2      5.60e+01   1.00e+00   1.59e-03   1.64e+01    0         1      0.28
     3      8.21e-02   1.00e+00   3.54e-05   1.00e-01    0         1      0.39
@@ -5047,7 +5047,7 @@ Error smaller than 1 ( 1.0050E-01 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.53 s to 0.54 s (Stepsize: 0.01 s)
@@ -5059,14 +5059,14 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.35e+08                                                      0.05
-    1      1.76e+06   1.00e+00   2.02e-02   4.17e+02    0         1      0.16
-    2      2.01e+02   1.00e+00   2.77e-03   2.96e+01    0         1      0.27
-    3      7.58e-02   1.00e+00   8.48e-05   2.80e-01    0         1      0.38
+    1      1.76e+06   1.00e+00   2.02e-02   4.17e+02    0         1      0.17
+    2      2.01e+02   1.00e+00   2.77e-03   2.96e+01    0         1      0.28
+    3      7.58e-02   1.00e+00   8.48e-05   2.80e-01    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.7961E-01 ).
 
 Accumulated times:
-Assembly time:        0.23 s
+Assembly time:        0.24 s
 Solve time:      0.15 s
 Total time:      0.39 s
 
@@ -5086,15 +5086,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.41e+07                                                      0.05
     1      4.45e+04   1.00e+00   4.22e-03   8.48e+01    0         1      0.16
-    2      4.61e-01   1.00e+00   1.36e-04   1.15e+00    0         1      0.28
-    3      8.71e-02   1.00e+00   3.22e-07   3.17e-04    0         1      0.39
+    2      4.61e-01   1.00e+00   1.36e-04   1.15e+00    0         1      0.27
+    3      8.71e-02   1.00e+00   3.22e-07   3.17e-04    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 3.1710E-04 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.54 s to 0.55 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.55 ... done.
@@ -5105,16 +5105,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.86e+07                                                      0.05
-    1      1.93e+05   1.00e+00   8.07e-03   1.63e+02    0         1      0.17
-    2      6.05e+00   1.00e+00   4.65e-04   3.79e+00    0         1      0.28
-    3      6.98e-02   1.00e+00   3.10e-06   2.82e-03    0         1      0.39
+    1      1.93e+05   1.00e+00   8.07e-03   1.63e+02    0         1      0.16
+    2      6.05e+00   1.00e+00   4.65e-04   3.79e+00    0         1      0.27
+    3      6.98e-02   1.00e+00   3.10e-06   2.82e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 2.8167E-03 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.14 s
-Total time:      0.39 s
+Assembly time:        0.23 s
+Solve time:      0.15 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.650E+00       7.268E-04         0.000E+00        7.268E-04
@@ -5132,14 +5132,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.47e+07                                                      0.05
     1      7.73e+05   1.00e+00   1.46e-02   2.95e+02    0         1      0.16
-    2      6.09e+01   1.00e+00   1.41e-03   1.07e+01    0         1      0.27
+    2      6.09e+01   1.00e+00   1.41e-03   1.07e+01    0         1      0.28
     3      1.28e-01   1.00e+00   2.36e-05   1.75e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.7493E-02 ).
 
 Accumulated times:
 Assembly time:        0.23 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.38 s
 
 Computing BDF2-step from 0.55 s to 0.56 s (Stepsize: 0.01 s)
@@ -5151,15 +5151,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.36e+08                                                      0.05
-    1      1.63e+06   1.00e+00   1.98e-02   4.00e+02    0         1      0.17
-    2      1.97e+02   1.00e+00   2.49e-03   1.80e+01    0         1      0.28
+    1      1.63e+06   1.00e+00   1.98e-02   4.00e+02    0         1      0.16
+    2      1.97e+02   1.00e+00   2.49e-03   1.80e+01    0         1      0.27
     3      1.00e-01   1.00e+00   6.86e-05   4.51e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 4.5081E-02 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -5176,16 +5176,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.42e+07                                                      0.06
-    1      4.13e+04   1.00e+00   3.95e-03   6.67e+01    0         1      0.17
-    2      3.00e-01   1.00e+00   1.32e-04   4.65e-01    0         1      0.28
+    0      2.42e+07                                                      0.05
+    1      4.13e+04   1.00e+00   3.95e-03   6.67e+01    0         1      0.16
+    2      3.00e-01   1.00e+00   1.32e-04   4.65e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 4.6471E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.29 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.56 s to 0.57 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.57 ... done.
@@ -5195,7 +5195,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      4.88e+07                                                      0.05
+    0      4.88e+07                                                      0.04
     1      1.79e+05   1.00e+00   7.66e-03   1.28e+02    0         1      0.16
     2      3.55e+00   1.00e+00   4.39e-04   1.72e+00    0         1      0.28
     3      1.68e-01   1.00e+00   2.90e-06   1.85e-03    0         1      0.39
@@ -5204,7 +5204,7 @@ Error smaller than 1 ( 1.8526E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -5221,17 +5221,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      9.49e+07                                                      0.05
-    1      7.15e+05   1.00e+00   1.40e-02   2.32e+02    0         1      0.16
-    2      3.67e+01   1.00e+00   1.27e-03   5.75e+00    0         1      0.28
-    3      1.76e-01   1.00e+00   1.78e-05   1.81e-02    0         1      0.39
+    0      9.49e+07                                                      0.04
+    1      7.15e+05   1.00e+00   1.40e-02   2.32e+02    0         1      0.15
+    2      3.67e+01   1.00e+00   1.27e-03   5.75e+00    0         1      0.26
+    3      1.76e-01   1.00e+00   1.78e-05   1.81e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.8145E-02 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.24 s
 Solve time:      0.14 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.57 s to 0.58 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.58 ... done.
@@ -5242,7 +5242,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.36e+08                                                      0.05
-    1      1.51e+06   1.00e+00   1.93e-02   3.17e+02    0         1      0.16
+    1      1.51e+06   1.00e+00   1.93e-02   3.17e+02    0         1      0.17
     2      1.25e+02   1.00e+00   2.20e-03   1.08e+01    0         1      0.28
     3      1.65e-01   1.00e+00   4.54e-05   5.57e-02    0         1      0.39
 Finished, because...
@@ -5250,7 +5250,7 @@ Error smaller than 1 ( 5.5744E-02 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -5268,15 +5268,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.42e+07                                                      0.05
-    1      3.81e+04   1.00e+00   3.65e-03   5.65e+01    0         1      0.16
-    2      2.72e-01   1.00e+00   1.09e-04   4.96e-01    0         1      0.27
+    1      3.81e+04   1.00e+00   3.65e-03   5.65e+01    0         1      0.17
+    2      2.72e-01   1.00e+00   1.09e-04   4.96e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 4.9628E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
+Assembly time:        0.18 s
 Solve time:      0.10 s
-Total time:      0.27 s
+Total time:      0.28 s
 
 Computing BDF2-step from 0.58 s to 0.59 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.59 ... done.
@@ -5288,14 +5288,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.88e+07                                                      0.05
     1      1.65e+05   1.00e+00   7.04e-03   1.10e+02    0         1      0.16
-    2      3.34e+00   1.00e+00   3.86e-04   1.74e+00    0         1      0.27
+    2      3.34e+00   1.00e+00   3.86e-04   1.74e+00    0         1      0.28
     3      1.48e-01   1.00e+00   2.95e-06   1.13e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.1283E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -5313,7 +5313,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.46e+07                                                      0.05
-    1      6.59e+05   1.00e+00   1.29e-02   2.05e+02    0         1      0.17
+    1      6.59e+05   1.00e+00   1.29e-02   2.05e+02    0         1      0.16
     2      3.08e+01   1.00e+00   1.17e-03   5.40e+00    0         1      0.28
     3      1.17e-01   1.00e+00   1.95e-05   1.12e-02    0         1      0.39
 Finished, because...
@@ -5321,7 +5321,7 @@ Error smaller than 1 ( 1.1181E-02 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.59 s to 0.6 s (Stepsize: 0.01 s)
@@ -5359,15 +5359,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.41e+07                                                      0.05
-    1      3.51e+04   1.00e+00   3.58e-03   5.49e+01    0         1      0.17
-    2      1.49e-01   1.00e+00   9.32e-05   4.94e-01    0         1      0.29
+    1      3.51e+04   1.00e+00   3.58e-03   5.49e+01    0         1      0.16
+    2      1.49e-01   1.00e+00   9.32e-05   4.94e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 4.9443E-01 ).
 
 Accumulated times:
-Assembly time:        0.19 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.29 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.6 s to 0.61 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.61 ... done.
@@ -5380,14 +5380,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      4.84e+07                                                      0.05
     1      1.52e+05   1.00e+00   6.86e-03   1.07e+02    0         1      0.16
     2      1.37e+00   1.00e+00   3.24e-04   1.85e+00    0         1      0.28
-    3      1.41e-01   1.00e+00   1.62e-06   2.02e-03    0         1      0.40
+    3      1.41e-01   1.00e+00   1.62e-06   2.02e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.0182E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.830E+00       7.848E-04         0.000E+00        7.848E-04
@@ -5404,16 +5404,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.38e+07                                                      0.05
-    1      6.06e+05   1.00e+00   1.24e-02   1.99e+02    0         1      0.16
+    1      6.06e+05   1.00e+00   1.24e-02   1.99e+02    0         1      0.17
     2      1.61e+01   1.00e+00   9.99e-04   6.14e+00    0         1      0.28
-    3      1.46e-01   1.00e+00   1.31e-05   1.77e-02    0         1      0.39
+    3      1.46e-01   1.00e+00   1.31e-05   1.77e-02    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 1.7682E-02 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.14 s
-Total time:      0.39 s
+Assembly time:        0.25 s
+Solve time:      0.15 s
+Total time:      0.40 s
 
 Computing BDF2-step from 0.61 s to 0.62 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.62 ... done.
@@ -5425,15 +5425,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.34e+08                                                      0.05
     1      1.27e+06   1.00e+00   1.69e-02   2.76e+02    0         1      0.16
-    2      7.68e+01   1.00e+00   1.79e-03   1.13e+01    0         1      0.28
-    3      1.66e-01   1.00e+00   3.80e-05   5.06e-02    0         1      0.39
+    2      7.68e+01   1.00e+00   1.79e-03   1.13e+01    0         1      0.27
+    3      1.66e-01   1.00e+00   3.80e-05   5.06e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 5.0647E-02 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.860E+00       7.943E-04         0.000E+00        7.943E-04
@@ -5457,7 +5457,7 @@ Error smaller than 1 ( 4.8855E-01 ).
 
 Accumulated times:
 Assembly time:        0.18 s
-Solve time:      0.10 s
+Solve time:      0.09 s
 Total time:      0.28 s
 
 Computing BDF2-step from 0.62 s to 0.63 s (Stepsize: 0.01 s)
@@ -5468,17 +5468,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      4.78e+07                                                      0.04
+    0      4.78e+07                                                      0.05
     1      1.39e+05   1.00e+00   6.31e-03   1.09e+02    0         1      0.16
-    2      1.46e+00   1.00e+00   3.06e-04   1.76e+00    0         1      0.27
-    3      1.49e-01   1.00e+00   1.62e-06   1.45e-03    0         1      0.38
+    2      1.46e+00   1.00e+00   3.06e-04   1.76e+00    0         1      0.28
+    3      1.49e-01   1.00e+00   1.62e-06   1.45e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.4474E-03 ).
 
 Accumulated times:
-Assembly time:        0.23 s
+Assembly time:        0.24 s
 Solve time:      0.14 s
-Total time:      0.38 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.890E+00       8.037E-04         0.000E+00        8.037E-04
@@ -5495,16 +5495,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.24e+07                                                      0.05
-    1      5.53e+05   1.00e+00   1.16e-02   2.02e+02    0         1      0.16
-    2      1.74e+01   1.00e+00   9.00e-04   5.78e+00    0         1      0.27
-    3      1.41e-01   1.00e+00   1.04e-05   1.58e-02    0         1      0.38
+    1      5.53e+05   1.00e+00   1.16e-02   2.02e+02    0         1      0.17
+    2      1.74e+01   1.00e+00   9.00e-04   5.78e+00    0         1      0.28
+    3      1.41e-01   1.00e+00   1.04e-05   1.58e-02    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 1.5824E-02 ).
 
 Accumulated times:
-Assembly time:        0.23 s
-Solve time:      0.15 s
-Total time:      0.38 s
+Assembly time:        0.25 s
+Solve time:      0.14 s
+Total time:      0.40 s
 
 Computing BDF2-step from 0.63 s to 0.64 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.64 ... done.
@@ -5515,16 +5515,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.32e+08                                                      0.05
-    1      1.16e+06   1.00e+00   1.59e-02   2.80e+02    0         1      0.17
-    2      6.40e+01   1.00e+00   1.57e-03   1.09e+01    0         1      0.29
-    3      1.58e-01   1.00e+00   2.66e-05   5.41e-02    0         1      0.40
+    1      1.16e+06   1.00e+00   1.59e-02   2.80e+02    0         1      0.16
+    2      6.40e+01   1.00e+00   1.57e-03   1.09e+01    0         1      0.27
+    3      1.58e-01   1.00e+00   2.66e-05   5.41e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 5.4116E-02 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.15 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.920E+00       8.131E-04         0.000E+00        8.131E-04
@@ -5542,14 +5542,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.33e+07                                                      0.05
     1      2.90e+04   1.00e+00   2.93e-03   5.58e+01    0         1      0.16
-    2      1.52e-01   1.00e+00   7.28e-05   6.35e-01    0         1      0.28
+    2      1.52e-01   1.00e+00   7.28e-05   6.35e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 6.3532E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.28 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.64 s to 0.65 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.65 ... done.
@@ -5559,17 +5559,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      4.69e+07                                                      0.05
+    0      4.69e+07                                                      0.04
     1      1.26e+05   1.00e+00   5.64e-03   1.10e+02    0         1      0.16
-    2      2.16e+00   1.00e+00   2.61e-04   2.36e+00    0         1      0.28
-    3      1.27e-01   1.00e+00   1.40e-06   2.27e-03    0         1      0.40
+    2      2.16e+00   1.00e+00   2.61e-04   2.36e+00    0         1      0.27
+    3      1.27e-01   1.00e+00   1.40e-06   2.27e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 2.2681E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.15 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.14 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        1.950E+00       8.224E-04         0.000E+00        8.224E-04
@@ -5587,15 +5587,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.05e+07                                                      0.05
     1      5.00e+05   1.00e+00   1.03e-02   2.05e+02    0         1      0.16
-    2      2.45e+01   1.00e+00   8.24e-04   7.79e+00    0         1      0.28
-    3      1.62e-01   1.00e+00   1.14e-05   2.20e-02    0         1      0.39
+    2      2.45e+01   1.00e+00   8.24e-04   7.79e+00    0         1      0.27
+    3      1.62e-01   1.00e+00   1.14e-05   2.20e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 2.2050E-02 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.65 s to 0.66 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.66 ... done.
@@ -5605,7 +5605,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.29e+08                                                      0.04
+    0      1.29e+08                                                      0.05
     1      1.05e+06   1.00e+00   1.41e-02   2.85e+02    0         1      0.16
     2      8.69e+01   1.00e+00   1.47e-03   1.44e+01    0         1      0.27
     3      1.25e-01   1.00e+00   3.02e-05   7.04e-02    0         1      0.38
@@ -5614,7 +5614,7 @@ Error smaller than 1 ( 7.0446E-02 ).
 
 Accumulated times:
 Assembly time:        0.23 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
@@ -5631,16 +5631,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.28e+07                                                      0.06
-    1      2.61e+04   1.00e+00   2.94e-03   6.09e+01    0         1      0.17
-    2      1.96e-01   1.00e+00   7.11e-05   6.71e-01    0         1      0.29
+    0      2.28e+07                                                      0.05
+    1      2.61e+04   1.00e+00   2.94e-03   6.09e+01    0         1      0.16
+    2      1.96e-01   1.00e+00   7.11e-05   6.71e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 6.7075E-01 ).
 
 Accumulated times:
-Assembly time:        0.19 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.29 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.66 s to 0.67 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.67 ... done.
@@ -5652,14 +5652,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      4.57e+07                                                      0.05
     1      1.13e+05   1.00e+00   5.69e-03   1.19e+02    0         1      0.16
-    2      2.64e+00   1.00e+00   2.45e-04   2.38e+00    0         1      0.28
+    2      2.64e+00   1.00e+00   2.45e-04   2.38e+00    0         1      0.27
     3      1.60e-01   1.00e+00   9.62e-07   1.77e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.7745E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -5678,13 +5678,13 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.82e+07                                                      0.05
     1      4.48e+05   1.00e+00   1.04e-02   2.19e+02    0         1      0.16
-    2      2.78e+01   1.00e+00   7.49e-04   7.31e+00    0         1      0.28
+    2      2.78e+01   1.00e+00   7.49e-04   7.31e+00    0         1      0.27
     3      1.50e-01   1.00e+00   7.09e-06   1.37e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.3721E-02 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.25 s
 Solve time:      0.14 s
 Total time:      0.39 s
 
@@ -5722,7 +5722,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.22e+07                                                      0.04
+    0      2.22e+07                                                      0.05
     1      2.33e+04   1.00e+00   2.62e-03   5.67e+01    0         1      0.16
     2      1.92e-01   1.00e+00   6.78e-05   3.52e-01    0         1      0.27
 Finished, because...
@@ -5744,14 +5744,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      4.45e+07                                                      0.05
     1      1.01e+05   1.00e+00   5.09e-03   1.09e+02    0         1      0.16
     2      2.63e+00   1.00e+00   2.42e-04   1.21e+00    0         1      0.27
-    3      1.54e-01   1.00e+00   1.26e-06   3.22e-04    0         1      0.38
+    3      1.54e-01   1.00e+00   1.26e-06   3.22e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.2156E-04 ).
 
 Accumulated times:
-Assembly time:        0.22 s
-Solve time:      0.14 s
-Total time:      0.38 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.070E+00       8.592E-04         0.000E+00        8.592E-04
@@ -5769,15 +5769,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.57e+07                                                      0.05
     1      4.00e+05   1.00e+00   9.40e-03   2.00e+02    0         1      0.16
-    2      2.84e+01   1.00e+00   7.41e-04   3.64e+00    0         1      0.28
-    3      1.82e-01   1.00e+00   8.46e-06   2.87e-03    0         1      0.40
+    2      2.84e+01   1.00e+00   7.41e-04   3.64e+00    0         1      0.27
+    3      1.82e-01   1.00e+00   8.46e-06   2.87e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.8662E-03 ).
 
 Accumulated times:
 Assembly time:        0.25 s
-Solve time:      0.15 s
-Total time:      0.40 s
+Solve time:      0.14 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.69 s to 0.7 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.7 ... done.
@@ -5814,13 +5814,13 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.15e+07                                                      0.05
-    1      2.08e+04   1.00e+00   2.71e-03   4.69e+01    0         1      0.17
+    1      2.08e+04   1.00e+00   2.71e-03   4.69e+01    0         1      0.16
     2      1.74e-01   1.00e+00   5.93e-05   1.92e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 1.9163E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
 Total time:      0.28 s
 
@@ -5832,16 +5832,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      4.31e+07                                                      0.05
-    1      8.99e+04   1.00e+00   5.22e-03   9.15e+01    0         1      0.16
-    2      2.26e+00   1.00e+00   2.11e-04   6.90e-01    0         1      0.27
+    0      4.31e+07                                                      0.06
+    1      8.99e+04   1.00e+00   5.22e-03   9.15e+01    0         1      0.17
+    2      2.26e+00   1.00e+00   2.11e-04   6.90e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 6.8961E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
+Assembly time:        0.18 s
 Solve time:      0.10 s
-Total time:      0.27 s
+Total time:      0.28 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.130E+00       8.773E-04         0.000E+00        8.773E-04
@@ -5859,15 +5859,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.30e+07                                                      0.05
     1      3.56e+05   1.00e+00   9.54e-03   1.70e+02    0         1      0.16
-    2      2.25e+01   1.00e+00   6.68e-04   2.22e+00    0         1      0.28
-    3      1.87e-01   1.00e+00   6.64e-06   1.74e-03    0         1      0.39
+    2      2.25e+01   1.00e+00   6.68e-04   2.22e+00    0         1      0.27
+    3      1.87e-01   1.00e+00   6.64e-06   1.74e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.7375E-03 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.71 s to 0.72 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.72 ... done.
@@ -5878,16 +5878,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.18e+08                                                      0.05
-    1      7.45e+05   1.00e+00   1.31e-02   2.36e+02    0         1      0.17
-    2      7.29e+01   1.00e+00   1.22e-03   4.09e+00    0         1      0.28
-    3      1.50e-01   1.00e+00   2.01e-05   6.28e-03    0         1      0.40
+    1      7.45e+05   1.00e+00   1.31e-02   2.36e+02    0         1      0.16
+    2      7.29e+01   1.00e+00   1.22e-03   4.09e+00    0         1      0.27
+    3      1.50e-01   1.00e+00   2.01e-05   6.28e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 6.2756E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.15 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.13 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.160E+00       8.862E-04         0.000E+00        8.862E-04
@@ -5903,16 +5903,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.09e+07                                                      0.05
-    1      1.85e+04   1.00e+00   2.61e-03   4.36e+01    0         1      0.16
-    2      1.30e-01   1.00e+00   6.48e-05   1.84e-01    0         1      0.28
+    0      2.09e+07                                                      0.06
+    1      1.85e+04   1.00e+00   2.61e-03   4.36e+01    0         1      0.17
+    2      1.30e-01   1.00e+00   6.48e-05   1.84e-01    0         1      0.29
 Finished, because...
 Error smaller than 1 ( 1.8435E-01 ).
 
 Accumulated times:
 Assembly time:        0.18 s
-Solve time:      0.09 s
-Total time:      0.28 s
+Solve time:      0.10 s
+Total time:      0.29 s
 
 Computing BDF2-step from 0.72 s to 0.73 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.73 ... done.
@@ -5930,7 +5930,7 @@ Error smaller than 1 ( 7.0211E-01 ).
 
 Accumulated times:
 Assembly time:        0.19 s
-Solve time:      0.10 s
+Solve time:      0.09 s
 Total time:      0.29 s
 
 contact        voltage     electron current    hole current     total current
@@ -5949,7 +5949,7 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.03e+07                                                      0.05
     1      3.20e+05   1.00e+00   9.48e-03   1.61e+02    0         1      0.16
-    2      1.02e+01   1.00e+00   6.70e-04   2.40e+00    0         1      0.28
+    2      1.02e+01   1.00e+00   6.70e-04   2.40e+00    0         1      0.27
     3      1.65e-01   1.00e+00   6.32e-06   2.81e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.8063E-03 ).
@@ -5967,17 +5967,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.14e+08                                                      0.06
-    1      6.69e+05   1.00e+00   1.31e-02   2.25e+02    0         1      0.17
-    2      3.48e+01   1.00e+00   1.17e-03   4.57e+00    0         1      0.28
-    3      1.31e-01   1.00e+00   1.64e-05   9.04e-03    0         1      0.40
+    0      1.14e+08                                                      0.05
+    1      6.69e+05   1.00e+00   1.31e-02   2.25e+02    0         1      0.16
+    2      3.48e+01   1.00e+00   1.17e-03   4.57e+00    0         1      0.27
+    3      1.31e-01   1.00e+00   1.64e-05   9.04e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 9.0352E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.40 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.220E+00       9.039E-04         0.000E+00        9.039E-04
@@ -5995,14 +5995,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.02e+07                                                      0.05
     1      1.67e+04   1.00e+00   2.62e-03   4.37e+01    0         1      0.16
-    2      1.76e-01   1.00e+00   5.64e-05   1.99e-01    0         1      0.28
+    2      1.76e-01   1.00e+00   5.64e-05   1.99e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 1.9942E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.28 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.74 s to 0.75 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.75 ... done.
@@ -6019,8 +6019,8 @@ Finished, because...
 Error smaller than 1 ( 7.2266E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
-Solve time:      0.09 s
+Assembly time:        0.19 s
+Solve time:      0.08 s
 Total time:      0.28 s
 
 contact        voltage     electron current    hole current     total current
@@ -6038,16 +6038,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.76e+07                                                      0.05
-    1      2.85e+05   1.00e+00   9.30e-03   1.62e+02    0         1      0.17
+    1      2.85e+05   1.00e+00   9.30e-03   1.62e+02    0         1      0.16
     2      8.66e+00   1.00e+00   6.50e-04   2.32e+00    0         1      0.28
-    3      1.44e-01   1.00e+00   7.22e-06   1.79e-03    0         1      0.40
+    3      1.44e-01   1.00e+00   7.22e-06   1.79e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.7876E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.75 s to 0.76 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.76 ... done.
@@ -6066,7 +6066,7 @@ Error smaller than 1 ( 6.1830E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -6085,14 +6085,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.96e+07                                                      0.05
     1      1.49e+04   1.00e+00   2.62e-03   4.32e+01    0         1      0.16
-    2      1.37e-01   1.00e+00   5.96e-05   1.81e-01    0         1      0.27
+    2      1.37e-01   1.00e+00   5.96e-05   1.81e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 1.8080E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
-Solve time:      0.10 s
-Total time:      0.27 s
+Assembly time:        0.19 s
+Solve time:      0.09 s
+Total time:      0.28 s
 
 Computing BDF2-step from 0.76 s to 0.77 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.77 ... done.
@@ -6104,14 +6104,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.91e+07                                                      0.05
     1      6.44e+04   1.00e+00   5.10e-03   8.48e+01    0         1      0.16
-    2      5.46e-01   1.00e+00   2.06e-04   6.87e-01    0         1      0.28
+    2      5.46e-01   1.00e+00   2.06e-04   6.87e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 6.8688E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.28 s
+Total time:      0.27 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.310E+00       9.301E-04         0.000E+00        9.301E-04
@@ -6128,16 +6128,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.51e+07                                                      0.05
-    1      2.54e+05   1.00e+00   9.38e-03   1.59e+02    0         1      0.17
-    2      6.60e+00   1.00e+00   6.28e-04   2.36e+00    0         1      0.28
-    3      1.03e-01   1.00e+00   5.30e-06   2.86e-03    0         1      0.39
+    1      2.54e+05   1.00e+00   9.38e-03   1.59e+02    0         1      0.16
+    2      6.60e+00   1.00e+00   6.28e-04   2.36e+00    0         1      0.27
+    3      1.03e-01   1.00e+00   5.30e-06   2.86e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 2.8567E-03 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 Computing BDF2-step from 0.77 s to 0.78 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.78 ... done.
@@ -6149,14 +6149,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.07e+08                                                      0.05
     1      5.31e+05   1.00e+00   1.29e-02   2.21e+02    0         1      0.16
-    2      2.46e+01   1.00e+00   1.12e-03   4.51e+00    0         1      0.28
+    2      2.46e+01   1.00e+00   1.12e-03   4.51e+00    0         1      0.27
     3      1.54e-01   1.00e+00   1.47e-05   9.38e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 9.3839E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
@@ -6173,8 +6173,8 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.89e+07                                                      0.04
-    1      1.34e+04   1.00e+00   2.43e-03   4.20e+01    0         1      0.16
+    0      1.89e+07                                                      0.05
+    1      1.34e+04   1.00e+00   2.43e-03   4.20e+01    0         1      0.17
     2      1.33e-01   1.00e+00   5.59e-05   2.12e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 2.1247E-01 ).
@@ -6193,14 +6193,14 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.78e+07                                                      0.05
-    1      5.77e+04   1.00e+00   4.72e-03   8.25e+01    0         1      0.16
+    1      5.77e+04   1.00e+00   4.72e-03   8.25e+01    0         1      0.17
     2      6.45e-01   1.00e+00   2.03e-04   7.83e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 7.8299E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
-Solve time:      0.10 s
+Assembly time:        0.19 s
+Solve time:      0.09 s
 Total time:      0.28 s
 
 contact        voltage     electron current    hole current     total current
@@ -6218,16 +6218,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.26e+07                                                      0.05
-    1      2.28e+05   1.00e+00   8.72e-03   1.55e+02    0         1      0.17
+    1      2.28e+05   1.00e+00   8.72e-03   1.55e+02    0         1      0.16
     2      7.65e+00   1.00e+00   6.43e-04   2.57e+00    0         1      0.28
-    3      1.44e-01   1.00e+00   7.21e-06   2.14e-03    0         1      0.40
+    3      1.44e-01   1.00e+00   7.21e-06   2.14e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.1367E-03 ).
 
 Accumulated times:
 Assembly time:        0.25 s
-Solve time:      0.15 s
-Total time:      0.40 s
+Solve time:      0.14 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.79 s to 0.8 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.8 ... done.
@@ -6240,14 +6240,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      1.03e+08                                                      0.05
     1      4.76e+05   1.00e+00   1.20e-02   2.16e+02    0         1      0.16
     2      2.81e+01   1.00e+00   1.15e-03   4.80e+00    0         1      0.27
-    3      1.22e-01   1.00e+00   1.85e-05   7.31e-03    0         1      0.38
+    3      1.22e-01   1.00e+00   1.85e-05   7.31e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 7.3145E-03 ).
 
 Accumulated times:
-Assembly time:        0.23 s
+Assembly time:        0.24 s
 Solve time:      0.15 s
-Total time:      0.38 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.400E+00       9.559E-04         0.000E+00        9.559E-04
@@ -6265,14 +6265,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.83e+07                                                      0.05
     1      1.20e+04   1.00e+00   2.52e-03   4.20e+01    0         1      0.16
-    2      1.40e-01   1.00e+00   5.34e-05   2.22e-01    0         1      0.27
+    2      1.40e-01   1.00e+00   5.34e-05   2.22e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 2.2170E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
-Solve time:      0.10 s
-Total time:      0.27 s
+Assembly time:        0.18 s
+Solve time:      0.09 s
+Total time:      0.28 s
 
 Computing BDF2-step from 0.8 s to 0.81 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.81 ... done.
@@ -6283,7 +6283,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.66e+07                                                      0.05
-    1      5.18e+04   1.00e+00   4.87e-03   8.27e+01    0         1      0.17
+    1      5.18e+04   1.00e+00   4.87e-03   8.27e+01    0         1      0.16
     2      7.80e-01   1.00e+00   1.88e-04   8.45e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 8.4546E-01 ).
@@ -6307,17 +6307,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      7.01e+07                                                      0.05
-    1      2.04e+05   1.00e+00   8.91e-03   1.55e+02    0         1      0.16
-    2      8.93e+00   1.00e+00   5.90e-04   2.92e+00    0         1      0.27
-    3      1.45e-01   1.00e+00   4.99e-06   3.29e-03    0         1      0.40
+    0      7.01e+07                                                      0.06
+    1      2.04e+05   1.00e+00   8.91e-03   1.55e+02    0         1      0.17
+    2      8.93e+00   1.00e+00   5.90e-04   2.92e+00    0         1      0.28
+    3      1.45e-01   1.00e+00   4.99e-06   3.29e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.2893E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.24 s
 Solve time:      0.15 s
-Total time:      0.40 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.81 s to 0.82 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.82 ... done.
@@ -6328,16 +6328,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.94e+07                                                      0.05
-    1      4.26e+05   1.00e+00   1.22e-02   2.16e+02    0         1      0.17
-    2      3.19e+01   1.00e+00   1.07e-03   5.61e+00    0         1      0.29
-    3      1.31e-01   1.00e+00   1.52e-05   1.13e-02    0         1      0.40
+    1      4.26e+05   1.00e+00   1.22e-02   2.16e+02    0         1      0.16
+    2      3.19e+01   1.00e+00   1.07e-03   5.61e+00    0         1      0.27
+    3      1.31e-01   1.00e+00   1.52e-05   1.13e-02    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.1263E-02 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.15 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.460E+00       9.729E-04         0.000E+00        9.729E-04
@@ -6355,14 +6355,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.77e+07                                                      0.05
     1      1.08e+04   1.00e+00   2.30e-03   4.33e+01    0         1      0.16
-    2      1.43e-01   1.00e+00   5.62e-05   2.81e-01    0         1      0.28
+    2      1.43e-01   1.00e+00   5.62e-05   2.81e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 2.8100E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.28 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.82 s to 0.83 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.83 ... done.
@@ -6375,14 +6375,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      3.53e+07                                                      0.05
     1      4.65e+04   1.00e+00   4.49e-03   8.54e+01    0         1      0.16
     2      8.55e-01   1.00e+00   1.97e-04   1.05e+00    0         1      0.27
-    3      1.66e-01   1.00e+00   8.09e-07   3.79e-04    0         1      0.38
+    3      1.66e-01   1.00e+00   8.09e-07   3.79e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.7850E-04 ).
 
 Accumulated times:
-Assembly time:        0.23 s
+Assembly time:        0.24 s
 Solve time:      0.15 s
-Total time:      0.38 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.490E+00       9.813E-04         0.000E+00        9.813E-04
@@ -6399,15 +6399,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.77e+07                                                      0.05
-    1      1.83e+05   1.00e+00   8.32e-03   1.60e+02    0         1      0.16
-    2      9.82e+00   1.00e+00   5.95e-04   3.50e+00    0         1      0.27
+    1      1.83e+05   1.00e+00   8.32e-03   1.60e+02    0         1      0.17
+    2      9.82e+00   1.00e+00   5.95e-04   3.50e+00    0         1      0.28
     3      1.54e-01   1.00e+00   5.48e-06   3.83e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 3.8258E-03 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.14 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.83 s to 0.84 s (Stepsize: 0.01 s)
@@ -6419,16 +6419,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.59e+07                                                      0.05
-    1      3.82e+05   1.00e+00   1.15e-02   2.24e+02    0         1      0.17
-    2      3.52e+01   1.00e+00   1.04e-03   6.53e+00    0         1      0.28
-    3      1.18e-01   1.00e+00   1.39e-05   1.24e-02    0         1      0.40
+    1      3.82e+05   1.00e+00   1.15e-02   2.24e+02    0         1      0.16
+    2      3.52e+01   1.00e+00   1.04e-03   6.53e+00    0         1      0.27
+    3      1.18e-01   1.00e+00   1.39e-05   1.24e-02    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.2402E-02 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.24 s
 Solve time:      0.14 s
-Total time:      0.40 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.520E+00       9.896E-04         0.000E+00        9.896E-04
@@ -6445,14 +6445,14 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.71e+07                                                      0.05
-    1      9.66e+03   1.00e+00   2.30e-03   4.54e+01    0         1      0.16
+    1      9.66e+03   1.00e+00   2.30e-03   4.54e+01    0         1      0.17
     2      1.62e-01   1.00e+00   4.84e-05   2.64e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 2.6447E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
-Solve time:      0.10 s
+Assembly time:        0.19 s
+Solve time:      0.09 s
 Total time:      0.28 s
 
 Computing BDF2-step from 0.84 s to 0.85 s (Stepsize: 0.01 s)
@@ -6489,7 +6489,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.52e+07                                                      0.05
-    1      1.64e+05   1.00e+00   8.11e-03   1.66e+02    0         1      0.17
+    1      1.64e+05   1.00e+00   8.11e-03   1.66e+02    0         1      0.16
     2      9.95e+00   1.00e+00   5.56e-04   2.99e+00    0         1      0.28
     3      1.29e-01   1.00e+00   5.27e-06   1.87e-03    0         1      0.39
 Finished, because...
@@ -6509,7 +6509,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      9.24e+07                                                      0.05
-    1      3.42e+05   1.00e+00   1.11e-02   2.31e+02    0         1      0.16
+    1      3.42e+05   1.00e+00   1.11e-02   2.31e+02    0         1      0.17
     2      3.42e+01   1.00e+00   1.01e-03   5.37e+00    0         1      0.28
     3      1.02e-01   1.00e+00   1.58e-05   5.36e-03    0         1      0.39
 Finished, because...
@@ -6534,7 +6534,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.64e+07                                                      0.04
+    0      1.64e+07                                                      0.05
     1      8.65e+03   1.00e+00   2.27e-03   4.41e+01    0         1      0.16
     2      1.48e-01   1.00e+00   5.17e-05   1.45e-01    0         1      0.27
 Finished, because...
@@ -6554,15 +6554,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.28e+07                                                      0.05
-    1      3.73e+04   1.00e+00   4.44e-03   8.64e+01    0         1      0.16
-    2      6.83e-01   1.00e+00   1.79e-04   5.09e-01    0         1      0.27
+    1      3.73e+04   1.00e+00   4.44e-03   8.64e+01    0         1      0.17
+    2      6.83e-01   1.00e+00   1.79e-04   5.09e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 5.0899E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
-Solve time:      0.10 s
-Total time:      0.27 s
+Assembly time:        0.18 s
+Solve time:      0.09 s
+Total time:      0.28 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.610E+00       1.014E-03         0.000E+00        1.014E-03
@@ -6579,14 +6579,14 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.28e+07                                                      0.05
-    1      1.47e+05   1.00e+00   8.23e-03   1.62e+02    0         1      0.16
+    1      1.47e+05   1.00e+00   8.23e-03   1.62e+02    0         1      0.17
     2      6.89e+00   1.00e+00   5.45e-04   1.58e+00    0         1      0.28
     3      1.48e-01   1.00e+00   4.25e-06   2.85e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.8481E-04 ).
 
 Accumulated times:
-Assembly time:        0.24 s
+Assembly time:        0.25 s
 Solve time:      0.14 s
 Total time:      0.39 s
 
@@ -6606,7 +6606,7 @@ Finished, because...
 Error smaller than 1 ( 8.9277E-04 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.24 s
 Solve time:      0.14 s
 Total time:      0.39 s
 
@@ -6624,16 +6624,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.58e+07                                                      0.05
-    1      7.75e+03   1.00e+00   2.23e-03   4.26e+01    0         1      0.16
-    2      1.64e-01   1.00e+00   4.71e-05   8.61e-02    0         1      0.27
+    0      1.58e+07                                                      0.06
+    1      7.75e+03   1.00e+00   2.23e-03   4.26e+01    0         1      0.17
+    2      1.64e-01   1.00e+00   4.71e-05   8.61e-02    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 8.6076E-02 ).
 
 Accumulated times:
-Assembly time:        0.17 s
+Assembly time:        0.18 s
 Solve time:      0.10 s
-Total time:      0.27 s
+Total time:      0.28 s
 
 Computing BDF2-step from 0.88 s to 0.89 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.89 ... done.
@@ -6643,16 +6643,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      3.16e+07                                                      0.04
-    1      3.34e+04   1.00e+00   4.33e-03   8.45e+01    0         1      0.15
-    2      2.93e-01   1.00e+00   1.72e-04   3.29e-01    0         1      0.27
+    0      3.16e+07                                                      0.05
+    1      3.34e+04   1.00e+00   4.33e-03   8.45e+01    0         1      0.17
+    2      2.93e-01   1.00e+00   1.72e-04   3.29e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 3.2918E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
+Assembly time:        0.18 s
 Solve time:      0.10 s
-Total time:      0.27 s
+Total time:      0.28 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.670E+00       1.031E-03         0.000E+00        1.031E-03
@@ -6669,16 +6669,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      6.04e+07                                                      0.05
-    1      1.31e+05   1.00e+00   8.01e-03   1.61e+02    0         1      0.17
+    1      1.31e+05   1.00e+00   8.01e-03   1.61e+02    0         1      0.16
     2      3.05e+00   1.00e+00   5.56e-04   1.15e+00    0         1      0.28
-    3      1.46e-01   1.00e+00   5.70e-06   2.94e-04    0         1      0.40
+    3      1.46e-01   1.00e+00   5.70e-06   2.94e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.9383E-04 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.23 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.89 s to 0.9 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.9 ... done.
@@ -6688,17 +6688,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      8.55e+07                                                      0.05
+    0      8.55e+07                                                      0.04
     1      2.74e+05   1.00e+00   1.11e-02   2.27e+02    0         1      0.16
-    2      1.14e+01   1.00e+00   1.01e-03   2.24e+00    0         1      0.28
-    3      1.44e-01   1.00e+00   1.56e-05   1.04e-03    0         1      0.39
+    2      1.14e+01   1.00e+00   1.01e-03   2.24e+00    0         1      0.27
+    3      1.44e-01   1.00e+00   1.56e-05   1.04e-03    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 1.0421E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.24 s
 Solve time:      0.14 s
-Total time:      0.39 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.700E+00       1.039E-03         0.000E+00        1.039E-03
@@ -6714,15 +6714,15 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.52e+07                                                      0.06
-    1      6.93e+03   1.00e+00   2.41e-03   4.72e+01    0         1      0.16
+    0      1.52e+07                                                      0.05
+    1      6.93e+03   1.00e+00   2.41e-03   4.72e+01    0         1      0.17
     2      1.53e-01   1.00e+00   4.95e-05   1.01e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 1.0054E-01 ).
 
 Accumulated times:
-Assembly time:        0.19 s
-Solve time:      0.08 s
+Assembly time:        0.18 s
+Solve time:      0.09 s
 Total time:      0.28 s
 
 Computing BDF2-step from 0.9 s to 0.91 s (Stepsize: 0.01 s)
@@ -6734,13 +6734,13 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      3.04e+07                                                      0.05
-    1      2.99e+04   1.00e+00   4.70e-03   9.47e+01    0         1      0.16
+    1      2.99e+04   1.00e+00   4.70e-03   9.47e+01    0         1      0.17
     2      2.88e-01   1.00e+00   1.74e-04   3.90e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 3.8951E-01 ).
 
 Accumulated times:
-Assembly time:        0.19 s
+Assembly time:        0.18 s
 Solve time:      0.09 s
 Total time:      0.28 s
 
@@ -6758,8 +6758,8 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      5.81e+07                                                      0.05
-    1      1.18e+05   1.00e+00   8.71e-03   1.83e+02    0         1      0.16
+    0      5.81e+07                                                      0.06
+    1      1.18e+05   1.00e+00   8.71e-03   1.83e+02    0         1      0.17
     2      3.30e+00   1.00e+00   5.44e-04   1.37e+00    0         1      0.28
     3      1.53e-01   1.00e+00   4.14e-06   2.68e-04    0         1      0.39
 Finished, because...
@@ -6767,7 +6767,7 @@ Error smaller than 1 ( 2.6756E-04 ).
 
 Accumulated times:
 Assembly time:        0.24 s
-Solve time:      0.15 s
+Solve time:      0.14 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.91 s to 0.92 s (Stepsize: 0.01 s)
@@ -6780,15 +6780,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      8.22e+07                                                      0.05
     1      2.45e+05   1.00e+00   1.21e-02   2.61e+02    0         1      0.16
-    2      1.18e+01   1.00e+00   9.88e-04   2.69e+00    0         1      0.28
-    3      1.74e-01   1.00e+00   1.26e-05   8.80e-04    0         1      0.40
+    2      1.18e+01   1.00e+00   9.88e-04   2.69e+00    0         1      0.27
+    3      1.74e-01   1.00e+00   1.26e-05   8.80e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 8.7961E-04 ).
 
 Accumulated times:
-Assembly time:        0.26 s
-Solve time:      0.14 s
-Total time:      0.40 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.760E+00       1.055E-03         0.000E+00        1.055E-03
@@ -6805,15 +6805,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      1.47e+07                                                      0.05
-    1      6.23e+03   1.00e+00   2.44e-03   5.84e+01    0         1      0.17
-    2      1.28e-01   1.00e+00   5.33e-05   1.20e-01    0         1      0.28
+    1      6.23e+03   1.00e+00   2.44e-03   5.84e+01    0         1      0.16
+    2      1.28e-01   1.00e+00   5.33e-05   1.20e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 1.1967E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
+Assembly time:        0.17 s
 Solve time:      0.10 s
-Total time:      0.28 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.92 s to 0.93 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.93 ... done.
@@ -6825,14 +6825,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.93e+07                                                      0.05
     1      2.68e+04   1.00e+00   4.82e-03   1.18e+02    0         1      0.16
-    2      3.24e-01   1.00e+00   1.92e-04   4.67e-01    0         1      0.28
+    2      3.24e-01   1.00e+00   1.92e-04   4.67e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 4.6678E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
-Solve time:      0.10 s
-Total time:      0.28 s
+Assembly time:        0.17 s
+Solve time:      0.09 s
+Total time:      0.27 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.790E+00       1.063E-03         0.000E+00        1.063E-03
@@ -6851,14 +6851,14 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
     0      5.59e+07                                                      0.05
     1      1.06e+05   1.00e+00   9.08e-03   2.30e+02    0         1      0.17
     2      3.52e+00   1.00e+00   5.98e-04   1.67e+00    0         1      0.28
-    3      1.36e-01   1.00e+00   5.68e-06   2.58e-04    0         1      0.40
+    3      1.36e-01   1.00e+00   5.68e-06   2.58e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 2.5821E-04 ).
 
 Accumulated times:
 Assembly time:        0.25 s
-Solve time:      0.15 s
-Total time:      0.40 s
+Solve time:      0.14 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.93 s to 0.94 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.94 ... done.
@@ -6869,16 +6869,16 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      7.92e+07                                                      0.05
-    1      2.20e+05   1.00e+00   1.27e-02   3.31e+02    0         1      0.17
-    2      1.22e+01   1.00e+00   1.06e-03   3.31e+00    0         1      0.29
-    3      1.61e-01   1.00e+00   1.47e-05   9.52e-04    0         1      0.42
+    1      2.20e+05   1.00e+00   1.27e-02   3.31e+02    0         1      0.16
+    2      1.22e+01   1.00e+00   1.06e-03   3.31e+00    0         1      0.27
+    3      1.61e-01   1.00e+00   1.47e-05   9.52e-04    0         1      0.38
 Finished, because...
 Error smaller than 1 ( 9.5192E-04 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.23 s
 Solve time:      0.15 s
-Total time:      0.42 s
+Total time:      0.38 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.820E+00       1.071E-03         0.000E+00        1.071E-03
@@ -6914,15 +6914,15 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      2.82e+07                                                      0.05
-    1      2.42e+04   1.00e+00   5.96e-03   1.57e+02    0         1      0.16
-    2      2.66e-01   1.00e+00   2.01e-04   6.20e-01    0         1      0.27
+    1      2.42e+04   1.00e+00   5.96e-03   1.57e+02    0         1      0.17
+    2      2.66e-01   1.00e+00   2.01e-04   6.20e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 6.2033E-01 ).
 
 Accumulated times:
-Assembly time:        0.17 s
+Assembly time:        0.18 s
 Solve time:      0.10 s
-Total time:      0.27 s
+Total time:      0.28 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.850E+00       1.079E-03         0.000E+00        1.079E-03
@@ -6939,7 +6939,7 @@ using Bank/Rose nonlinear solver.
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      5.39e+07                                                      0.05
-    1      9.51e+04   1.00e+00   1.14e-02   3.08e+02    0         1      0.16
+    1      9.51e+04   1.00e+00   1.14e-02   3.08e+02    0         1      0.17
     2      2.88e+00   1.00e+00   6.66e-04   2.26e+00    0         1      0.28
     3      1.34e-01   1.00e+00   7.19e-06   3.68e-04    0         1      0.39
 Finished, because...
@@ -6958,7 +6958,7 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      7.63e+07                                                      0.05
+    0      7.63e+07                                                      0.06
     1      1.98e+05   1.00e+00   1.61e-02   4.46e+02    0         1      0.17
     2      1.05e+01   1.00e+00   1.25e-03   4.51e+00    0         1      0.28
     3      1.31e-01   1.00e+00   2.21e-05   1.26e-03    0         1      0.39
@@ -7003,8 +7003,8 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.72e+07                                                      0.06
-    1      2.18e+04   1.00e+00   8.45e-03   2.21e+02    0         1      0.17
+    0      2.72e+07                                                      0.05
+    1      2.18e+04   1.00e+00   8.45e-03   2.21e+02    0         1      0.16
     2      2.64e-01   1.00e+00   2.65e-04   8.75e-01    0         1      0.28
 Finished, because...
 Error smaller than 1 ( 8.7526E-01 ).
@@ -7036,8 +7036,8 @@ Finished, because...
 Error smaller than 1 ( 3.0013E-04 ).
 
 Accumulated times:
-Assembly time:        0.25 s
-Solve time:      0.14 s
+Assembly time:        0.24 s
+Solve time:      0.15 s
 Total time:      0.39 s
 
 Computing BDF2-step from 0.97 s to 0.98 s (Stepsize: 0.01 s)
@@ -7048,17 +7048,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      7.35e+07                                                      0.05
+    0      7.35e+07                                                      0.06
     1      1.79e+05   1.00e+00   2.36e-02   6.40e+02    0         1      0.17
     2      1.16e+01   1.00e+00   1.57e-03   6.44e+00    0         1      0.28
-    3      1.21e-01   1.00e+00   2.61e-05   1.04e-03    0         1      0.40
+    3      1.21e-01   1.00e+00   2.61e-05   1.04e-03    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 1.0426E-03 ).
 
 Accumulated times:
-Assembly time:        0.25 s
+Assembly time:        0.24 s
 Solve time:      0.15 s
-Total time:      0.40 s
+Total time:      0.39 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.940E+00       1.102E-03         0.000E+00        1.102E-03
@@ -7074,16 +7074,16 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      1.32e+07                                                      0.05
-    1      4.84e+03   1.00e+00   6.45e-03   1.59e+02    0         1      0.17
-    2      1.74e-01   1.00e+00   1.13e-04   3.23e-01    0         1      0.28
+    0      1.32e+07                                                      0.04
+    1      4.84e+03   1.00e+00   6.45e-03   1.59e+02    0         1      0.16
+    2      1.74e-01   1.00e+00   1.13e-04   3.23e-01    0         1      0.27
 Finished, because...
 Error smaller than 1 ( 3.2316E-01 ).
 
 Accumulated times:
-Assembly time:        0.18 s
-Solve time:      0.10 s
-Total time:      0.28 s
+Assembly time:        0.17 s
+Solve time:      0.09 s
+Total time:      0.27 s
 
 Computing BDF2-step from 0.98 s to 0.99 s (Stepsize: 0.01 s)
 Extrapolating values for t = 0.99 ... done.
@@ -7093,17 +7093,17 @@ using Bank/Rose nonlinear solver.
 
 Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
-    0      2.62e+07                                                      0.05
+    0      2.62e+07                                                      0.06
     1      1.98e+04   1.00e+00   1.31e-02   3.27e+02    0         1      0.17
-    2      3.02e-01   1.00e+00   4.28e-04   1.29e+00    0         1      0.28
-    3      1.30e-01   1.00e+00   3.04e-06   3.68e-05    0         1      0.39
+    2      3.02e-01   1.00e+00   4.28e-04   1.29e+00    0         1      0.29
+    3      1.30e-01   1.00e+00   3.04e-06   3.68e-05    0         1      0.40
 Finished, because...
 Error smaller than 1 ( 3.6826E-05 ).
 
 Accumulated times:
-Assembly time:        0.24 s
-Solve time:      0.15 s
-Total time:      0.39 s
+Assembly time:        0.26 s
+Solve time:      0.14 s
+Total time:      0.40 s
 
 contact        voltage     electron current    hole current     total current
  drain        2.970E+00       1.110E-03         0.000E+00        1.110E-03
@@ -7121,15 +7121,15 @@ Iteration   |Rhs|      factor     |step|     error   #inner  #iterative  time
 ------------------------------------------------------------------------------
     0      5.01e+07                                                      0.05
     1      7.76e+04   1.00e+00   2.57e-02   6.58e+02    0         1      0.16
-    2      3.46e+00   1.00e+00   1.43e-03   4.76e+00    0         1      0.27
-    3      1.46e-01   1.00e+00   2.28e-05   4.32e-04    0         1      0.38
+    2      3.46e+00   1.00e+00   1.43e-03   4.76e+00    0         1      0.28
+    3      1.46e-01   1.00e+00   2.28e-05   4.32e-04    0         1      0.39
 Finished, because...
 Error smaller than 1 ( 4.3243E-04 ).
 
 Accumulated times:
-Assembly time:        0.23 s
+Assembly time:        0.24 s
 Solve time:      0.15 s
-Total time:      0.38 s
+Total time:      0.39 s
 
 Computing BDF2-step from 0.99 s to 1 s (Stepsize: 1.0000e-02 s)
 Extrapolating values for t = 1 ... done.
@@ -7169,14 +7169,14 @@ System ("rm n67_des.plt")
 
 Writing plot 'n67_des.tdr' (TDR format) ... done.
 
-Fri Sep  4 13:35:06 2026: checked in 1 sparallel license(s)
-Fri Sep  4 13:35:06 2026: checked in 1 sdevice-parallel license(s)
-Fri Sep  4 13:35:06 2026: checked in 1 sdevice license(s)
+Mon Sep  7 10:55:39 2026: checked in 1 sparallel license(s)
+Mon Sep  7 10:55:39 2026: checked in 1 sdevice-parallel license(s)
+Mon Sep  7 10:55:39 2026: checked in 1 sdevice license(s)
 
 ******************************************************************************
-Sentaurus Device peak memory usage: 277 megabytes
+Sentaurus Device peak memory usage: 275 megabytes
 Sentaurus Device simulation times:
-  wallclock: 54.13 s (0 h:00 m:54 s)
-  total cpu: 86.92 s (0 h:01 m:26 s)
-Sentaurus Device simulation finished (Date: Fri Sep  4 13:35:06 2026  (IST)).
+  wallclock: 53.77 s (0 h:00 m:53 s)
+  total cpu: 86.42 s (0 h:01 m:26 s)
+Sentaurus Device simulation finished (Date: Mon Sep  7 10:55:39 2026  (IST)).
 ********************************* Good Bye ! *********************************

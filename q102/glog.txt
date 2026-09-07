@@ -1,0 +1,92 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gsub                       ***
+***                          Version V-2023.12                           ***
+***                      (2.8515123, x86_64, Linux)                      ***
+***                                                                      ***
+***                Copyright (c) 1994-2023 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gsub is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
+Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/../lib/gsub0'
+Command line options '-verbose -swb_pid 79021 -nopp -q local:default -e 79 /home/cdsllab/25ec01021/q102'
+Current directory '/home/cdsllab'
+Project organization 'Traditional'
+Some relevant environment variables:
+	STROOT=/cad/synopsys/sentaurus/V-2023.12
+	STRELEASE=current
+	STROOT_LIB=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib
+	STDB=/home/cdsllab/25ec01021
+	DATEX=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib/datexcodes.txt
+	DISPLAY=:1
+
+Starting swblm daemon...OK
+Project '/home/cdsllab/25ec01021/q102'
+Application mode : traditional
+15:30:36 Sep 07 2026 <q102> submitted to the batch system
+Loading global queue configuration file '/cad/synopsys/sentaurus/V-2023.12/queues/gqueues.dat'...ok
+Loading project tree '/home/cdsllab/25ec01021/q102/gtree.dat'
+>>>>> Preprocessing the project to run in normal mode
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q102/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q102/gtree.dat'
+Loading project variables '/home/cdsllab/25ec01021/q102/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q102/mosfet_1_dvs.cmd
+Reading file /home/cdsllab/25ec01021/q102/mosfet_1_dvs.bnd
+Reading file /home/cdsllab/25ec01021/q102/Breakdown_des.cmd
+Reading file /home/cdsllab/25ec01021/q102/sdevice.par
+Reading file /home/cdsllab/25ec01021/q102/id_vds_des.cmd
+Reading file /home/cdsllab/25ec01021/q102/idvg_des.cmd
+Reading file /home/cdsllab/25ec01021/q102/equillibrium_des.cmd
+Reading file /home/cdsllab/25ec01021/q102/idon_des.cmd
+Reading file /home/cdsllab/25ec01021/q102/idoff_des.cmd
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q102/idvg_des.cmd for node 79
+'@tdr@' creates dependences with the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q102/sdevice.par for node 79
++++Node successfully preprocessed+++
+The node '79' has dependencies to the node(s) '1'
+Writing 'gexec.cmd'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q102/gexec.cmd"'
+>>>>>>>>>> job '79' status changed from 'failed' to 'queued'
+-----------------------------------------------------------------
+queue "local:default" - 79
+-----------------------------------------------------------------
+>>>>>>>>>> Initializing back-end schedulers...
+>>>>>>>> Loaded Schedulers are ... local
+local% initialize 'local' scheduler data
+>>>>> List of Active Schedulers : local
+<<<<<<<<<<
+>>>>>>>>>> job '79' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q102/n79_des.job
+local% submit job 79 for local execution
+>>>>>>>>>> job '79' status changed from 'ready' to 'pending'
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4 -nopp -job 79 -swb_pid 79021 -gsub_pid 96789 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 46509  "/home/cdsllab/25ec01021/q102"
+>>>>>>>>>> job '79' status changed from 'pending' to 'running'
+15:30:37 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+>>>>>>>>>> job '79' status changed from 'running' to 'done'
+15:31:23 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+
+SCHEDULING REPORT
++++ done     : 79
+
+15:31:25 Sep 07 2026 <q102> done (49 sec)
+>>>>>> Writing to status file 49
+gsub exits with status 0

@@ -1,0 +1,40 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gjob                       ***
+***                          Version V-2023.12                           ***
+***                      (2.8515123, x86_64, Linux)                      ***
+***                                                                      ***
+***                Copyright (c) 1994-2023 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gjob is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
+Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/gjob'
+Command line options '-verbose -nice 19 --max_threads 4 -nopp -job 79 -swb_pid 79021 -gsub_pid 96789 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 46509 /home/cdsllab/25ec01021/q102'
+Current directory '/home/cdsllab/25ec01021/q102'
+Project organization 'Traditional'
+Some relevant environment variables:
+	STROOT=/cad/synopsys/sentaurus/V-2023.12
+	STRELEASE=current
+	STROOT_LIB=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib
+	STDB=/home/cdsllab/25ec01021
+	DATEX=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib/datexcodes.txt
+	DISPLAY=:1
+
+Project '/home/cdsllab/25ec01021/q102'
+Application mode : traditional
+Loading project tree '/home/cdsllab/25ec01021/q102/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q102/gexec.cmd"'
+Start Simulation section
+15:30:38 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+15:31:23 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+End Simulation section
+Start Epilogue section
+15:31:23 Sep 07 2026 *** job 79 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n79_des.out 79 "
+End Epilogue section
+Job succeeded
+gjob exits with status 0

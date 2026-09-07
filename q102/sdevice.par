@@ -1,0 +1,17 @@
+#define ParFileDir .
+
+Material="Nitride" {
+  #includeext "ParFileDir/Nitride.par"
+}
+Material="PolySilicon" {
+  #includeext "ParFileDir/PolySilicon.par"
+}
+Material="SiO2" {
+  #includeext "ParFileDir/SiO2.par"
+}
+Material="Silicide" {
+  #includeext "ParFileDir/Silicide.par"
+}
+Material="Silicon" {
+  #includeext "ParFileDir/Silicon.par"
+}

@@ -2,7 +2,7 @@
 # Sentaurus Visual V-2023.12.
 # Tcl log file.
 #------------------------------------------
-# Date: Sep 04, 2026. 11:35:26.
+# Date: Sep 07, 2026. 15:21:44.
 # Version: 35.2.8515123 (2.8515123)
 # Mode: Interactive (GUI).
 # Hostname: cdsl18.cdsl.iitbbs.ac.in.
@@ -10,55 +10,26 @@
 # Kernel: 5.14.0-503.11.1.el9_5.x86_64.
 ###########################################
 
-load_file /home/cdsllab/25ec01021/MOSFET/n44_des.tdr -fod
-create_plot -dataset n44_des
-select_plots {Plot_n44_des}
-#-> Plot_n44_des
-#-> Plot_n44_des
-#-> n44_des
-set_region_prop {R.GateOx R.Poly R.STI.Left R.STI.Right R.Silicide.Left R.Silicide.Right R.Spacer.Left R.Spacer.Right R.Substrate R.GateOx R.GateOx+R.Poly R.GateOx+R.Spacer.Left R.GateOx+R.Spacer.Right R.GateOx+R.Substrate R.Poly R.Poly+R.Spacer.Left R.STI.Left R.STI.Left+R.Substrate R.STI.Right R.STI.Right+R.Substrate R.Silicide.Left R.Silicide.Right R.Silicide.Right+R.Substrate R.Spacer.Left R.Spacer.Left+R.Silicide.Left R.Spacer.Right R.Spacer.Right+R.Poly R.Spacer.Right+R.Silicide.Right R.Spacer.Right+R.Substrate R.Substrate R.Substrate+R.Silicide.Left R.Substrate+R.Spacer.Left drain gate source} -plot Plot_n44_des -geom n44_des -hide_field
-#-> 0
-set_region_prop {R.GateOx R.Poly R.STI.Left R.STI.Right R.Silicide.Left R.Silicide.Right R.Spacer.Left R.Spacer.Right R.Substrate R.GateOx R.GateOx+R.Poly R.GateOx+R.Spacer.Left R.GateOx+R.Spacer.Right R.GateOx+R.Substrate R.Poly R.Poly+R.Spacer.Left R.STI.Left R.STI.Left+R.Substrate R.STI.Right R.STI.Right+R.Substrate R.Silicide.Left R.Silicide.Right R.Silicide.Right+R.Substrate R.Spacer.Left R.Spacer.Left+R.Silicide.Left R.Spacer.Right R.Spacer.Right+R.Poly R.Spacer.Right+R.Silicide.Right R.Spacer.Right+R.Substrate R.Substrate R.Substrate+R.Silicide.Left R.Substrate+R.Spacer.Left drain gate source} -plot Plot_n44_des -geom n44_des -show_field
-#-> 0
-set_region_prop {R.GateOx R.Poly R.STI.Left R.STI.Right R.Silicide.Left R.Silicide.Right R.Spacer.Left R.Spacer.Right R.Substrate R.GateOx R.GateOx+R.Poly R.GateOx+R.Spacer.Left R.GateOx+R.Spacer.Right R.GateOx+R.Substrate R.Poly R.Poly+R.Spacer.Left R.STI.Left R.STI.Left+R.Substrate R.STI.Right R.STI.Right+R.Substrate R.Silicide.Left R.Silicide.Right R.Silicide.Right+R.Substrate R.Spacer.Left R.Spacer.Left+R.Silicide.Left R.Spacer.Right R.Spacer.Right+R.Poly R.Spacer.Right+R.Silicide.Right R.Spacer.Right+R.Substrate R.Substrate R.Substrate+R.Silicide.Left R.Substrate+R.Spacer.Left drain gate source} -plot Plot_n44_des -geom n44_des -show_mesh
-#-> 0
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.751315
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.21
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.21
-set_field_prop ImpactIonization -plot Plot_n44_des -geom n44_des -show_bands
-#-> 0
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.21
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.826446
-set_material_prop {Oxide Interface PolySilicon Silicide Nitride Silicon Contact JunctionLine DepletionRegion} -plot Plot_n44_des -geom n44_des -hide_mesh
-#-> 0
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.826446
-zoom_plot -plot Plot_n44_des -factor 0.826446
-move_plot -plot Plot_n44_des -position {0.00256282 -0.0352387}
-#-> 0
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 1.1
-zoom_plot -plot Plot_n44_des -factor 0.909091
-zoom_plot -plot Plot_n44_des -factor 0.909091
-move_plot -plot Plot_n44_des -position {0.0103186 -0.0365841}
-#-> 0
-move_plot -plot Plot_n44_des -position {0.0112567 0.0412744}
-#-> 0
-export_view /home/cdsllab/25ec01021/q8.png -plots {Plot_n44_des} -format png
-#-> 0
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n7_des.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> IdVg_n7_des
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n21_des.plt
+#-> IdVg_n21_des
+load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n31_des.plt
+#-> IdVg_n31_des
+create_curve -axisX {gate OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVg_n7_des IdVg_n21_des IdVg_n31_des} -plot Plot_1
+#-> Curve_1 Curve_2 Curve_3
+calculate Curve_2 -plot Plot_1 -op vth
+# vth: 0.0638717410545
+#-> 0.0638717410545
+calculate Curve_1 -plot Plot_1 -op vth
+# vth: 0.152070001698
+#-> 0.152070001698
+calculate Curve_3 -plot Plot_1 -op vth
+# vth: 0.225016727921
+#-> 0.225016727921
 exit 0
  

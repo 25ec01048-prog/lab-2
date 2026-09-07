@@ -68,7 +68,7 @@ Math {
 
 Solve {
     Coupled(Iterations= 1000 LineSearchDamping= 1e-2) { Poisson }
-    Coupled(Iterations= 100) { Poisson Electron Hole }
+    Coupled(Iterations= 1000) { Poisson Electron Hole }
     
     NewCurrent = "IdVd_0.005_1.5_"
     Transient (

@@ -1,13 +1,6 @@
 # project name
 name q10
 # execution graph
-job 56 -d "51"  -post { extract_vars "$nodedir" n56_des.out 56 }  -o n56_des "sdevice pp56_des.cmd"
-job 103 -d "51"  -post { extract_vars "$nodedir" n103_des.out 103 }  -o n103_des "sdevice pp103_des.cmd"
-job 135 -d "51"  -post { extract_vars "$nodedir" n135_des.out 135 }  -o n135_des "sdevice pp135_des.cmd"
-job 7 -d "1"  -post { extract_vars "$nodedir" n7_des.out 7 }  -o n7_des "sdevice pp7_des.cmd"
-job 87 -d "1"  -post { extract_vars "$nodedir" n87_des.out 87 }  -o n87_des "sdevice pp87_des.cmd"
-job 119 -d "1"  -post { extract_vars "$nodedir" n119_des.out 119 }  -o n119_des "sdevice pp119_des.cmd"
-job 60 -d "51"  -post { extract_vars "$nodedir" n60_des.out 60 }  -o n60_des "sdevice pp60_des.cmd"
 job 18 -d "1"  -post { extract_vars "$nodedir" n18_des.out 18 }  -o n18_des "sdevice pp18_des.cmd"
 job 20 -d "1"  -post { extract_vars "$nodedir" n20_des.out 20 }  -o n20_des "sdevice pp20_des.cmd"
 job 30 -d "1"  -post { extract_vars "$nodedir" n30_des.out 30 }  -o n30_des "sdevice pp30_des.cmd"
@@ -16,6 +9,15 @@ job 55 -d "51"  -post { extract_vars "$nodedir" n55_des.out 55 }  -o n55_des "sd
 job 59 -d "51"  -post { extract_vars "$nodedir" n59_des.out 59 }  -o n59_des "sdevice pp59_des.cmd"
 job 63 -d "51"  -post { extract_vars "$nodedir" n63_des.out 63 }  -o n63_des "sdevice pp63_des.cmd"
 job 67 -d "51"  -post { extract_vars "$nodedir" n67_des.out 67 }  -o n67_des "sdevice pp67_des.cmd"
+job 79 -d "1"  -post { extract_vars "$nodedir" n79_des.out 79 }  -o n79_des "sdevice pp79_des.cmd"
+job 83 -d "51"  -post { extract_vars "$nodedir" n83_des.out 83 }  -o n83_des "sdevice pp83_des.cmd"
+job 7 -d "1"  -post { extract_vars "$nodedir" n7_des.out 7 }  -o n7_des "sdevice pp7_des.cmd"
+job 56 -d "51"  -post { extract_vars "$nodedir" n56_des.out 56 }  -o n56_des "sdevice pp56_des.cmd"
+job 87 -d "1"  -post { extract_vars "$nodedir" n87_des.out 87 }  -o n87_des "sdevice pp87_des.cmd"
+job 103 -d "51"  -post { extract_vars "$nodedir" n103_des.out 103 }  -o n103_des "sdevice pp103_des.cmd"
+job 119 -d "1"  -post { extract_vars "$nodedir" n119_des.out 119 }  -o n119_des "sdevice pp119_des.cmd"
+job 135 -d "51"  -post { extract_vars "$nodedir" n135_des.out 135 }  -o n135_des "sdevice pp135_des.cmd"
+job 60 -d "51"  -post { extract_vars "$nodedir" n60_des.out 60 }  -o n60_des "sdevice pp60_des.cmd"
 job 57 -d "51"  -post { extract_vars "$nodedir" n57_des.out 57 }  -o n57_des "sdevice pp57_des.cmd"
 job 58 -d "51"  -post { extract_vars "$nodedir" n58_des.out 58 }  -o n58_des "sdevice pp58_des.cmd"
 job 75 -d "51"  -post { extract_vars "$nodedir" n75_des.out 75 }  -o n75_des "sdevice pp75_des.cmd"
@@ -40,13 +42,13 @@ check mosfet_1_dvs.cmd 1788504833
 check mosfet_1_dvs.bnd 1788503542
 check Breakdown_des.cmd 1788503542
 check sdevice.par 1788503542
-check id_vds_des.cmd 1788508670
-check idvg_des.cmd 1788509128
+check id_vds_des.cmd 1788758212
+check idvg_des.cmd 1788758198
 check equillibrium_des.cmd 1788503542
 check idon_des.cmd 1788507460
 check idoff_des.cmd 1788505083
 check global_tooldb 1697803711
-check gtree.dat 1788509149
+check gtree.dat 1788758048
 check ./Nitride.par 1788503542
 check ./PolySilicon.par 1788503542
 check ./SiO2.par 1788503542
