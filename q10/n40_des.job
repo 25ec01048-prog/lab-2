@@ -14,14 +14,14 @@
 
 gjob is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
 Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/gjob'
-Command line options '-verbose -nice 19 --max_threads 4 -job 40 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347 /home/cdsllab/25ec01021/q10'
+Command line options '-verbose -nice 19 --max_threads 4 -job 40 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521 /home/cdsllab/25ec01021/q10'
 Current directory '/home/cdsllab/25ec01021/q10'
 Project organization 'Traditional'
 Some relevant environment variables:
 	STROOT=/cad/synopsys/sentaurus/V-2023.12
 	STRELEASE=current
 	STROOT_LIB=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib
-	STDB=/home/cdsllab
+	STDB=/home/cdsllab/25ec01021
 	DATEX=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib/datexcodes.txt
 	DISPLAY=:1
 
@@ -54,11 +54,11 @@ Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 40
 +++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp40_des.par
 The node '40' has dependencies to the node(s) '1'
 Start Simulation section
-10:50:47 Sep 07 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp40_des.cmd"
-10:51:46 Sep 07 2026 +++ job 40 <sdevice> done: exit(0)
+11:35:35 Sep 12 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp40_des.cmd"
+11:36:32 Sep 12 2026 +++ job 40 <sdevice> done: exit(0)
 End Simulation section
 Start Epilogue section
-10:51:46 Sep 07 2026 *** job 40 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q10" n40_des.out 40 "
+11:36:32 Sep 12 2026 *** job 40 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q10" n40_des.out 40 "
 End Epilogue section
 Job succeeded
 gjob exits with status 0

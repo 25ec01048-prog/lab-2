@@ -18,7 +18,7 @@ Hardware type: x86_64
 OS name: Linux
 OS release: 5.14.0-503.11.1.el9_5.x86_64
 OS version: #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
-Process ID: 702082
+Process ID: 843123
 
 Flags used:
 
@@ -65,10 +65,10 @@ Interpolating data...done.
 Saving file n1_msh.tdr...done.
 
 ===============================  Timer Report===================================
-              Total Mesh Generation Time:     0.211s       100%
-                       Rate of #Vertices:  2.15e+04
-                          Rate of #Edges:  4.42e+04
-                          Rate of #Faces:  4.18e+04
+              Total Mesh Generation Time:     0.175s       100%
+                       Rate of #Vertices:  2.58e+04
+                          Rate of #Edges:  5.31e+04
+                          Rate of #Faces:  5.02e+04
                        Rate of #Elements:         0
 
                             Time Covered:         0s         0%

@@ -13,7 +13,7 @@ Electrode {
     { Name="gate"      Voltage=0 }
 }
 Physics (MaterialInterface = "Silicon/Oxide"){
-	Traps(conc=-1.85e10 FixedCharge)
+	Traps(conc=-4.28e10 FixedCharge)
 }
 
 Physics {
@@ -61,7 +61,7 @@ Math {
 Solve {
 	Coupled( Iterations=1000 LineSearchDamping=1e-2 ) { Poisson }
 	Coupled( Iterations=100 ) { Poisson Electron Hole }
-	NewCurrentPrefix = "BV_1.85e10"
+	NewCurrentPrefix = "BV_4.28e10"
 	Transient (
 	InitialTime=0 FinalTime=1
 	InitialStep= 1e-06

@@ -1,6 +1,6 @@
 (sdegeo:create-rectangle (position 0.000  0.000 0.0) (position 0.5  0.25 0.0) "Silicon" "R.Substrate")
-(sdegeo:create-rectangle (position -0.00538 0.105 0.0) (position 0.0 0.145 0.0) "Oxide" "R.GateOx")
-(sdegeo:create-rectangle (position -0.070 0.105 0.0) (position -0.00538 0.145 0.0) "PolySilicon" "R.Poly")
+(sdegeo:create-rectangle (position -0.00928 0.105 0.0) (position 0.0 0.145 0.0) "Oxide" "R.GateOx")
+(sdegeo:create-rectangle (position -0.070 0.105 0.0) (position -0.00928 0.145 0.0) "PolySilicon" "R.Poly")
 (sdegeo:create-polygon
    (list (position 0      0.07  0.0)
          (position -0.07  0.07  0.0)

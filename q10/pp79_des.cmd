@@ -11,7 +11,7 @@ File {
 
 Electrode {
    { Name="source"    Voltage=0.0 }
-   { Name="drain"     Voltage= 1.1}
+   { Name="drain"     Voltage= 0.4}
    { Name="gate"      Voltage=(0 at 0, 3 at 1) }
 
 }
@@ -76,6 +76,6 @@ Solve {
         InitialStep= 33333.3333333 MinStep = 1e-14 Maxstep= 0.01 
         Increment= 1.5 Decrement= 2
     ) { coupled { Poisson Electron Hole } }
-    System ("rm n_des.plt")   
+    System ("rm n79_des.plt")   
 }
 

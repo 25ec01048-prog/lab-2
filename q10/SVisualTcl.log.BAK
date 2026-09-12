@@ -2,7 +2,7 @@
 # Sentaurus Visual V-2023.12.
 # Tcl log file.
 #------------------------------------------
-# Date: Sep 07, 2026. 15:46:08.
+# Date: Sep 12, 2026. 12:07:07.
 # Version: 35.2.8515123 (2.8515123)
 # Mode: Interactive (GUI).
 # Hostname: cdsl18.cdsl.iitbbs.ac.in.
@@ -10,11 +10,15 @@
 # Kernel: 5.14.0-503.11.1.el9_5.x86_64.
 ###########################################
 
-load_file /home/cdsllab/25ec01021/q10/Id_off_0.005n71_des.plt
+load_file /home/cdsllab/25ec01021/q10/BV_n44_des.plt
 create_plot -1d
 select_plots {Plot_1}
 #-> Plot_1
 #-> Plot_1
-#-> Id_off_0.005n71_des
+#-> BV_n44_des
+create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {BV_n44_des} -plot Plot_1
+#-> Curve_1
+probe_curve {Curve_1} -valueY 1e-06
+#-> 0.0557079888459
 exit 0
  

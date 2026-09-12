@@ -59,9 +59,9 @@ Math {
 
 Solve {
     Coupled(Iterations= 1000 LineSearchDamping= 1e-2) { Poisson }
-    Coupled(Iterations= 100) { Poisson Electron Hole }
+    Coupled(Iterations= 1000) { Poisson Electron Hole }
     
-    NewCurrent = "Id_off_0.00538"
+    NewCurrent = "Id_off_0.00928"
     Transient (
         InitialTime= 0 FinalTime= 1  
         InitialStep= 142857.142857 MinStep = 1e-14 Maxstep= 0.01 

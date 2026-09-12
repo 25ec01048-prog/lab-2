@@ -14,8 +14,8 @@
 
 gjob is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
 Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/gjob'
-Command line options '-verbose -nice 19 -job 1 -swb_pid 674638 -gsub_pid 700467 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 33105 /home/cdsllab/25ec01021/MOSFET_Copy'
-Current directory '/home/cdsllab/25ec01021/MOSFET_Copy'
+Command line options '-verbose -nice 19 -job 1 -swb_pid 833533 -gsub_pid 842858 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 33743 /home/cdsllab/25ec01021/q10'
+Current directory '/home/cdsllab/25ec01021/q10'
 Project organization 'Traditional'
 Some relevant environment variables:
 	STROOT=/cad/synopsys/sentaurus/V-2023.12
@@ -25,12 +25,12 @@ Some relevant environment variables:
 	DATEX=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib/datexcodes.txt
 	DISPLAY=:1
 
-Project '/home/cdsllab/25ec01021/MOSFET_Copy'
+Project '/home/cdsllab/25ec01021/q10'
 INITIALIZING PREPROCESSOR:
 Application mode : traditional
-Loading project tree '/home/cdsllab/25ec01021/MOSFET_Copy/gtree.dat'
-Loading jobs and dependence graph '"/home/cdsllab/25ec01021/MOSFET_Copy/gexec.cmd"'
-Loading project variables '/home/cdsllab/25ec01021/MOSFET_Copy/gvars.dat'
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
 --Get files to preprocess...
 --Create file handlers...
 --Read the toolflow...
@@ -41,21 +41,21 @@ Loading project variables '/home/cdsllab/25ec01021/MOSFET_Copy/gvars.dat'
 --Get all parameters...
 PREPROCESSOR SUCCESSFULLY INITIALIZED.
 PREPROCESSING STEP 1:
-Reading file /home/cdsllab/25ec01021/MOSFET_Copy/mosfet_1_dvs.cmd
-Reading file /home/cdsllab/25ec01021/MOSFET_Copy/mosfet_1_dvs.bnd
+Reading file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.cmd
+Reading file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.bnd
 PREPROCESSING STEP 2:
 ---------------------------------------
-Preprocessing file /home/cdsllab/25ec01021/MOSFET_Copy/mosfet_1_dvs.cmd for node 1
-+++Preprocessing results written to /home/cdsllab/25ec01021/MOSFET_Copy/pp1_dvs.cmd
+Preprocessing file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.cmd for node 1
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp1_dvs.cmd
 ---------------------------------------
-Preprocessing file /home/cdsllab/25ec01021/MOSFET_Copy/mosfet_1_dvs.bnd for node 1
-+++Preprocessing results written to /home/cdsllab/25ec01021/MOSFET_Copy/pp1_dvs.bnd
+Preprocessing file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.bnd for node 1
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp1_dvs.bnd
 Start Simulation section
-12:51:04 Sep 04 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
-12:51:07 Sep 04 2026 +++ job 1 <sde> done: exit(0)
+11:22:03 Sep 12 2026     job 1 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n1_dvs.cmd"
+11:22:07 Sep 12 2026 +++ job 1 <sde> done: exit(0)
 End Simulation section
 Start Epilogue section
-12:51:07 Sep 04 2026 *** job 1 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/MOSFET_Copy" n1_dvs.out 1 "
+11:22:07 Sep 12 2026 *** job 1 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q10" n1_dvs.out 1 "
 End Epilogue section
 Job succeeded
 gjob exits with status 0

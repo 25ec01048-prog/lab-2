@@ -14,7 +14,7 @@
 
 gjob is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
 Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/gjob'
-Command line options '-verbose -nice 19 -job 51 -swb_pid 79021 -gsub_pid 80541 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 41109 /home/cdsllab/25ec01021/q102'
+Command line options '-verbose -nice 19 -job 51 -swb_pid 833533 -gsub_pid 841684 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 43121 /home/cdsllab/25ec01021/q102'
 Current directory '/home/cdsllab/25ec01021/q102'
 Project organization 'Traditional'
 Some relevant environment variables:
@@ -51,11 +51,11 @@ Preprocessing file /home/cdsllab/25ec01021/q102/mosfet_1_dvs.cmd for node 51
 Preprocessing file /home/cdsllab/25ec01021/q102/mosfet_1_dvs.bnd for node 51
 +++Preprocessing results written to /home/cdsllab/25ec01021/q102/pp51_dvs.bnd
 Start Simulation section
-14:39:13 Sep 07 2026     job 51 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n51_dvs.cmd"
-14:39:16 Sep 07 2026 +++ job 51 <sde> done: exit(0)
+11:19:45 Sep 12 2026     job 51 <sde> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sde -e -l n51_dvs.cmd"
+11:19:48 Sep 12 2026 +++ job 51 <sde> done: exit(0)
 End Simulation section
 Start Epilogue section
-14:39:16 Sep 07 2026 *** job 51 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n51_dvs.out 51 "
+11:19:48 Sep 12 2026 *** job 51 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n51_dvs.out 51 "
 End Epilogue section
 Job succeeded
 gjob exits with status 0

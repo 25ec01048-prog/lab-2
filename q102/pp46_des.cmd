@@ -10,8 +10,8 @@ File {
 
 Electrode {
    { Name="source"    Voltage=0.0 }
-   { Name="drain"     Voltage=0 }
-   { Name="gate"      Voltage= 0}
+   { Name="drain"     Voltage=0.4 }
+   { Name="gate"      Voltage= 1.5}
 }
 Physics (MaterialInterface = "Silicon/Oxide"){
 	Traps(conc=-0 FixedCharge)
@@ -61,7 +61,7 @@ Math {
 
 Solve {
     Coupled(Iterations= 1000 LineSearchDamping= 1e-2) { Poisson }
-    Coupled(Iterations= 100) { Poisson Electron Hole }
+    Coupled(Iterations= 1000) { Poisson Electron Hole }
     
     NewCurrent = "idOn_0"
     Transient (

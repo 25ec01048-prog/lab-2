@@ -18,7 +18,7 @@ Hardware type: x86_64
 OS name: Linux
 OS release: 5.14.0-503.11.1.el9_5.x86_64
 OS version: #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
-Process ID: 693084
+Process ID: 843279
 
 Flags used:
 
@@ -60,15 +60,15 @@ bbox  volume: 0.1425
 Are all boundaries on bbox? false
 =================================================================================
 
-Smallest region: R.GateOx  Total volume: 0.0002152
+Smallest region: R.GateOx  Total volume: 0.0003712
 Interpolating data...done.
 Saving file n51_msh.tdr...done.
 
 ===============================  Timer Report===================================
-              Total Mesh Generation Time:     0.177s       100%
-                       Rate of #Vertices:  2.56e+04
-                          Rate of #Edges:  5.27e+04
-                          Rate of #Faces:  4.99e+04
+              Total Mesh Generation Time:     0.179s       100%
+                       Rate of #Vertices:  2.53e+04
+                          Rate of #Edges:  5.21e+04
+                          Rate of #Faces:  4.93e+04
                        Rate of #Elements:         0
 
                             Time Covered:         0s         0%

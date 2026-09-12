@@ -2,7 +2,7 @@
 # Sentaurus Visual V-2023.12.
 # Tcl log file.
 #------------------------------------------
-# Date: Sep 07, 2026. 15:52:12.
+# Date: Sep 12, 2026. 12:09:12.
 # Version: 35.2.8515123 (2.8515123)
 # Mode: Interactive (GUI).
 # Hostname: cdsl18.cdsl.iitbbs.ac.in.
@@ -10,72 +10,55 @@
 # Kernel: 5.14.0-503.11.1.el9_5.x86_64.
 ###########################################
 
-load_file /home/cdsllab/25ec01021/q10/Id_off_0.005n71_des.plt
+load_file /home/cdsllab/25ec01021/q10/BV_n44_des.plt
 create_plot -1d
 select_plots {Plot_1}
 #-> Plot_1
 #-> Plot_1
-#-> Id_off_0.005n71_des
-load_file /home/cdsllab/25ec01021/q10/Id_off_0.00538n75_des.plt
-#-> Id_off_0.00538n75_des
-load_file /home/cdsllab/25ec01021/q10/idOn_0.005n46_des.plt
-#-> idOn_0.005n46_des
-load_file /home/cdsllab/25ec01021/q10/idOn_0.00538n58_des.plt
-#-> idOn_0.00538n58_des
-create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {Id_off_0.005n71_des Id_off_0.00538n75_des idOn_0.005n46_des idOn_0.00538n58_des} -plot Plot_1
-#-> Curve_1 Curve_2 Curve_3 Curve_4
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 0.9
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-zoom_plot -plot Plot_1 -factor 1.1
-export_curves {Curve_1 Curve_2 Curve_3 Curve_4} -plot Plot_1 -filename /home/cdsllab/25ec01021/q10_id_onoff.csv -format csv
-#-> /home/cdsllab/25ec01021/q10_id_onoff.csv
-load_file /home/cdsllab/25ec01021/MOSFET/IdVg_n7_des.plt
-#-> IdVg_n7_des
-remove_curves -plot Plot_1 {Curve_1 Curve_2 Curve_3 Curve_4}
-#-> Curve_1 Curve_2 Curve_3 Curve_4
-create_curve -axisX {gate OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVg_n7_des} -plot Plot_1
+#-> BV_n44_des
+create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {BV_n44_des} -plot Plot_1
 #-> Curve_1
-calculate Curve_1 -plot Plot_1 -op vth
-# vth: 0.152070001698
-#-> 0.152070001698
+probe_curve {Curve_1} -valueY 1e-06 -snap
+#-> 0.0554057291836
+probe_curve {Curve_1} -valueY 1e-06 -snap
+#-> 0.0554057291836
+probe_curve {Curve_1} -valueY 1e-06 -snap
+#-> 0.0554057291836
+probe_curve {Curve_1} -valueY 1e-06 -snap
+#-> 0.0554057291836
+draw_textbox -plot Plot_1 -at {0.0692232 5.27485e-05} -label TextBox_1
+#-> TextBox_1
+set_textbox_prop TextBox_1 -plot Plot_1 -text "(0.0554 v, 1e-6 A)"
+#-> 0
+set_textbox_prop TextBox_1 -plot Plot_1 -text "(0.0554 v, 1e-6 A)"
+#-> 0
+set_textbox_prop TextBox_1 -plot Plot_1 -pos {0.052012 4.99864e-06}
+#-> 0
+export_view /home/cdsllab/25ec01021/q8_graph.png -plots {Plot_1} -format png -overwrite
+#-> 0
+load_file /home/cdsllab/25ec01021/q9/BV_n2_des.plt
+#-> BV_n2_des
+create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {BV_n2_des} -plot Plot_1
+#-> Curve_2
+remove_curves -plot Plot_1 {Curve_1}
+#-> Curve_1
+set_curve_prop {Curve_2} -plot Plot_1 -color #00ff00
+#-> 0
+set_curve_prop {Curve_2} -plot Plot_1 -color #00ff00
+#-> 0
+set_curve_prop {Curve_2} -plot Plot_1 -color #800000
+#-> 0
+probe_curve {Curve_2} -valueY 1e-06 -snap
+#-> 0.22443482928
+probe_curve {Curve_2} -valueY 1e-06 -snap
+#-> 0.22443482928
+probe_curve {Curve_2} -valueY 1e-06 -snap
+#-> 0.22443482928
+probe_curve {Curve_2} -valueY 1e-06 -snap
+#-> 0.22443482928
+set_textbox_prop TextBox_1 -plot Plot_1 -text "(0.22 v, 1e-6 A)"
+#-> 0
+export_view /home/cdsllab/25ec01021/q9_graph.png -plots {Plot_1} -format png -overwrite
+#-> 0
 exit 0
  

@@ -3,7 +3,7 @@ Project Summary for /home/cdsllab/25ec01021/q102
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Project Details :
 		current status		: running
-		was last modified	: 09/07/2026 15:30:37
+		was last modified	: 09/12/2026 11:20:40
 		was modified by		: cdsllab
 		was run on host		: cdsl18.cdsl.iitbbs.ac.in
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -17,8 +17,8 @@ Total Number of Nodes			: 47
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  
 Nodes by status				: 
-		none			: 24
-		done			: 20
+		none			: 26
+		done			: 18
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -30,13 +30,13 @@ Hosts and Execution Information
  
  
 Host "cdsl18.cdsl.iitbbs.ac.in" 
-		Number of nodes		: 20
-		Host Time		: 1180 sec
+		Number of nodes		: 18
+		Host Time		: 1170 sec
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		Total RunTime		: 1180 sec
+		Total RunTime		: 1170 sec
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Project Summary generated on		: 09/07/2026 15:31:25
+Project Summary generated on		: 09/12/2026 11:40:18
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

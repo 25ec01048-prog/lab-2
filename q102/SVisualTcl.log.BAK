@@ -2,7 +2,7 @@
 # Sentaurus Visual V-2023.12.
 # Tcl log file.
 #------------------------------------------
-# Date: Sep 07, 2026. 15:35:20.
+# Date: Sep 12, 2026. 11:51:37.
 # Version: 35.2.8515123 (2.8515123)
 # Mode: Interactive (GUI).
 # Hostname: cdsl18.cdsl.iitbbs.ac.in.
@@ -10,29 +10,73 @@
 # Kernel: 5.14.0-503.11.1.el9_5.x86_64.
 ###########################################
 
-load_file /home/cdsllab/25ec01021/q102/IdVd_0_0.3_n18_des.plt
+load_file /home/cdsllab/25ec01021/q102/IdVd_0_1.5_n40_des.plt
 create_plot -1d
 select_plots {Plot_1}
 #-> Plot_1
 #-> Plot_1
-#-> IdVd_0_0.3_n18_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_0_0.6_n20_des.plt
-#-> IdVd_0_0.6_n20_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_0_0.9_n30_des.plt
-#-> IdVd_0_0.9_n30_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_0_1.5_n40_des.plt
 #-> IdVd_0_1.5_n40_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_1.85e10_0.3_n55_des.plt
-#-> IdVd_1.85e10_0.3_n55_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_1.85e10_0.6_n59_des.plt
-#-> IdVd_1.85e10_0.6_n59_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_1.85e10_0.9_n63_des.plt
-#-> IdVd_1.85e10_0.9_n63_des
-load_file /home/cdsllab/25ec01021/q102/IdVd_1.85e10_1.5_n67_des.plt
-#-> IdVd_1.85e10_1.5_n67_des
-create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVd_0_0.3_n18_des IdVd_0_0.6_n20_des IdVd_0_0.9_n30_des IdVd_0_1.5_n40_des IdVd_1.85e10_0.3_n55_des IdVd_1.85e10_0.6_n59_des IdVd_1.85e10_0.9_n63_des IdVd_1.85e10_1.5_n67_des} -plot Plot_1
-#-> Curve_1 Curve_2 Curve_3 Curve_4 Curve_5 Curve_6 Curve_7 Curve_8
-export_curves {Curve_1 Curve_2 Curve_3 Curve_4 Curve_5 Curve_6 Curve_7 Curve_8} -plot Plot_1 -filename /home/cdsllab/25ec01021/q102_id_vd.csv -format csv
-#-> /home/cdsllab/25ec01021/q102_id_vd.csv
+load_file /home/cdsllab/25ec01021/q102/IdVd_4.28e10_1.5_n67_des.plt
+#-> IdVd_4.28e10_1.5_n67_des
+create_curve -axisX {drain OuterVoltage} -axisY {drain TotalCurrent} -dataset {IdVd_0_1.5_n40_des IdVd_4.28e10_1.5_n67_des} -plot Plot_1
+#-> Curve_1 Curve_2
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+move_plot -plot Plot_1 -position {-0.504156 -0.000218508}
+#-> 0
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+move_plot -plot Plot_1 -position {-0.195195 4.53138e-05}
+#-> 0
+probe_curve {Curve_1 Curve_2} -valueX 0.680819
+#-> 0.000423980048714 0.000416137405399
+probe_curve {Curve_1 Curve_2} -valueX 0.560655
+#-> 0.000380426883403 0.000373486164461
+probe_curve {Curve_1 Curve_2} -valueX 0.508754
+#-> 0.000361537054762 0.000355049868449
+probe_curve {Curve_1 Curve_2} -valueX 0.625532
+#-> 0.000403935874607 0.000396487284445
+probe_curve {Curve_1 Curve_2} -valueX 0.761491
+#-> 0.00045329035121 0.000444917173963
+probe_curve {Curve_1 Curve_2} -valueX 0.891809
+#-> 0.000500653785124 0.00049150721745
+probe_curve {Curve_1 Curve_2} -valueX 0.945967
+#-> 0.000520265001936 0.00051082172158
+probe_curve {Curve_1 Curve_2} -valueX 0.851191
+#-> 0.000485907191963 0.000476992217371
+probe_curve {Curve_1 Curve_2} -valueX 0.753029
+#-> 0.000450212788615 0.000441892727429
+probe_curve {Curve_1 Curve_2} -valueX 0.697743
+#-> 0.000430123122692 0.000422165066227
+probe_curve {Curve_1 Curve_2} -valueX 0.621019
+#-> 0.000402301145255 0.000394886525154
+probe_curve {Curve_1 Curve_2} -valueX 0.60071
+#-> 0.000394944863172 0.000387683108349
+probe_curve {Curve_1 Curve_2} -valueX 0.58435
+#-> 0.000389017508293 0.00038188492893
+probe_curve {Curve_1 Curve_2} -valueX 0.516088
+#-> 0.000364213859317 0.000357660218652
+probe_curve {Curve_1 Curve_2} -valueX 0.516088
+#-> 0.000364213859317 0.000357660218652
 exit 0
  

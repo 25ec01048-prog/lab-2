@@ -14,7 +14,7 @@
 
 gjob is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
 Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/gjob'
-Command line options '-verbose -nice 19 --max_threads 4 -nopp -job 79 -swb_pid 79021 -gsub_pid 96789 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 46509 /home/cdsllab/25ec01021/q102'
+Command line options '-verbose -nice 19 --max_threads 4 -job 79 -swb_pid 833533 -gsub_pid 842194 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 32847 /home/cdsllab/25ec01021/q102'
 Current directory '/home/cdsllab/25ec01021/q102'
 Project organization 'Traditional'
 Some relevant environment variables:
@@ -26,15 +26,39 @@ Some relevant environment variables:
 	DISPLAY=:1
 
 Project '/home/cdsllab/25ec01021/q102'
+INITIALIZING PREPROCESSOR:
 Application mode : traditional
 Loading project tree '/home/cdsllab/25ec01021/q102/gtree.dat'
 Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q102/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q102/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q102/idvg_des.cmd
+Reading file /home/cdsllab/25ec01021/q102/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q102/idvg_des.cmd for node 79
+'@tdr@' creates dependences with the node(s) '1'
++++Preprocessing results written to /home/cdsllab/25ec01021/q102/pp79_des.cmd
+The node '79' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q102/sdevice.par for node 79
++++Preprocessing results written to /home/cdsllab/25ec01021/q102/pp79_des.par
+The node '79' has dependencies to the node(s) '1'
 Start Simulation section
-15:30:38 Sep 07 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
-15:31:23 Sep 07 2026 +++ job 79 <sdevice> done: exit(0)
+11:36:03 Sep 12 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp79_des.cmd"
+11:36:53 Sep 12 2026 +++ job 79 <sdevice> done: exit(0)
 End Simulation section
 Start Epilogue section
-15:31:23 Sep 07 2026 *** job 79 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n79_des.out 79 "
+11:36:53 Sep 12 2026 *** job 79 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n79_des.out 79 "
 End Epilogue section
 Job succeeded
 gjob exits with status 0

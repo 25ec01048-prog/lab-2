@@ -14,7 +14,7 @@
 
 gjob is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
 Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/gjob'
-Command line options '-verbose -nice 19 --max_threads 4 -job 46 -swb_pid 79021 -gsub_pid 88791 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 40509 /home/cdsllab/25ec01021/q102'
+Command line options '-verbose -nice 19 --max_threads 4 -job 46 -swb_pid 833533 -gsub_pid 842194 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 32847 /home/cdsllab/25ec01021/q102'
 Current directory '/home/cdsllab/25ec01021/q102'
 Project organization 'Traditional'
 Some relevant environment variables:
@@ -54,11 +54,11 @@ Preprocessing file /home/cdsllab/25ec01021/q102/sdevice.par for node 46
 +++Preprocessing results written to /home/cdsllab/25ec01021/q102/pp46_des.par
 The node '46' has dependencies to the node(s) '1'
 Start Simulation section
-15:19:47 Sep 07 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp46_des.cmd"
-15:20:10 Sep 07 2026 +++ job 46 <sdevice> done: exit(0)
+11:37:41 Sep 12 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp46_des.cmd"
+11:38:16 Sep 12 2026 +++ job 46 <sdevice> done: exit(0)
 End Simulation section
 Start Epilogue section
-15:20:10 Sep 07 2026 *** job 46 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n46_des.out 46 "
+11:38:16 Sep 12 2026 *** job 46 pre/post execution: eval " gjob::find_extracted_vars "/home/cdsllab/25ec01021/q102" n46_des.out 46 "
 End Epilogue section
 Job succeeded
 gjob exits with status 0

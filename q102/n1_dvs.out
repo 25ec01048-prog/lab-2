@@ -19,7 +19,7 @@ Hardware type: x86_64
 OS name: Linux
 OS release: 5.14.0-503.11.1.el9_5.x86_64
 OS version: #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
-Process ID: 80736
+Process ID: 841878
 
 version #3 done.
 Evaluating file n1_dvs.cmd
@@ -148,7 +148,7 @@ Hardware type: x86_64
 OS name: Linux
 OS release: 5.14.0-503.11.1.el9_5.x86_64
 OS version: #1 SMP PREEMPT_DYNAMIC Mon Sep 30 11:54:45 EDT 2024
-Process ID: 80788
+Process ID: 841916
 
 Flags used:
 
@@ -207,10 +207,10 @@ Interpolating data...done.
 Saving file n1_msh.tdr...done.
 
 ===============================  Timer Report===================================
-              Total Mesh Generation Time:     0.214s       100%
-                       Rate of #Vertices:  2.12e+04
-                          Rate of #Edges:  4.36e+04
-                          Rate of #Faces:  4.13e+04
+              Total Mesh Generation Time:     0.178s       100%
+                       Rate of #Vertices:  2.55e+04
+                          Rate of #Edges:  5.25e+04
+                          Rate of #Faces:  4.96e+04
                        Rate of #Elements:         0
 
                             Time Covered:         0s         0%
@@ -221,8 +221,8 @@ Saving file n1_msh.tdr...done.
 
 "************************************************************************"
 "Sentaurus Structure Editor "
-"Start Time:    Mon Sep  7 14:39:04 2026"
-"End   Time:    Mon Sep  7 14:39:11 2026"
-"Total Execution Time (sec):    7"
+"Start Time:    Sat Sep 12 11:19:40 2026"
+"End   Time:    Sat Sep 12 11:19:43 2026"
+"Total Execution Time (sec):    3"
 "Total System calls Time (sec): 0"
 "************************************************************************"

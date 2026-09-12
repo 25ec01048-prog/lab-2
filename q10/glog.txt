@@ -14,24 +14,138 @@
 
 gsub is running on host 'cdsl18.cdsl.iitbbs.ac.in' by user 'cdsllab'
 Binary '/cad/synopsys/sentaurus/V-2023.12/tcad/current/linux64/bin/../lib/gsub0'
-Command line options '-verbose -swb_pid 54190 -q local:default -e {18 + 20 + 30 + 40 + 55 + 59 + 63 + 67} /home/cdsllab/25ec01021/q10'
+Command line options '-verbose -swb_pid 833533 -q local:default -e {44 + 53} /home/cdsllab/25ec01021/q10'
 Current directory '/home/cdsllab'
 Project organization 'Traditional'
 Some relevant environment variables:
 	STROOT=/cad/synopsys/sentaurus/V-2023.12
 	STRELEASE=current
 	STROOT_LIB=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib
-	STDB=/home/cdsllab
+	STDB=/home/cdsllab/25ec01021
 	DATEX=/cad/synopsys/sentaurus/V-2023.12/tcad/current/lib/datexcodes.txt
 	DISPLAY=:1
 
 Starting swblm daemon...OK
 Project '/home/cdsllab/25ec01021/q10'
 Application mode : traditional
-10:47:10 Sep 07 2026 <q10> submitted to the batch system
+11:23:33 Sep 12 2026 <q10> submitted to the batch system
 Loading global queue configuration file '/cad/synopsys/sentaurus/V-2023.12/queues/gqueues.dat'...ok
 Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
 >>>>> Preprocessing the project to run in normal mode
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.cmd
+Reading file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.bnd
+Reading file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+Reading file /home/cdsllab/25ec01021/q10/id_vds_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/idvg_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/equillibrium_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/idon_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/idoff_des.cmd
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd for node 44
+'@tdr@' creates dependences with the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 44
++++Node successfully preprocessed+++
+The node '44' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd for node 53
+'@tdr@' creates dependences with the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 53
++++Node successfully preprocessed+++
+The node '53' has dependencies to the node(s) '51'
+Writing 'gexec.cmd'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+>>>>>>>>>> job '44' status changed from 'none' to 'queued'
+>>>>>>>>>> job '53' status changed from 'none' to 'queued'
+-----------------------------------------------------------------
+queue "local:default" - 44 53
+-----------------------------------------------------------------
+>>>>>>>>>> Initializing back-end schedulers...
+>>>>>>>> Loaded Schedulers are ... local
+local% initialize 'local' scheduler data
+>>>>> List of Active Schedulers : local
+<<<<<<<<<<
+>>>>>>>>>> job '44' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd for node 44
+'@tdr@' creates dependences with the node(s) '1'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp44_des.cmd
+The node '44' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 44
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp44_des.par
+The node '44' has dependencies to the node(s) '1'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n44_des.job
+local% submit job 44 for local execution
+>>>>>>>>>> job '44' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '53' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd for node 53
+'@tdr@' creates dependences with the node(s) '51'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp53_des.cmd
+The node '53' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 53
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp53_des.par
+The node '53' has dependencies to the node(s) '51'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n53_des.job
+local% submit job 53 for local execution
+>>>>>>>>>> job '53' status changed from 'ready' to 'pending'
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 44 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '44' status changed from 'pending' to 'running'
+11:23:34 Sep 12 2026     job 44 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp44_des.cmd"
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
 Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
 INITIALIZING PREPROCESSOR:
 Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
@@ -114,22 +228,14 @@ Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 67
 The node '67' has dependencies to the node(s) '51'
 Writing 'gexec.cmd'
 Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
->>>>>>>>>> job '18' status changed from 'done' to 'queued'
->>>>>>>>>> job '20' status changed from 'aborted' to 'queued'
+>>>>>>>>>> job '18' status changed from 'none' to 'queued'
+>>>>>>>>>> job '20' status changed from 'none' to 'queued'
 >>>>>>>>>> job '30' status changed from 'none' to 'queued'
 >>>>>>>>>> job '40' status changed from 'none' to 'queued'
 >>>>>>>>>> job '55' status changed from 'none' to 'queued'
 >>>>>>>>>> job '59' status changed from 'none' to 'queued'
 >>>>>>>>>> job '63' status changed from 'none' to 'queued'
 >>>>>>>>>> job '67' status changed from 'none' to 'queued'
------------------------------------------------------------------
-queue "local:default" - 18 20 30 40 55 59 63 67
------------------------------------------------------------------
->>>>>>>>>> Initializing back-end schedulers...
->>>>>>>> Loaded Schedulers are ... local
-local% initialize 'local' scheduler data
->>>>> List of Active Schedulers : local
-<<<<<<<<<<
 >>>>>>>>>> job '18' status changed from 'queued' to 'ready'
 INITIALIZING PREPROCESSOR:
 Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
@@ -370,50 +476,342 @@ The node '67' has dependencies to the node(s) '51'
 >>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n67_des.job
 local% submit job 67 for local execution
 >>>>>>>>>> job '67' status changed from 'ready' to 'pending'
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 18 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.cmd
+Reading file /home/cdsllab/25ec01021/q10/mosfet_1_dvs.bnd
+Reading file /home/cdsllab/25ec01021/q10/Breakdown_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+Reading file /home/cdsllab/25ec01021/q10/id_vds_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/idvg_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/equillibrium_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/idon_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/idoff_des.cmd
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idon_des.cmd for node 46
+'@tdr@' creates dependences with the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 46
++++Node successfully preprocessed+++
+The node '46' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idon_des.cmd for node 58
+'@tdr@' creates dependences with the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 58
++++Node successfully preprocessed+++
+The node '58' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idoff_des.cmd for node 71
+'@tdr@' creates dependences with the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 71
++++Node successfully preprocessed+++
+The node '71' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idoff_des.cmd for node 75
+'@tdr@' creates dependences with the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 75
++++Node successfully preprocessed+++
+The node '75' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idvg_des.cmd for node 79
+'@tdr@' creates dependences with the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 79
++++Node successfully preprocessed+++
+The node '79' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idvg_des.cmd for node 83
+'@tdr@' creates dependences with the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 83
++++Node successfully preprocessed+++
+The node '83' has dependencies to the node(s) '51'
+Writing 'gexec.cmd'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+>>>>>>>>>> job '79' status changed from 'none' to 'queued'
+>>>>>>>>>> job '46' status changed from 'none' to 'queued'
+>>>>>>>>>> job '71' status changed from 'none' to 'queued'
+>>>>>>>>>> job '83' status changed from 'none' to 'queued'
+>>>>>>>>>> job '58' status changed from 'none' to 'queued'
+>>>>>>>>>> job '75' status changed from 'none' to 'queued'
+>>>>>>>>>> job '79' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/idvg_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idvg_des.cmd for node 79
+'@tdr@' creates dependences with the node(s) '1'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp79_des.cmd
+The node '79' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 79
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp79_des.par
+The node '79' has dependencies to the node(s) '1'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n79_des.job
+local% submit job 79 for local execution
+>>>>>>>>>> job '79' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '83' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/idvg_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idvg_des.cmd for node 83
+'@tdr@' creates dependences with the node(s) '51'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp83_des.cmd
+The node '83' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 83
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp83_des.par
+The node '83' has dependencies to the node(s) '51'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n83_des.job
+local% submit job 83 for local execution
+>>>>>>>>>> job '83' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '46' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/idon_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idon_des.cmd for node 46
+'@tdr@' creates dependences with the node(s) '1'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp46_des.cmd
+The node '46' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 46
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp46_des.par
+The node '46' has dependencies to the node(s) '1'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n46_des.job
+local% submit job 46 for local execution
+>>>>>>>>>> job '46' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '58' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/idon_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idon_des.cmd for node 58
+'@tdr@' creates dependences with the node(s) '51'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp58_des.cmd
+The node '58' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 58
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp58_des.par
+The node '58' has dependencies to the node(s) '51'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n58_des.job
+local% submit job 58 for local execution
+>>>>>>>>>> job '58' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '71' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/idoff_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idoff_des.cmd for node 71
+'@tdr@' creates dependences with the node(s) '1'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp71_des.cmd
+The node '71' has dependencies to the node(s) '1'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 71
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp71_des.par
+The node '71' has dependencies to the node(s) '1'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n71_des.job
+local% submit job 71 for local execution
+>>>>>>>>>> job '71' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '75' status changed from 'queued' to 'ready'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/cdsllab/25ec01021/q10/gtree.dat'
+Loading jobs and dependence graph '"/home/cdsllab/25ec01021/q10/gexec.cmd"'
+Loading project variables '/home/cdsllab/25ec01021/q10/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/cdsllab/25ec01021/q10/idoff_des.cmd
+Reading file /home/cdsllab/25ec01021/q10/sdevice.par
+PREPROCESSING STEP 2:
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/idoff_des.cmd for node 75
+'@tdr@' creates dependences with the node(s) '51'
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp75_des.cmd
+The node '75' has dependencies to the node(s) '51'
+---------------------------------------
+Preprocessing file /home/cdsllab/25ec01021/q10/sdevice.par for node 75
++++Preprocessing results written to /home/cdsllab/25ec01021/q10/pp75_des.par
+The node '75' has dependencies to the node(s) '51'
+>>>>>>>>>> os_rm /home/cdsllab/25ec01021/q10/n75_des.job
+local% submit job 75 for local execution
+>>>>>>>>>> job '75' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '44' status changed from 'running' to 'done'
+11:27:08 Sep 12 2026 +++ job 44 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 53 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '53' status changed from 'pending' to 'running'
+11:27:09 Sep 12 2026     job 53 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp53_des.cmd"
+>>>>>>>>>> job '53' status changed from 'running' to 'done'
+11:32:25 Sep 12 2026 +++ job 53 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 18 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '18' status changed from 'pending' to 'running'
-10:47:13 Sep 07 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
+11:32:26 Sep 12 2026     job 18 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp18_des.cmd"
 >>>>>>>>>> job '18' status changed from 'running' to 'done'
-10:48:20 Sep 07 2026 +++ job 18 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 20 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:33:25 Sep 12 2026 +++ job 18 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 20 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '20' status changed from 'pending' to 'running'
-10:48:21 Sep 07 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
+11:33:26 Sep 12 2026     job 20 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp20_des.cmd"
 >>>>>>>>>> job '20' status changed from 'running' to 'done'
-10:49:39 Sep 07 2026 +++ job 20 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 30 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:34:34 Sep 12 2026 +++ job 20 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 30 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '30' status changed from 'pending' to 'running'
-10:49:40 Sep 07 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
+11:34:35 Sep 12 2026     job 30 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp30_des.cmd"
 >>>>>>>>>> job '30' status changed from 'running' to 'done'
-10:50:45 Sep 07 2026 +++ job 30 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 40 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:35:33 Sep 12 2026 +++ job 30 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 40 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '40' status changed from 'pending' to 'running'
-10:50:46 Sep 07 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
+11:35:34 Sep 12 2026     job 40 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp40_des.cmd"
 >>>>>>>>>> job '40' status changed from 'running' to 'done'
-10:51:47 Sep 07 2026 +++ job 40 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 55 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:36:33 Sep 12 2026 +++ job 40 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 55 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '55' status changed from 'pending' to 'running'
-10:51:48 Sep 07 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
+11:36:34 Sep 12 2026     job 55 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp55_des.cmd"
 >>>>>>>>>> job '55' status changed from 'running' to 'done'
-10:52:45 Sep 07 2026 +++ job 55 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 59 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:37:33 Sep 12 2026 +++ job 55 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 59 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '59' status changed from 'pending' to 'running'
-10:52:46 Sep 07 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
+11:37:34 Sep 12 2026     job 59 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp59_des.cmd"
 >>>>>>>>>> job '59' status changed from 'running' to 'done'
-10:53:44 Sep 07 2026 +++ job 59 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 63 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:38:34 Sep 12 2026 +++ job 59 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 63 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '63' status changed from 'pending' to 'running'
-10:53:45 Sep 07 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
+11:38:35 Sep 12 2026     job 63 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp63_des.cmd"
 >>>>>>>>>> job '63' status changed from 'running' to 'done'
-10:54:42 Sep 07 2026 +++ job 63 <sdevice> done: exit(0)
-local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 67 -swb_pid 54190 -gsub_pid 62745 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 39347  "/home/cdsllab/25ec01021/q10"
+11:39:38 Sep 12 2026 +++ job 63 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 67 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
 >>>>>>>>>> job '67' status changed from 'pending' to 'running'
-10:54:43 Sep 07 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp67_des.cmd"
+11:39:39 Sep 12 2026     job 67 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp67_des.cmd"
 >>>>>>>>>> job '67' status changed from 'running' to 'done'
-10:55:39 Sep 07 2026 +++ job 67 <sdevice> done: exit(0)
+11:40:39 Sep 12 2026 +++ job 67 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 79 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '79' status changed from 'pending' to 'running'
+11:40:40 Sep 12 2026     job 79 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp79_des.cmd"
+>>>>>>>>>> job '79' status changed from 'running' to 'done'
+11:41:25 Sep 12 2026 +++ job 79 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 83 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '83' status changed from 'pending' to 'running'
+11:41:26 Sep 12 2026     job 83 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp83_des.cmd"
+>>>>>>>>>> job '83' status changed from 'running' to 'done'
+11:42:10 Sep 12 2026 +++ job 83 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 46 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '46' status changed from 'pending' to 'running'
+11:42:11 Sep 12 2026     job 46 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp46_des.cmd"
+>>>>>>>>>> job '46' status changed from 'running' to 'done'
+11:42:45 Sep 12 2026 +++ job 46 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 58 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '58' status changed from 'pending' to 'running'
+11:42:46 Sep 12 2026     job 58 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp58_des.cmd"
+>>>>>>>>>> job '58' status changed from 'running' to 'done'
+11:43:15 Sep 12 2026 +++ job 58 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 71 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '71' status changed from 'pending' to 'running'
+11:43:16 Sep 12 2026     job 71 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice pp71_des.cmd"
+>>>>>>>>>> job '71' status changed from 'running' to 'done'
+11:43:59 Sep 12 2026 +++ job 71 <sdevice> done: exit(0)
+local% exec /cad/synopsys/sentaurus/V-2023.12/bin/gjob -verbose -nice 19 --max_threads 4  -job 75 -swb_pid 833533 -gsub_pid 843529 -gsub_host cdsl18.cdsl.iitbbs.ac.in -gsub_port 45521  "/home/cdsllab/25ec01021/q10"
+>>>>>>>>>> job '75' status changed from 'pending' to 'running'
+11:44:00 Sep 12 2026     job 75 <sdevice> started on host 'cdsl18.cdsl.iitbbs.ac.in': "sdevice --max_threads 4  pp75_des.cmd"
+>>>>>>>>>> job '75' status changed from 'running' to 'done'
+11:44:44 Sep 12 2026 +++ job 75 <sdevice> done: exit(0)
 
 SCHEDULING REPORT
-+++ done     : 18 20 30 40 55 59 63 67
++++ done     : 44 53 18 20 30 40 55 59 63 67 79 46 71 83 58 75
 
-10:55:41 Sep 07 2026 <q10> done (511 sec)
->>>>>> Writing to status file 511
+11:44:46 Sep 12 2026 <q10> done (1273 sec)
+>>>>>> Writing to status file 1273
 gsub exits with status 0

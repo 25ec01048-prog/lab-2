@@ -11,7 +11,7 @@ File {
 
 Electrode {
    { Name="source"    Voltage=0.0 }
-   { Name="drain"     Voltage= 1.1}
+   { Name="drain"     Voltage= 0.4}
    { Name="gate"      Voltage=(0 at 0, 3 at 1) }
 
 }
@@ -70,12 +70,12 @@ Solve {
     Coupled(Iterations= 1000 LineSearchDamping= 1e-2) { Poisson }
     Coupled(Iterations= 1000) { Poisson Electron Hole }
     
-    NewCurrent = "IdVg_0.00538_"
+    NewCurrent = "IdVg_0.00928_"
     Transient (
         InitialTime= 0 FinalTime= 1  
         InitialStep= 33333.3333333 MinStep = 1e-14 Maxstep= 0.01 
         Increment= 1.5 Decrement= 2
     ) { coupled { Poisson Electron Hole } }
-    System ("rm n_des.plt")   
+    System ("rm n83_des.plt")   
 }
 

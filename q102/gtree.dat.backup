@@ -3,7 +3,7 @@
 
 # --- simulation flow
 mosfet_1 sde "" {}
-mosfet_1 qf "0" {0 1.85e10} R
+mosfet_1 qf "0" {0 4.28e10} R
 Breakdown sdevice "" {}
 id_vds sdevice "" {}
 id_vds vgs "0.3" {0.3 0.6 0.9 1.5} R
@@ -40,7 +40,7 @@ scenario default vgs ""
 6 43 82 {} {default} 0
 7 49 43 {} {default} 0
 8 74 49 {} {default} 0
-1 51 87 {1.85e10} {default} 0
+1 51 87 {4.28e10} {default} 0
 2 52 51 {} {default} 0
 3 54 52 {} {default} 0
 4 55 54 {0.3} {default} 0

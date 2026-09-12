@@ -16,7 +16,7 @@ Electrode {
 
 }
 Physics (MaterialInterface = "Silicon/Oxide"){
-	Traps(conc=-1.85e10 FixedCharge)
+	Traps(conc=-4.28e10 FixedCharge)
 }
 Physics {
 
@@ -72,7 +72,7 @@ Solve {
     Coupled(Iterations= 1000 LineSearchDamping= 1e-2) { Poisson }
     Coupled(Iterations= 1000) { Poisson Electron Hole }
     
-    NewCurrent = "IdVd_1.85e10_1.5_"
+    NewCurrent = "IdVd_4.28e10_1.5_"
     Transient (
         InitialTime= 0 FinalTime= 1  
         InitialStep= 33333.3333333 MinStep = 1e-14 Maxstep= 0.01 

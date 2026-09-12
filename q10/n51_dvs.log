@@ -1,9 +1,9 @@
 Evaluating file n51_dvs.cmd
 ---> (sdegeo:create-rectangle (position 0.0 0.0 0.0) (position 0.5 0.25 0.0) Silicon R.Substrate)
 #[body 5 1]
----> (sdegeo:create-rectangle (position -0.00538 0.105 0.0) (position 0.0 0.145 0.0) Oxide R.GateOx)
+---> (sdegeo:create-rectangle (position -0.00928 0.105 0.0) (position 0.0 0.145 0.0) Oxide R.GateOx)
 #[body 6 1]
----> (sdegeo:create-rectangle (position -0.07 0.105 0.0) (position -0.00538 0.145 0.0) PolySilicon R.Poly)
+---> (sdegeo:create-rectangle (position -0.07 0.105 0.0) (position -0.00928 0.145 0.0) PolySilicon R.Poly)
 #[body 7 1]
 ---> (sdegeo:create-polygon (list (position 0 0.07 0.0) (position -0.07 0.07 0.0) (position -0.07 0.105 0.0) (position 0 0.105 0.0) (position 0 0.07 0.0)) Nitride R.Spacer.Left)
 #[body 8 1]
@@ -98,8 +98,8 @@ Evaluating file n51_dvs.cmd
 ---> #[end-of-file]
 "************************************************************************"
 "Sentaurus Structure Editor "
-"Start Time:    Fri Sep  4 12:25:14 2026"
-"End   Time:    Fri Sep  4 12:25:15 2026"
-"Total Execution Time (sec):    1"
+"Start Time:    Sat Sep 12 11:22:10 2026"
+"End   Time:    Sat Sep 12 11:22:12 2026"
+"Total Execution Time (sec):    2"
 "Total System calls Time (sec): 0"
 "************************************************************************"

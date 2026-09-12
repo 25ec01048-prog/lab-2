@@ -3,7 +3,7 @@
 
 # --- simulation flow
 mosfet_1 sde "" {}
-mosfet_1 tox "0.5" {0.005 0.00538} R
+mosfet_1 tox "0.5" {0.005 0.00928} R
 Breakdown sdevice "" {}
 Breakdown 1 "1" {1} R
 id_vds sdevice "" {}
@@ -43,7 +43,7 @@ scenario default vgs ""
 7 43 82 {} {default} 0
 8 49 43 {} {default} 0
 9 74 49 {} {default} 0
-1 51 50 {0.00538} {default} 0
+1 51 50 {0.00928} {default} 0
 2 52 51 {} {default} 0
 3 53 52 {1} {default} 0
 4 54 53 {} {default} 0
