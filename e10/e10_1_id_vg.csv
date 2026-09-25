@@ -1,4 +1,4 @@
-drain TotalCurrent(IdVg_0.005_n79_des) X,drain TotalCurrent(IdVg_0.005_n79_des) Y,drain TotalCurrent(IdVg_0.00928_n83_des) X,drain TotalCurrent(IdVg_0.00928_n83_des) Y
+5nm-X,5nm-Y,9.28nm-X,9.28nm-Y
 0.03,8.3827091e-06,0.03,7.8342854e-06
 0.06,8.5643748e-06,0.06,7.9406287e-06
 0.09,8.758499e-06,0.09,8.0486983e-06

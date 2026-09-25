@@ -1,4 +1,4 @@
-drain TotalCurrent(IdVg_0_n79_des) X,drain TotalCurrent(IdVg_0_n79_des) Y,drain TotalCurrent(IdVg_4.28e10_n83_des) X,drain TotalCurrent(IdVg_4.28e10_n83_des) Y
+Qf=0-X,Qf=0-Y,Qf=4.28e10-X,Qf=4.28e10-Y
 0.03,8.382709e-06,0.03,6.6361332e-06
 0.06,8.5643747e-06,0.06,6.7996494e-06
 0.09,8.758499e-06,0.09,6.9741933e-06
